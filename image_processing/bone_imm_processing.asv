@@ -169,7 +169,7 @@ toc
 %figure
 %%
 figure()
-volshow(imbin(1000:1002,:,:),config) %generare il config dall'app e slavrlo
+volshow(imbin(:,:,500:550),config) %generare il config dall'app e slavrlo
 % quindi caricarlo a inizio scritp
 
 %%
@@ -180,6 +180,21 @@ for i=1:length(imbin(1,1,:))
     i
 end
 close(video);
+
+%%
+tic
+video=VideoWriter(strcat(selpath,'/flow_vol.mp4'),'MPEG-4'); %default 30 fps
+open(video); %open the file for writing
+for i=2:length(imbin(1,1,:))
+    f=figure()
+    volshow(imbin(:,:,1:i),config);
+    A=export_fig(f,'-png');
+    %%add dimensione fissa A
+    writeVideo(video,A(:,:,i));
+    i
+end
+close(video);
+toc
 %%
 
 function [CI1,CI2,CI3]=my_contrast_index(I)

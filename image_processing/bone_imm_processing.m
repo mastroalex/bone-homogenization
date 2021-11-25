@@ -182,13 +182,19 @@ end
 close(video);
 
 %%
+tic
 video=VideoWriter(strcat(selpath,'/flow_vol.mp4'),'MPEG-4'); %default 30 fps
 open(video); %open the file for writing
-for i=1:length(imbin(1,1,:))
-    writeVideo(video,imbin(:,:,i));
+for i=2:length(imbin(1,1,:))
+    f=figure()
+    volshow(imbin(:,:,1:i),config);
+    A=export_fig(f,'-png');
+    %%add dimensione fissa A
+    writeVideo(video,imresize(A,[300 750]));
     i
 end
 close(video);
+toc
 %%
 
 function [CI1,CI2,CI3]=my_contrast_index(I)
