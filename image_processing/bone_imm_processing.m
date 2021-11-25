@@ -167,9 +167,28 @@ figure()
 volshow(imbin)
 toc
 %figure
-%volshow(imbin,config) %generare il config dall'app e slavrlo
+%%
+figure()
+volshow(imbin(:,:,500:550),config) %generare il config dall'app e slavrlo
 % quindi caricarlo a inizio scritp
 
+%%
+video=VideoWriter(strcat(selpath,'/flow_bin.mp4'),'MPEG-4'); %default 30 fps
+open(video); %open the file for writing
+for i=1:length(imbin(1,1,:))
+    writeVideo(video,imbin(:,:,i));
+    i
+end
+close(video);
+
+%%
+video=VideoWriter(strcat(selpath,'/flow_vol.mp4'),'MPEG-4'); %default 30 fps
+open(video); %open the file for writing
+for i=1:length(imbin(1,1,:))
+    writeVideo(video,imbin(:,:,i));
+    i
+end
+close(video);
 %%
 
 function [CI1,CI2,CI3]=my_contrast_index(I)
