@@ -186,6 +186,7 @@ tic
 video=VideoWriter(strcat(selpath,'/flow_vol.mp4'),'MPEG-4'); %default 30 fps
 open(video); %open the file for writing
 for i=2:length(imbin(1,1,:))
+    close all
     f=figure()
     volshow(imbin(:,:,1:i),config);
     A=export_fig(f,'-png');
