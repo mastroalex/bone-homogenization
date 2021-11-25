@@ -5,6 +5,7 @@ selpath = uigetdir; %select image processing folder
 folderpath=strcat(selpath,'/file_raw/slice*');
 folderlist=dir(folderpath);
 %%
+tic
 for k=1:length(folderlist)
     temp_list=dir(strcat(selpath,'/file_raw/',folderlist(k).name,'/ESA*.png'));
      if k==1
@@ -26,12 +27,14 @@ imload=imm;
 parfor i=1:length(xlsfiles)
 imload(:,:,i)=mat2gray(imread(xlsfiles{i}));
 end 
+toc
 %% video w
 video=VideoWriter(strcat(selpath,'/flow.mp4'),'MPEG-4'); %default 30 fps
 open(video); %open the file for writing
 tic
 for i=1:length(imload(1,1,:))
     writeVideo(video,imload(:,:,i));
+    i
 end
 close(video);
 toc
@@ -53,6 +56,7 @@ subplot(4,1,4);
 imhist(imload(:,:,k)); hold on;
 line([mu(k) mu(k)],[0 max(imhist(imload(:,:,k)))],'color','r','linewidth',2);
 drawnow;
+k
 end
 best_contrast_index=find(CI2==max(CI2));
 %%
@@ -68,7 +72,7 @@ imshowpair(imload(:,:,best_contrast_index),A,'montage')
 [CI1,CI2,CI3]=my_contrast_index(A)
 %% test best contrast
 clear CII2 row col val val_g gamma m M MAT val_g val_g_i
-
+tic
 gamma=1.2:0.2:2;
 m=1:2:40;
 M=97:1:99;
@@ -100,11 +104,15 @@ figure;
 imshowpair(imload(:,:,best_contrast_index),contrastim,'montage')
 mex=strcat('m=',string(val1),', M=',string(val2),', gamma=',string(val3));
 title(mex)
+toc
 %%  contrasto su best imm
+tic
 imcontr=imm;
 for k=1:length(imload(1,1,:))
 imcontr(:,:,k)=imadjust(imload(:,:,k),[row(val_g_i)/100 col(val_g_i)/100],[0 1],gamma(val_g_i));
+k
 end
+toc
 %% filtraggio
    
 L=6;
@@ -118,10 +126,14 @@ figure;
 imshowpair(ima,ima_f2,'montage')
 
 %% filtering
+tic
 imfilt=imm;
-for k=1:length(imload(1,1,:))
+
+for k=1:length(imm(1,1,:))
 imfilt(:,:,k)=imfilter(imcontr(:,:,k),mask1);
+k
 end
+toc
 
 %% bin test
 
@@ -138,13 +150,16 @@ imshow(BW);
 %save BW
 %% binarization
 %insert imwrite in loop
+tic
 imbin=imm;
 
-parfor i=1:length(imload(1,1,:))
+parfor i=1:length(imbin(1,1,:))
 imbin(:,:,i)=imbinarize(imfilt(:,:,i),0.46);
 imbin(:,:,i)=imbin(:,:,i).*BW;
 %imwrite(imbin(:,:,i),strcat(selpath,'/binarized/',string(i),'.png'))
+i
 end
+toc
 %%
 figure()
 volshow(imbin)
