@@ -108,7 +108,7 @@ toc
 %%  contrasto su best imm
 tic
 imcontr=imm;
-for k=1:length(imload(1,1,:))
+for k=1:length(imm(1,1,:))
 imcontr(:,:,k)=imadjust(imload(:,:,k),[row(val_g_i)/100 col(val_g_i)/100],[0 1],gamma(val_g_i));
 k
 end
@@ -147,22 +147,25 @@ taglio=drawfreehand(gca);
 BW=createMask(taglio);
 figure;
 imshow(BW);
-%save BW
+save BW
 %% binarization
 %insert imwrite in loop
 tic
-imbin=imm;
+%imbin=imm;
 
-parfor i=1:length(imbin(1,1,:))
-imbin(:,:,i)=imbinarize(imfilt(:,:,i),0.46);
-imbin(:,:,i)=imbin(:,:,i).*BW;
-%imwrite(imbin(:,:,i),strcat(selpath,'/binarized/',string(i),'.png'))
+for i=1:length(imbin(1,1,:))
+imbin(:,:,i)=imbinarize(imfilt(:,:,i),0.46).*BW;
+%imbin(:,:,i)=imbin(:,:,i).*BW;
+imwrite(imbin(:,:,i),strcat(selpath,'\binarized\',string(i),'.png'))
 i
 end
+save imbin
 toc
 %%
+tic
 figure()
 volshow(imbin)
+toc
 %figure
 %volshow(imbin,config) %generare il config dall'app e slavrlo
 % quindi caricarlo a inizio scritp
