@@ -13,4 +13,4 @@ figure()
 volshow(imbin,config)
 ```
 
-[More info..](https://alessandromastrofini.it/2021/11/26/image-volumetric-bone/)
+[More info on my website..](https://alessandromastrofini.it/2021/11/26/image-volumetric-bone/)
