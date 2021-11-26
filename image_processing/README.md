@@ -14,7 +14,7 @@ volshow(imbin,config)
 ```
 ## Full code
 
-Open (matlab `bone_imm_processing.m`file)[https://github.com/mastroalex/bone-homogenization/blob/main/image_processing/bone_imm_processing.m]
+Open matlab (`bone_imm_processing.m`)[https://github.com/mastroalex/bone-homogenization/blob/main/image_processing/bone_imm_processing.m] file.
 
 ## Mathematica
 
