@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Please note that whilst this template provides a 
+% preview of the typeset manuscript for submission, it 
+% will not necessarily be the final publication layout.
+%
+% letterpaper/a4paper: US/UK paper size toggle
+% num-refs/alpha-refs: numeric/author-year citation and bibliography toggle
+
+
+%\documentclass[letterpaper]{oup-contemporary}
+\documentclass[a4paper,num-refs]{oup-contemporary}
+
+
+
+%%% Journal toggle; only specific options recognised.
+%%% (Only "gigascience" and "general" are implemented now. Support for other journals is planned.)%
+%\journal{Test}
+\jname{Università degli studi Roma Tor Vergata}
+\jlogo{}
+\usepackage[euler]{textgreek}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{import}
+\usepackage{amsmath}
+\numberwithin{equation}{section}% numera eq come #section.#formula
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{cancel}
+\usepackage{textcomp}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian, english]{babel}
+\graphicspath{{figures/}} %Setting the graphicspat%h
+\graphicspath{{figures/}} %Setting the graphicspath
+\makeatletter
+\providecommand*{\input@path}{}
+\edef\input@path{{figures/}{}\input@path}% prepend
+\makeatother
+
+
+%%% Flushend: You can add this package to automatically balance the final page, but if things go awry (e.g. section contents appearing out-of-order or entire blocks or paragraphs are coloured), remove it!
+% \usepackage{flushend}
+
+\title{Omogeneizzazione numerica di materiali microstrutturati}
+
+%%% Use the \authfn to add symbols for additional footnotes, if any. 1 is reserved for correspondence emails; then continuing with 2 etc for contributions.
+\author{Mastrofini Alessandro}
+
+%\affil[1]{First Institution}
+%\affil[2]{Second Institution}
+
+%%% Author Notes
+\authnote{\authfn{1}abc@uni.edu; alphbeta@lab.edu}
+%\authnote{\authfn{2}Contributed equally.}
+
+%%% Paper category
+\papercat{Meccanica Computazionale dei Tessuti e Biomateriali}
+
+%%% "Short" author for running page header
+\runningauthor{}
+
+%%% Should only be set by an editor%
+%\jvolume{00}
+\jnumber{1}
+\jyear{2021}
+
+\begin{document}
+
+\begin{frontmatter}
+\maketitle
+\begin{abstract}
+The Abstract (250 words maximum) should be structured to include the following details:
+
+ \textbf{Background}, the context and purpose of the study;
+ 
+  \textbf{Results}, the main findings;
+  
+   \textbf{Conclusions}, brief summary and potential implications. 
+   
+   Please minimize the use of abbreviations and do not cite references in the abstract.
+\end{abstract}
+
+\begin{keywords}
+trabecular bone; homogenization; composite material
+\end{keywords}
+\end{frontmatter}
+
+
+
+\section{Introduzione}
+
+Lo scopo della seguente analisi è quello di indagare l'influenza delle proprietà microstrutturali sul comportamento macroscopico di un materiale composito.
+
+
+
+\begin{figure*}%[b!]  %% Add a [b!] if you prefer the wide image to be at the bottm of the page
+	\centering
+	\def\svgwidth{\textwidth}
+	\input{homogen.pdf_tex}
+	\caption{Idealizzazione del RVE. (a) Ricostruzione tridimensionale; (b) Slice di riferimento no. 650; (c) ingrandimento del volume di interesse; (d) idealizzazione geometrica} 
+	
+\label{fig:homogen_RVE}
+\end{figure*}
+
+
+\section{Struttura multiscala}
+
+
+
+\section{Omogenizzazione}
+
+\subsubsection{Stime analitiche}
+\begin{table}[bt!]
+	\caption{Parametri materiali}\label{tab:example}
+	\begin{tabular}{l r l}
+		\toprule
+		Nome & Valore &  Reference\\
+		\midrule
+		$E_t$ & XX & \citet{Cowin1}  \\
+		$E_n$ & YY &  \\
+			$E_{om}$ & ZZ & Measure uniti\textsuperscript{*}  \\
+		\bottomrule
+	\end{tabular}
+	\begin{tablenotes}
+		\item This is a table note.
+		\item \textsuperscript{*}Another note.
+	\end{tablenotes}
+\end{table}
+\subsubsection{Volume di interesse}
+
+PARTE SUL CODICE SNIPPET
+
+
+\begin{figure*}%[b!]  %% Add a [b!] if you prefer the wide image to be at the bottm of the page
+\centering
+\includegraphics[width=.7\textwidth]{example-image}
+\caption{An example wide figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+}\label{fig:example:wide}
+\end{figure*}
+
+
+\section{Effetto del carico sulla struttura macroscopica}
+
+
+
+\section{Conclusioni}
+
+\section{???}
+
+
+\section{Metodi}
+
+\subsubsection{Elaborazione dell'immagine}
+
+\subsubsection{Codice}
+
+\subsubsection{Analisi di convergenza}
+
+
+
+\section{Disponibilità del codice e materiale aggiuntivo}
+
+
+
+
+\subsection{List of abbreviations}
+If abbreviations are used in the text they should be defined in the text at first use, and a list of abbreviations should be provided in alphabetical order.
+
+
+
+%% Specify your .bib file name here, without the extension
+\bibliography{paper-refs}
+
+
+
+
+\end{document}
