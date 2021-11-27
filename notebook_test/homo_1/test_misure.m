@@ -7,7 +7,7 @@ APT=0.8*AT;
 AP=pi*(rp^2);
 N=APT/AP
 %% parto dal numero di pori a trovo il volume di interesse
-N=23
+N=25
 rp=250/2;
 AP=pi*(rp^2);
 APT=N*AP;
@@ -49,9 +49,9 @@ VP=pi*(rp^3)*(4/3);
 N=VPT/VP
 
 %% parto dal numero di pori a trovo il volume di interesse
-N=11+(8/2)+(4/4)
+N=25
 rp=250/2;
 VP=(4/3)*pi*(rp^3);
 VPT=N*VP;
 VT=VPT/0.8;
-L=sqrt(VT/rp)
+
