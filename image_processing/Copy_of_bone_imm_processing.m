@@ -108,7 +108,7 @@ title(mex)
 toc
 %%  contrasto su best imm
 tic
-imcontr=imm;
+%imcontr=imm;
 for k=1:length(imm(1,1,:))
 imcontr(:,:,k)=imadjust(imload(:,:,k),[row(val_g_i)/100 col(val_g_i)/100],[0 1],gamma(val_g_i));
 k
@@ -139,6 +139,7 @@ toc
 %% bin test
 
 bintest=imbinarize(imfilt(:,:,best_contrast_index),0.48);
+figure();
 imshow(bintest);
 %%
 figure()
