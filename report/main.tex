@@ -17,17 +17,56 @@
 %\journal{Test}
 \jname{Università degli studi Roma Tor Vergata}
 \jlogo{}
-\usepackage[euler]{textgreek}
+
 \usepackage{graphicx}
 \usepackage{siunitx}
 \usepackage{import}
 \usepackage{amsmath}
 \numberwithin{equation}{section}% numera eq come #section.#formula
 \usepackage{amsthm}
+\usepackage{stmaryrd}
 \usepackage{amssymb}
 \usepackage{wasysym}
 \usepackage{cancel}
 \usepackage{textcomp}
+\usepackage{cleveref}
+\crefformat{section}{\S#2#1#3} % see manual of cleveref, section 8.2.1
+\crefformat{subsection}{\S#2#1#3}
+\crefformat{subsubsection}{\S#2#1#3}
+\usepackage{lipsum}  
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codestring}{rgb}{0.4,0.4,0.4}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.96}
+\definecolor{bbcolour}{rgb}{0.01,0.03,0.35}
+\definecolor{indexcolour}{rgb}{0,0.4,0.4}
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	classoffset=1,
+	keywordstyle=\color{bbcolour},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codestring},
+	basicstyle=\ttfamily\small,
+	breakatwhitespace=false,  
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=false,                 
+	numbers=left,                    
+	numbersep=3pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{texcl=false, mathescape=true,style=mystyle}
+\lstset{emph={%  
+		i, j%
+	},emphstyle={\color{indexcolour}}%
+}%
+
+\usepackage[euler]{textgreek}
 
 
 \usepackage[T1]{fontenc}
@@ -53,7 +92,7 @@
 %\affil[2]{Second Institution}
 
 %%% Author Notes
-\authnote{\authfn{1}abc@uni.edu; alphbeta@lab.edu}
+\authnote{alessandro.mastrofini@alumni.uniroma2.eu}
 %\authnote{\authfn{2}Contributed equally.}
 
 %%% Paper category
@@ -94,6 +133,7 @@ trabecular bone; homogenization; composite material
 
 Lo scopo della seguente analisi è quello di indagare l'influenza delle proprietà microstrutturali sul comportamento macroscopico di un materiale composito.
 
+DESCRIVI OSSO TRABECOLARE DA COWIN e LIBRO ISTOLOGIA
 
 
 \begin{figure*}%[b!]  %% Add a [b!] if you prefer the wide image to be at the bottm of the page
@@ -108,30 +148,37 @@ Lo scopo della seguente analisi è quello di indagare l'influenza delle propriet
 
 \section{Struttura multiscala}
 
-
+\lipsum[1-8]
 
 \section{Omogenizzazione}
 
-\subsubsection{Stime analitiche}
+\subsection{Stime analitiche}
 \begin{table}[bt!]
 	\caption{Parametri materiali}\label{tab:example}
 	\begin{tabular}{l r l}
 		\toprule
 		Nome & Valore &  Reference\\
 		\midrule
-		$E_t$ & XX & \citet{Cowin1}  \\
-		$E_n$ & YY &  \\
-			$E_{om}$ & ZZ & Measure uniti\textsuperscript{*}  \\
+		$E_b$ & $3.8$ GPa & \citet{Cowin1}  \\
+	    $\nu_b$  & $0.3$ & \citet{Dalstra:93,Wirtz:2000}  \\
+		$E_m$  & $15$ KPa  & \citet{Jansen:2015} \\ 
+		$\nu_m$ & 0.1 &    \\
+	$E_{om}$ & ZZ 	\textsuperscript{*} & \cref{sec:homogen}  \\
+	$\nu_{om}$ & ZZ 	\textsuperscript{*}&  \\
+		$L$ & MISURA LATO & \cref{sec:RVE} \\
 		\bottomrule
 	\end{tabular}
 	\begin{tablenotes}
-		\item This is a table note.
-		\item \textsuperscript{*}Another note.
+	
+		\item \textsuperscript{*}Parametri calcolati
 	\end{tablenotes}
 \end{table}
-\subsubsection{Volume di interesse}
-
+\subsection{Volume di interesse}
+\label{sec:RVE}
 PARTE SUL CODICE SNIPPET
+
+\subsection{Omogenizzazione numerica}
+\label{sec:homogen}
 
 
 \begin{figure*}%[b!]  %% Add a [b!] if you prefer the wide image to be at the bottm of the page
@@ -153,12 +200,42 @@ PARTE SUL CODICE SNIPPET
 
 \section{Metodi}
 
-\subsubsection{Elaborazione dell'immagine}
+\subsection{Elaborazione dell'immagine}
 
-\subsubsection{Codice}
+L'immagine presentata in figura \ref{fig:homogen_RVE}(a) è una ricostruzione 3D ottenuta con un algoritmo scritto ad hoc \citep{Mastrofini:21} a partire dalle singole slices (500-650) \citep{ESA:2005}. A seguire è stata selezionata la slice no. 650 che risulta essere quella a contrasto maggiore e soddisfa la frazione di pori \citep{CC21}. In particolare si può utilizzare il tool 
+\texttt{Image Region Analyzer} in Matlab per averne conferma. Queste considerazioni, e soprattutto il volume 3D, hanno permesso di arrivare all'idealizzazione del volume di interesse presentata in  \cref{sec:RVE}
 
-\subsubsection{Analisi di convergenza}
+\subsection{Rappresentazione del volume di riferimento}
 
+\begin{lstlisting}[language=Mathematica,caption=Generazione RVE]
+$\Omega$ext=Rectangle[{0,0},{Lx,Ly}];
+$\Omega$=$\Omega$ext;
+Do[$\Omega$=RegionDifference[
+	$\Omega$,Disk[{centerx$\llbracket$i$\rrbracket$,centery$\llbracket$j$\rrbracket$},Rc]],
+	{i,1,Ninclx},{j,1,Nincly}]
+marker={{{Lx/100,Ly/100},1}};
+Do[marker=Join[
+	marker,{{{centerx$\llbracket$i$\rrbracket$,centery$\llbracket$j$\rrbracket$},2}}],
+	{i,1,Ninclx},{j,1,Nincly}]
+mesh=ToElementMesh[
+$\Omega$,"RegionHoles"->None,"RegionMarker"->marker];	
+
+\end{lstlisting}
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\includegraphics[width=\linewidth]{mesh1.png}
+	\caption{Mesh del volume rappresentativo COMPLETA DOG}\label{fig:Mesh}
+\end{figure}
+
+
+
+\subsection{Codice}
+
+\subsection{Analisi di convergenza}
+
+
+COMPLETA
 
 
 \section{Disponibilità del codice e materiale aggiuntivo}

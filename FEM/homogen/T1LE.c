@@ -1,10 +1,10 @@
 /*************************************************************
-* AceGen    7.303 MacOSX (3 Aug 21)                          *
-*           Co. J. Korelc  2020           20 Nov 21 22:43:29 *
+* AceGen    7.303 Windows (3 Aug 21)                         *
+*           Co. J. Korelc  2020           28 Nov 21 17:59:22 *
 **************************************************************
 User     : Full professional version
-Notebook : test_homo1
-Evaluation time                 : 3 s     Mode  : Optimal
+Notebook : test_homo2
+Evaluation time                 : 1 s     Mode  : Optimal
 Number of formulae              : 84      Method: Automatic
 Subroutine                      : SKR size: 781
 Subroutine                      : SPP size: 633

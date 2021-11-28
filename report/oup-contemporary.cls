@@ -108,7 +108,8 @@
 \def\@runningtitle{}
 \def\@corraddress{}
 \def\@authnotes{}
-\colorlet{jcolour}{green!95!blue!80!red!70!black!90}
+%\colorlet{jcolour}{green!95!blue!80!red!70!black!92}
+\definecolor{jcolour}{RGB}{29,137,53}
 
 \newcommand{\runningauthor}[1]{\def\@runningauthor{#1}}
 \newcommand{\runningtitle}[1]{\def\@runningtitle{#1}}
@@ -182,7 +183,7 @@
     \fontsize{6.5pt}{9.5pt}\bfseries%
     \textcolor{jcolour}{doi: xx.xxxx/xxxx}\par
 	Progetto 1\par
-    Omogenizzazione tessuto osseo\par
+    Omogenizzazione del tessuto osseo\par
     \@papercat\par
     \vspace{\dimexpr 8pt-1em\relax}%
     {\color{black!15}\rule{\linewidth}{2pt}}\par

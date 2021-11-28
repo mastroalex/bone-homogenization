@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -7,5 +7,47 @@
 Cowin S.
 \newblock Bone Mechanics Handbook.
 \newblock CRC Press; 2001.
+
+\bibitem[{Dalstra et~al.(1993)Dalstra, M. and Huiskes, R. and Odgaard, A. and
+  Van Erning, L.}]{Dalstra:93}
+Dalstra M, Huiskes R, Odgaard A, Van~Erning L.
+\newblock Mechanical and textural properties of pelvic trabecular bone.
+\newblock Journal of biomechanics 1993;26:523--35.
+\newblock \urlprefix\url{https://doi.org/10.1016/0021-9290(93)90014-6}.
+
+\bibitem[{Wirtz et~al.(2000)Wirtz, D. C. and Schiffers, N. and Pandorf, T. and
+  Radermacher, K. and Weichert, D. and Forst, R.}]{Wirtz:2000}
+Wirtz DC, Schiffers N, Pandorf T, Radermacher K, Weichert D, Forst R.
+\newblock Critical evaluation of known bone material properties to realize
+  anisotropic FE-simulation of the proximal femur.
+\newblock Journal of biomechanics 2000;33:1325--30.
+\newblock \urlprefix\url{https://doi.org/10.1016/s0021-9290(00)00069-5}.
+
+\bibitem[{Jansen et~al.(2015)Jansen, L. E. and Birch, N. P. and Schiffman, J.
+  D. and Crosby, A. J. and Peyton, S. R.}]{Jansen:2015}
+Jansen LE, Birch NP, Schiffman JD, Crosby AJ, Peyton SR.
+\newblock Mechanics of intact bone marrow.
+\newblock Journal of the mechanical behavior of biomedical materials
+  2015;50:299--307.
+\newblock \urlprefix\url{https://doi.org/10.1016/j.jmbbm.2015.06.023}.
+
+\bibitem[{Mastrofini(2021)Mastrofini, Alessandro}]{Mastrofini:21}
+Mastrofini A.
+\newblock Image processing volumetrico su osso trabecolare.
+\newblock website
+  2021;\urlprefix\url{https://alessandromastrofini.it/image-volumetric-bone/}.
+
+\bibitem[{Beller et~al.(2005)Beller, Gisela and Burkhart, Markus and
+  Felsenberg, Dieter and Gowin, Wolfgang and Hege, Hans-Christian and Koller,
+  Bruno and Prohaska, Steffen and Saparin, Peter I. and Thomsen, Jesper
+  S.}]{ESA:2005}
+Beller G, Burkhart M, Felsenberg D, Gowin W, Hege HC, Koller B, et~al.
+\newblock Vertebral Body Data Set ESA29-99-L3
+  2005;\urlprefix\url{http://bone3d.zib.de/data/2005/ESA29-99-L3/}.
+
+\bibitem[{Cowin(2001)Cowin, Sthepen}]{CC21}
+Cowin S.
+\newblock Integrated Bone Tissue Physiology.
+\newblock Bone Mechanics Handbook 2001;1:4--5.
 
 \end{thebibliography}
