@@ -55,3 +55,11 @@ VP=(4/3)*pi*(rp^3);
 VPT=N*VP;
 VT=VPT/0.8;
 
+%% parto dal numero di pori a trovo il volume di interesse
+N=5^3
+rp=250/2;
+VP=(4/3)*pi*(rp^3);
+VPT=N*VP;
+VT=VPT/0.8;
+VT=VPT/0.7;
+L=VT^(1/3)
