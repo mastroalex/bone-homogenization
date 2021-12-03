@@ -1,12 +1,28 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
+
+\bibitem[{Doktor et~al.(2011)Doktor, Tomáš and Valach, Jaroslav and Kytyr,
+  Dan and Jiroušek, Ondřej}]{Doktor:2011}
+Doktor T, Valach J, Kytyr D, Jiroušek O.
+\newblock Pore Size Distribution of Human Trabecular Bone - Comparison of
+  Intrusion Measurements with Image Analysis.
+\newblock Engineering Mechanics 2011;Mat.
 
 \bibitem[{Cowin(2001)Cowin, Sthepen}]{Cowin1}
 Cowin S.
 \newblock Bone Mechanics Handbook.
 \newblock CRC Press; 2001.
+
+\bibitem[{Aboudi et~al.(2013)Jacob Aboudi and Steven M. Arnold and Brett A.
+  Bednarcyk}]{ABOUDI201387}
+Aboudi J, Arnold SM, Bednarcyk BA.
+\newblock Chapter 3 - Fundamentals of the Mechanics of Multiphase Materials.
+\newblock In: Aboudi J, Arnold SM, Bednarcyk BA, editors. Micromechanics of
+  Composite Materials Oxford: Butterworth-Heinemann; 2013.p. 87--145.
+\newblock
+  \urlprefix\url{https://www.sciencedirect.com/science/article/pii/B9780123970350000033}.
 
 \bibitem[{Dalstra et~al.(1993)Dalstra, M. and Huiskes, R. and Odgaard, A. and
   Van Erning, L.}]{Dalstra:93}
