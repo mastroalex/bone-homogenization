@@ -22,7 +22,7 @@
 \usepackage{siunitx}
 \usepackage{import}
 \usepackage{amsmath}
-\numberwithin{equation}{section}% numera eq come #section.#formula
+%\numberwithin{equation}{section}% numera eq come #section.#formula
 \usepackage{amsthm}
 \usepackage{stmaryrd}
 \usepackage{amssymb}
@@ -133,7 +133,7 @@ trabecular bone; homogenization; composite material
 
 Lo scopo della seguente analisi è quello di indagare l'influenza delle proprietà microstrutturali sul comportamento macroscopico di un materiale composito.
 
-DESCRIVI OSSO TRABECOLARE DA COWIN e LIBRO ISTOLOGIA
+
 
 
 \begin{figure*}%[b!]  %% Add a [b!] if you prefer the wide image to be at the bottm of the page
@@ -148,13 +148,93 @@ DESCRIVI OSSO TRABECOLARE DA COWIN e LIBRO ISTOLOGIA
 
 \section{Struttura multiscala}
 
-\lipsum[1-8]
+
+DESCRIVI OSSO TRABECOLARE DA COWIN e LIBRO ISTOLOGIA
+
+\textcolor{blue}{\lipsum[1-8]}
 
 \section{Omogenizzazione}
 
+L'obiettivo è quindi quello di ottenere delle proprietà materiali alla macroscala a partire dalle proprietà alla microscala come le rigidezza dei due materiali, matrice ossea e pori.
+
+\subsection{Volume di interesse}
+\label{sec:RVE}
+
+Il primo passo, per poter procedere ad un'omogenizzazione, è quello di definire un volume rappresentativo (RVE) tale da essere rappresentativo dal punto di vista statistico della distribuzione geometrica dei costituenti, quindi della microscala. Per farlo il codice calcola automaticamente il lato nel range di qualche mm a partire da alcune considerazioni. Viene rispettato il diametro medio dei pori \citep{Doktor:2011} e la frazione volumetrica  \citep{Cowin1}. 
+
+Sulla base di queste considerazioni vengono inseriti 25 pori equidistanti e tali che la loro distanza dal bordo sia la metà della distanza tra ogni poro. Questo consente di avere un RVE simmetrico e rappresentativo di una selezione delle trabecole. 
+
+Maggiori informazioni sulla procedura di automazione del calcolo del RVE sono nella sezione \ref{sec:RVE_code}.
+
+Inoltre, per fare le opportune considerazioni nel considerare le tensioni medie, i pori vengono considerati pieni di un materiale a bassa rigidezza rappresentativo del midollo osseo. 
+
+APPROFNDISIC QUESTA PARTE
+
+INSERISCI DISCUSSIONE TECNICA SULLA DISTRIBUXIONE DI PORI 
+
+
 \subsection{Stime analitiche}
 
-PARLA DI VOIGT E REUSS 
+Per confrontare i dati dell'omogenizzazione vengono considerate le stime analitiche di Voigt e Reuss. 
+
+L'approssimazione di Voigt considera la matrice di rigidezza come una media pesata per le volume fraction delle rigidezze dei costituenti. 
+\begin{equation}
+	\mathbb C_{\operatorname{Voigt}}=(1-v_f)\mathbb C_b+v_f \mathbb C_m
+\end{equation}
+
+Le stime di Reuss sono analoghe ma in cedevolezza:
+
+\begin{equation}
+	\mathbb S_{\operatorname{Voigt}}=(1-v_f)\mathbb S_b+v_f \mathbb S_m
+\end{equation}
+
+Vengono considerate queste due stime per via del teorema di Hill che garantisce, sotto le opportune ipotesi, che la matrice di rigidezza sia compresa tra queste \citep{ABOUDI201387}. Reuss costituisce il limite inferiore e Voigt il limite superiore dell'omogenizzazione. 
+
+I due materiali vengono con considerati singolarmente isotropi, quindi tali da avere un comportamento materiale descritto dalla matrice di cedevolezza  \eqref{eq:isotropic_S}.
+
+\begin{equation}
+[\mathbb S]_{\operatorname{iso}}=\left[\begin{array}{cccccc}
+	\frac{1}{E} & -\frac{\nu}{E} & -\frac{\nu}{E} & 0 & 0 & 0 \\
+	-\frac{\nu}{E} & \frac{1}{E} & -\frac{\nu}{E} & 0 & 0 & 0 \\
+	-\frac{\nu}{E} & -\frac{\nu}{E} & \frac{1}{E} & 0 & 0 & 0 \\
+	0 & 0 & 0 & \frac{2(1+\nu)}{E} & 0 & 0 \\
+	0 & 0 & 0 & 0 & \frac{2(1+\nu)}{E} & 0 \\
+	0 & 0 & 0 & 0 & 0 & \frac{2(1+\nu)}{E}
+\end{array}\right]
+\label{eq:isotropic_S}
+\end{equation}
+
+In particolare queste matrici vengono calcolate e per ogni iterazione del processo di omogenizzazione viene verificato che il risultato sia compreso in tali stime tramite la funzione \texttt{VoigtReussTest[]}.
+
+
+\subsection{Omogenizzazione numerica}
+\label{sec:homogen}
+
+Viene quindi strutturata una campagna di simulazioni tale da analizzare il RVE ed estrarre una matrice di rigidezza omogenizzata. Ulteriori considerazioni vengono fatte sul parametro $\mathbb C_{11}^{(om)}$.
+
+L'approccio all'omogenizzazione segue condizioni al bordo omogenee di tipo spostamento.  
+In particolare, applicheremo un campo di spostamento alla macroscala supponendo che sia rappresentativo di quello alla microscala. Quindi otterremo un certo campo di tensione alla microscala, funzione del punto. Possiamo quindi considerare il campo di tensione alla macroscala come la media di quello alla microscala. In particolare, queste condizioni sono garantite dall'Average Strain Theorem. Quindi applicando un campo di deformazione alla macroscala otterrei le deformazioni alla microscala e potrei estrarre le tensioni semplicemente risolvendo il problema dell'equilibrio elastico:
+\begin{equation}
+\underline{\sigma}=\langle\tilde{\sigma}\rangle=\mathbb C\langle\tilde{\varepsilon}\rangle=\mathbb C \underline{\varepsilon}
+\end{equation}
+In particolare, applicando condizioni di deformazione unitaria su $\varepsilon_1$,$\varepsilon_2$ e $\gamma_{12}$ otterrei rispettivamente prima, seconda e terza colonna di $\mathbb C$.
+
+Questo viene implementato tramite una campagna di simulazioni in \texttt{Mathematica} sfruttando il tool \texttt{AceFEM}. 
+
+Viene sfruttata la procedura \texttt{TEST[]} che permette di applicare in sequenza le tre condizioni di spostamento e ottenere così la matrice di rigidezza:
+
+\begin{equation}
+\mathbb C^{(om)}=\left(
+\begin{array}{ccc}
+	756.78 & 80.90 & 0.00 \\
+	80.90 & 756.78 & 0.00 \\
+	0.00 & 0.00 & 40.87\\
+\end{array}
+\right)
+\end{equation}.
+
+Da questa matrice COMPLETA COMPLETA
+
 
 \begin{table}[bt!]
 	\caption{Parametri materiali}\label{tab:example}
@@ -163,39 +243,28 @@ PARLA DI VOIGT E REUSS
 		Nome & Valore &  Reference\\
 		\midrule
 		$E_b$ & $3.8$ GPa & \citet{Cowin1}  \\
-	    $\nu_b$  & $0.3$ & \citet{Dalstra:93,Wirtz:2000}  \\
+		$\nu_b$  & $0.3$ & \citet{Dalstra:93,Wirtz:2000}  \\
 		$E_m$  & $15$ KPa  & \citet{Jansen:2015} \\ 
-		$\nu_m$ & 0.1 &    \\
-	$E_{om}$ & ZZ 	\textsuperscript{*} & \cref{sec:homogen}  \\
-	$\nu_{om}$ & ZZ 	\textsuperscript{*}&  \\
-		$L$ & MISURA LATO & \cref{sec:RVE} \\
+		$\nu_m$ & $0.1 $&    \\
+		
+		$C_{11}^{(b)}$&$6730.77 $MPa& \cref{sec:homogen} \textsuperscript{*}\\
+		$C_{11}^{(m)}$& $0.15$ Mpa& \cref{sec:homogen} \textsuperscript{*}\\
+		$C_{11}^{(om)}$& $756.78 $ Mpa & \cref{sec:homogen} \textsuperscript{*}\\
+		$L$ & $1.324$ mm& \cref{sec:RVE} \textsuperscript{*}\\
 		\bottomrule
 	\end{tabular}
 	\begin{tablenotes}
-	
+		
 		\item \textsuperscript{*}Parametri calcolati
 	\end{tablenotes}
 \end{table}
 
-\subsection{Volume di interesse}
-\label{sec:RVE}
-PARTE SUL CODICE SNIPPET E SULLA CREAZIONE DELL RVE 
 
-\subsection{Omogenizzazione numerica}
-\label{sec:homogen}
-
-
-\begin{figure*}%[b!]  %% Add a [b!] if you prefer the wide image to be at the bottm of the page
-\centering
-\includegraphics[width=.7\textwidth]{example-image}
-\caption{An example wide figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-}\label{fig:example:wide}
-\end{figure*}
-
+\section{Variazione della microstruttura}
 
 \section{Effetto del carico sulla struttura macroscopica}
 
-
+\textcolor{blue}{\lipsum[1-8]}
 
 \section{Conclusioni}
 
@@ -210,14 +279,23 @@ L'immagine presentata in figura \ref{fig:homogen_RVE}(a) è una ricostruzione 3D
 \texttt{Image Region Analyzer} in Matlab per averne conferma. Queste considerazioni, e soprattutto il volume 3D, hanno permesso di arrivare all'idealizzazione del volume di interesse presentata in  \cref{sec:RVE}
 
 \subsection{Rappresentazione del volume di riferimento}
+\label{sec:RVE_code}
 
+Per la creazione dei fori viene considerata una griglia quadrata con $\sqrt{\text{N. fori}}$ per lato e viene generato un rettangolo esterno tale da garantire la volume fraction desiderata. Quindi viene generato anche un vettore contenente tutte le posizioni dei centri calcolate. Il calco viene effettuato con le funzioni \texttt{GeometryInitailization[]} e \texttt{GeometrySet[]}.
 
+Vengono quindi creati e fori e assegnati i marker come identificato nello snippet \ref{code_rve}.  Un esempio di questo RVE in Figura \ref{fig:Mesh}.
 
-\begin{lstlisting}[language=Mathematica,caption=Generazione RVE]
+Un calcolo più raffinato può essere fatto considerando la distribuzione del diametro dei pori \citep{Doktor:2011} e quindi creare i fori di diametro diverso rispettando la distribuzione. Chiaramente questo richiede un RVE con più inclusioni in modo da essere più rappresentativo. 
+
+Per quanto riguarda la discretizzazione viene preso il valore ottimo tale da garantire un risultato sufficientemente accurato in tempi ridotti. Vedi \cref{sec:convergenza}.
+
+Per la discretizzazione sono stati usati elementi T1LE, triangolari a 3 nodi con funzioni di forma lineari e una mappa isoparametrica.  
+
+\begin{lstlisting}[language=Mathematica,caption=Generazione RVE,label=code_rve]
 $\Omega$ext=Rectangle[{0,0},{Lx,Ly}];
 $\Omega$=$\Omega$ext;
 Do[$\Omega$=RegionDifference[
-	$\Omega$,Disk[{centerx$\llbracket$i$\rrbracket$,centery$\llbracket$j$\rrbracket$},Rc]],
+	$\Omega$,Disk[{centerx$\llbracket$i$\rrbracket$,centery$\llbracket$j$\rrbracket$},{Rc,Rc}]],
 	{i,1,Ninclx},{j,1,Nincly}]
 marker={{{Lx/100,Ly/100},1}};
 Do[marker=Join[
@@ -228,20 +306,56 @@ $\Omega$,"RegionHoles"->None,"RegionMarker"->marker];
 
 \end{lstlisting}
 
+
 \begin{figure}[bt!] %% preferably at bottom or top of column
 	\centering
-	\includegraphics[width=\linewidth]{mesh1.png}
-	\caption{Mesh del volume rappresentativo COMPLETA DOG}\label{fig:Mesh}
+	\includegraphics[width=\linewidth]{test_mesh_8.png}
+	\caption{Mesh del volume rappresentativo con 756.787 DoF}\label{fig:Mesh}
 \end{figure}
 
 
 
 \subsection{Codice}
 
+\subsubsection{Condizioni al bordo}
+
+DESCriVI CODICE BORDO
+
 \subsection{Analisi di convergenza}
+\label{sec:convergenza}
+
+Per effettuare l'analisi a convergenza è stata implementata una routine che ripete diverse volte l'omogenizzazione citata in \cref{sec:homogen} andando ad infittire la mesh. I risultati sono presenti in Tabella \ref{tab:convergence} e in \cref{fig:convergence}.
+
+Analizzando i risultati è stato preso come valore ottimo quello ottenuto nell'iterazione 8 che presenta un errore rispetto il risultato ideale dello $0.11\%$ a fronte di differenza di impegno computazionale del $83\%$. 
 
 
-COMPLETA
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\includegraphics[width=\linewidth]{test_data.pdf}
+	\caption{Analisi di convergenza sul parametro $\mathbb C_{11}$}\label{fig:convergence}
+\end{figure}
+
+\begin{table}[bt!]
+	\caption{Analisi di convergenza}\label{tab:convergence}
+	\begin{tabular}{l r r l}
+		\toprule
+Iterazione&	$C_{11}^{(om)}$ & DoF &  Time (s)\\
+		\midrule
+	1&		$845.289$ &$3368 $ &  $4.8125 $\\
+			2&	$846.427$ & $3384$ &  $4.7500 $\\
+			3&	$ 772.214$ &$ 16874$  &  $ 8.5625$\\
+			4&$ 763.611$ &$ 39022$  &$ 14.0625$   \\
+			5&$ 759.333$ &$ 253262$  & $ 60.7656$     \\
+		6&	$ 759.333$ & $ 253316$ & $ 59.2188$     \\
+		7&	$758.829 $ &$ 263104$  & $ 61.6563$     \\
+		8&	$ 756.787$ &$ 453436$  & $95.2344 $     \\
+		9&	$ 755.942$ &$2800338 $  &  $509.141 0$    \\
+		10&	$755.903 $ &$ 3024312$  &  $ 555.0630$    \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
 
 
 \section{Disponibilità del codice e materiale aggiuntivo}
@@ -249,8 +363,20 @@ COMPLETA
 
 
 
-\subsection{List of abbreviations}
-If abbreviations are used in the text they should be defined in the text at first use, and a list of abbreviations should be provided in alphabetical order.
+\subsection{Lista delle abbreviazioni}
+
+\begin{itemize}
+	\item RVE , rappresentative volume element 
+	\item $\mathbb C^{(om)}$:,matrice di rigidezza ottenuta dall'omogenizzazione
+	\item $\cdot_b$, parametri che fanno riferimento all'osso
+	\item $\cdot_m$, parametri che fanno riferimento al midollo
+	\item DoF, degrees of freedom
+\end{itemize}
+ 
+
+
+
+
 
 
 
