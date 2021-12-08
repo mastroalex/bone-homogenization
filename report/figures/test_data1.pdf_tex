@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.1.1 (3bf5ae0d25, 2021-09-20), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'test_data.pdf' (pdf, eps, ps)
+%% Accompanies image file 'test_data1.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,18 +53,17 @@
   \begin{picture}(1,0.76047769)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{test_data.pdf}}%
-    \put(0.1182727,-0.01052011){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^3$\end{tabular}}}}%
-    \put(-0.01707657,0.13432922){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.02$\end{tabular}}}}%
-    \put(-0.01707657,0.24473463){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.04$\end{tabular}}}}%
-    \put(-0.01707657,0.35514013){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.06$\end{tabular}}}}%
-    \put(-0.01707657,0.46558355){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.08$\end{tabular}}}}%
-    \put(-0.01707657,0.57598895){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.10$\end{tabular}}}}%
-    \put(-0.01707657,0.68639438){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.12$\end{tabular}}}}%
-    \put(0.23244324,-0.01052011){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^4$\end{tabular}}}}%
-    \put(0.8103317,-0.01093841){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^6$\end{tabular}}}}%
-    \put(0.51805968,-0.01052011){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^5$\end{tabular}}}}%
-    \put(0.70076299,-0.01052011){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^5$\end{tabular}}}}%
-    \put(0.71554418,0.07469866){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\color{myred}0.0011$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{test_data1.pdf}}%
+    \put(0.16072655,0.01162973){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^3$\end{tabular}}}}%
+    \put(0.27120545,0.00793806){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^4$\end{tabular}}}}%
+    \put(1.07612972,0.01121139){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^6$\end{tabular}}}}%
+    \put(0.6454213,0.01162973){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^5$\end{tabular}}}}%
+    \put(0.94071954,0.00978387){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^5$\end{tabular}}}}%
+    \put(0.9148927,0.08761942){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\color{myred}0.0023$\end{tabular}}}}%
+    \put(-0.05743323,0.20055941){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.05$\end{tabular}}}}%
+    \put(-0.06112487,0.3680095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.10$\end{tabular}}}}%
+    \put(-0.05743323,0.54157512){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.15$\end{tabular}}}}%
+    \put(-0.05743323,0.70902521){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.20$\end{tabular}}}}%
+    \put(-0.06297069,0.88997406){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.25$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
