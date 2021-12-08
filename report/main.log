@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  8 DEC 2021 17:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  8 DEC 2021 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1989,15 +1989,18 @@ ine 342.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/it' will be
 (Font)              scaled to size 7.5pt on input line 342.
  [4 <./figures//test_mesh_8.png (PNG copy)>]
-<figures//test_data.pdf, id=189, 597.50786pt x 845.04686pt>
+<figures//test_data.pdf, id=189, 204.47139pt x 150.2162pt>
 File: figures//test_data.pdf Graphic file (type pdf)
 <use figures//test_data.pdf>
 Package pdftex.def Info: figures//test_data.pdf  used on input line 368.
-(pdftex.def)             Requested size: 235.11394pt x 332.51976pt.
+(pdftex.def)             Requested size: 235.11394pt x 172.72894pt.
 File: figures//test_data.pdf Graphic file (type pdf)
 <use figures//test_data.pdf>
 Package pdftex.def Info: figures//test_data.pdf  used on input line 374.
-(pdftex.def)             Requested size: 235.11394pt x 332.51976pt.
+(pdftex.def)             Requested size: 235.11394pt x 172.72894pt.
+
+Underfull \vbox (badness 2221) has occurred while \output is active []
+
 LaTeX Font Info:    Trying to load font information for TS1+Merriwthr-OsF on in
 put line 427.
 
@@ -2018,9 +2021,6 @@ sciencedirect . com / science / article / pii /
  []
 
 
-Underfull \vbox (badness 1418) has occurred while \output is active []
-
- [5 <./figures//test_data.pdf>]
 Underfull \hbox (badness 1215) in paragraph at lines 51--55
 []\T1/Merriwthr-OsF/m/up/7.5 (+20) Mastrofini A.  Im-age pro-cess-ing vol-u-met
 -rico su osso tra-
@@ -2034,9 +2034,7 @@ Underfull \hbox (badness 2875) in paragraph at lines 51--55
 
 ) 
 AED: lastpage setting LastPage
-[6
-
-] (./main.aux)
+[5 <./figures//test_data.pdf>] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -2048,9 +2046,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2FF8D38E64D16DF764E0A7A7CF5202C0;3254.
  ) 
 Here is how much of TeX's memory you used:
- 35867 strings out of 478994
- 643031 string characters out of 5858184
- 2414514 words of memory out of 5000000
+ 35866 strings out of 478994
+ 643025 string characters out of 5858184
+ 2421519 words of memory out of 5000000
  52227 multiletter control sequences out of 15000+600000
  1590163 words of font info for 496 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2073,10 +2071,10 @@ amsfonts/symbols/msam7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
 ublic/stmaryrd/stmary7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/wasy-type1/wasy7.pfb>
-Output written on main.pdf (6 pages, 20552721 bytes).
+Output written on main.pdf (5 pages, 20552137 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
  207533 words of extra memory for PDF output out of 221844 (max. 10000000)
 
