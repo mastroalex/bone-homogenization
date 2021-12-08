@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  8 DEC 2021 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  8 DEC 2021 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1917,28 +1917,19 @@ LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
 (Font)              scaled to size 7.5pt on input line 183.
 
-Underfull \hbox (badness 1038) in paragraph at lines 209--210
-[]\T1/Merriwthr-OsF/m/up/7.5 (+20) In par-ti-co-lare queste ma-trici ven-gono c
-al-co-late e per ogni
- []
-
-
-Underfull \hbox (badness 4254) in paragraph at lines 209--210
-\T1/Merriwthr-OsF/m/up/7.5 (+20) it-er-azione del pro-cesso di omog-e-niz-zazio
-ne viene ver-i-fi-cato
- []
+Underfull \vbox (badness 8075) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 7.8pt on input line 219.
-[2 <./figures//homogen.pdf>]
+(Font)              scaled to size 7.8pt on input line 225.
+ [2 <./figures//homogen.pdf>]
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 246.
+(Font)              scaled to size 7.0pt on input line 262.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 6.0pt on input line 264.
+(Font)              scaled to size 6.0pt on input line 280.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 264.
+(Font)              scaled to size 6.0pt on input line 280.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 264.
+(Font)              scaled to size 6.0pt on input line 280.
  [3]
 (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1953,69 +1944,72 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 300.
+nput line 316.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 6.8438pt on input line 301.
+(Font)              scaled to size 6.8438pt on input line 317.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 3.75pt on input line 301.
-LaTeX Font Info:    Calculating math sizes for size <6.8438> on input line 301.
+(Font)              scaled to size 3.75pt on input line 317.
+LaTeX Font Info:    Calculating math sizes for size <6.8438> on input line 317.
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 6.8438pt on input line 301.
+(Font)              scaled to size 6.8438pt on input line 317.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 5.70291pt on input line 301.
+(Font)              scaled to size 5.70291pt on input line 317.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 4.79063pt on input line 301.
+(Font)              scaled to size 4.79063pt on input line 317.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 5.70291pt on input line 301.
+(Font)              scaled to size 5.70291pt on input line 317.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 4.79063pt on input line 301.
+(Font)              scaled to size 4.79063pt on input line 317.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 6.8438pt on input line 301.
+(Font)              scaled to size 6.8438pt on input line 317.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 5.70291pt on input line 301.
+(Font)              scaled to size 5.70291pt on input line 317.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 4.79063pt on input line 301.
+(Font)              scaled to size 4.79063pt on input line 317.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 6.8438pt on input line 301.
+(Font)              scaled to size 6.8438pt on input line 317.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 5.70291pt on input line 301.
+(Font)              scaled to size 5.70291pt on input line 317.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 4.79063pt on input line 301.
+(Font)              scaled to size 4.79063pt on input line 317.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6.8438> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 311.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 327.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 7.5pt on input line 313.
-<figures//test_mesh_8.png, id=154, 803.1606pt x 801.7152pt>
+(Font)              scaled to size 7.5pt on input line 329.
+<figures//test_mesh_8.png, id=156, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_8.png Graphic file (type png)
 <use figures//test_mesh_8.png>
-Package pdftex.def Info: figures//test_mesh_8.png  used on input line 318.
+Package pdftex.def Info: figures//test_mesh_8.png  used on input line 334.
 (pdftex.def)             Requested size: 235.11394pt x 234.68118pt.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/sl' in size <7.5> not availa
 ble
 (Font)              Font shape `T1/Merriwthr-OsF/b/it' tried instead on input l
-ine 326.
+ine 342.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/it' will be
-(Font)              scaled to size 7.5pt on input line 326.
-<figures//test_data.pdf, id=160, 260.975pt x 191.71625pt>
-File: figures//test_data.pdf Graphic file (type pdf)
-<use figures//test_data.pdf>
-Package pdftex.def Info: figures//test_data.pdf  used on input line 352.
-(pdftex.def)             Requested size: 235.11394pt x 172.72147pt.
-File: figures//test_data.pdf Graphic file (type pdf)
-<use figures//test_data.pdf>
-Package pdftex.def Info: figures//test_data.pdf  used on input line 358.
-(pdftex.def)             Requested size: 235.11394pt x 172.72147pt.
+(Font)              scaled to size 7.5pt on input line 342.
  [4 <./figures//test_mesh_8.png (PNG copy)>]
+<figures//test_data.pdf, id=189, 260.975pt x 191.71625pt>
+File: figures//test_data.pdf Graphic file (type pdf)
+<use figures//test_data.pdf>
+Package pdftex.def Info: figures//test_data.pdf  used on input line 368.
+(pdftex.def)             Requested size: 235.11394pt x 172.72147pt.
+File: figures//test_data.pdf Graphic file (type pdf)
+<use figures//test_data.pdf>
+Package pdftex.def Info: figures//test_data.pdf  used on input line 374.
+(pdftex.def)             Requested size: 235.11394pt x 172.72147pt.
+
+Underfull \vbox (badness 2237) has occurred while \output is active []
+
 LaTeX Font Info:    Trying to load font information for TS1+Merriwthr-OsF on in
-put line 411.
+put line 427.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/merriweather/TS1Merriwthr-OsF.fd
 File: TS1Merriwthr-OsF.fd 2020/08/30 (autoinst) Font definitions for TS1/Merriw
 thr-OsF.
 )
 LaTeX Font Info:    Font shape `TS1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 7.5pt on input line 411.
+(Font)              scaled to size 7.5pt on input line 427.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Merriwthr-OsF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2052,11 +2046,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2FF8D38E64D16DF764E0A7A7CF5202C0;3254.
  ) 
 Here is how much of TeX's memory you used:
- 35863 strings out of 478994
- 642968 string characters out of 5858184
- 2450628 words of memory out of 5000000
+ 35866 strings out of 478994
+ 643025 string characters out of 5858184
+ 2421514 words of memory out of 5000000
  52227 multiletter control sequences out of 15000+600000
- 1590031 words of font info for 495 fonts, out of 8000000 for 9000
+ 1590163 words of font info for 496 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  126i,16n,149p,630b,8855s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/merriweather/merriwthr_ow
@@ -2077,10 +2071,10 @@ amsfonts/symbols/msam7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
 ublic/stmaryrd/stmary7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/wasy-type1/wasy7.pfb>
-Output written on main.pdf (5 pages, 20566484 bytes).
+Output written on main.pdf (5 pages, 20567385 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 312 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
  207533 words of extra memory for PDF output out of 221844 (max. 10000000)
 

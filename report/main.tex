@@ -206,7 +206,23 @@ I due materiali vengono con considerati singolarmente isotropi, quindi tali da a
 \label{eq:isotropic_S}
 \end{equation}
 
-In particolare queste matrici vengono calcolate e per ogni iterazione del processo di omogenizzazione viene verificato che il risultato sia compreso in tali stime tramite la funzione \texttt{VoigtReussTest[]}.
+Queste matrici vengono calcolate e per ogni iterazione del processo di omogenizzazione viene verificato che il risultato sia compreso in tali stime tramite la funzione \texttt{VoigtReussTest[]}. In particolare, passando la variabile \texttt{verbOutput==True} è possibile estrarne i valori:
+\begin{equation}
+\mathbb C_{Voigt}=\begin{pmatrix}
+	2019.340&865.404&0\\
+	865.404&2019.340&0\\
+	0&0&576.969
+	
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+	\mathbb C_{Reuss}=\mathbb S_{Reuss}^{-1}=\begin{pmatrix}
+0.226262&0.0399292&0\\
+0.0399292&0.226262&0\\
+0&0&0.0931663
+	\end{pmatrix}
+\end{equation}
 
 
 \subsection{Omogenizzazione numerica}
@@ -316,7 +332,7 @@ $\Omega$,"RegionHoles"->None,"RegionMarker"->marker];
 \begin{figure}[bt!] %% preferably at bottom or top of column
 	\centering
 	\includegraphics[width=\linewidth]{test_mesh_8.png}
-	\caption{Mesh del volume rappresentativo con 756.787 DoF. I bordi appaiono neri e più spessi, questo è dovuto al refinement della mesh.}\label{fig:Mesh}
+	\caption{Mesh del volume rappresentativo con 756.787 DoF. I bordi appaiono neri e più spessi, questo è dovuto al refinement della mesh molto più fitta nei punti di bordo.}\label{fig:Mesh}
 \end{figure}
 
 
