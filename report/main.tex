@@ -62,7 +62,7 @@
 }
 \lstset{texcl=false, mathescape=true,style=mystyle}
 \lstset{emph={%  
-		i, j%
+		i, j,X,n,Y%
 	},emphstyle={\color{indexcolour}}%
 }%
 
@@ -157,6 +157,10 @@ DESCRIVI OSSO TRABECOLARE DA COWIN e LIBRO ISTOLOGIA
 
 L'obiettivo è quindi quello di ottenere delle proprietà materiali alla macroscala a partire dalle proprietà alla microscala come le rigidezza dei due materiali, matrice ossea e pori.
 
+Ad una sclaa sufficientemente grande rispetto le singole trabecolee è possibile considerare la matrice di midollo e le trabecole ossee come due materiali diversi ma entrambi eterogenei e dal comportamento isotropo. L'isootropia è una prima approssimazione che però ci permette di procedere in modo più efficiente nell'omogenizzazione andando a vedere come la struttura e la disposizione dei pori influenzi il comportamento macroscopico. 
+
+Con la procedura di omogenizzazione andremo a considerare una media delle proprietà meccaniche di osso e matrice ma questa media viene intesa in senso più ampio e il significato può variare a seconda dell'approccio. 
+
 \subsection{Volume di interesse}
 \label{sec:RVE}
 
@@ -166,11 +170,9 @@ Sulla base di queste considerazioni vengono inseriti 25 pori equidistanti e tali
 
 Maggiori informazioni sulla procedura di automazione del calcolo del RVE sono nella sezione \ref{sec:RVE_code}.
 
-Inoltre, per fare le opportune considerazioni nel considerare le tensioni medie, i pori vengono considerati pieni di un materiale a bassa rigidezza rappresentativo del midollo osseo. 
+Inoltre, per fare le opportune considerazioni nel considerare le tensioni medie, i pori vengono considerati pieni di un materiale a bassa rigidezza rappresentativo del midollo osseo. Questo serve sia a considerare un fenomeno più rappresentativo della realtà sia a permettere una corretta applicazione del teorema della media delle tensioni. 
 
-APPROFNDISIC QUESTA PARTE
 
-INSERISCI DISCUSSIONE TECNICA SULLA DISTRIBUXIONE DI PORI 
 
 
 \subsection{Stime analitiche}
@@ -217,7 +219,8 @@ In particolare, applicheremo un campo di spostamento alla macroscala supponendo 
 \begin{equation}
 \underline{\sigma}=\langle\tilde{\sigma}\rangle=\mathbb C\langle\tilde{\varepsilon}\rangle=\mathbb C \underline{\varepsilon}
 \end{equation}
-In particolare, applicando condizioni di deformazione unitaria su $\varepsilon_1$,$\varepsilon_2$ e $\gamma_{12}$ otterrei rispettivamente prima, seconda e terza colonna di $\mathbb C$.
+In particolare, applicando condizioni di deformazione unitaria su $\varepsilon_1$,$\varepsilon_2$ e $\gamma_{12}$ otterrei rispettivamente prima, seconda e terza colonna di $\mathbb C$. È possibile farlo in tre processi carico separati e considerare il contributo complessivo in quanto siamo in elasticità lineare sotto l'ipotesi di piccole deformazioni per cui vale la sovrapposizione degli effetti,
+
 
 Questo viene implementato tramite una campagna di simulazioni in \texttt{Mathematica} sfruttando il tool \texttt{AceFEM}. 
 
@@ -233,7 +236,10 @@ Viene sfruttata la procedura \texttt{TEST[]} che permette di applicare in sequen
 \right)
 \end{equation}.
 
-Da questa matrice COMPLETA COMPLETA
+Da questa matrice è possibile innanzitutto verificare che sono soddisfatti i limiti inferiore e superiore (Reuss e Voigt). 
+Si vede inoltre un comportamento isotropo e come l'elevata pore fraction e quindi la grande presenza di materiale a bassa rigidezza va ad abbassare la rigidezza della matrice ossea. 
+
+Ulteriori informazioni sull'automazione e sulla convergenza di questo risultato sono presenti nella sezione dell'analisi a convergenza \cref{sec:convergenza}.
 
 
 \begin{table}[bt!]
@@ -310,7 +316,7 @@ $\Omega$,"RegionHoles"->None,"RegionMarker"->marker];
 \begin{figure}[bt!] %% preferably at bottom or top of column
 	\centering
 	\includegraphics[width=\linewidth]{test_mesh_8.png}
-	\caption{Mesh del volume rappresentativo con 756.787 DoF}\label{fig:Mesh}
+	\caption{Mesh del volume rappresentativo con 756.787 DoF. I bordi appaiono neri e più spessi, questo è dovuto al refinement della mesh.}\label{fig:Mesh}
 \end{figure}
 
 
@@ -319,48 +325,84 @@ $\Omega$,"RegionHoles"->None,"RegionMarker"->marker];
 
 \subsubsection{Condizioni al bordo}
 
-DESCriVI CODICE BORDO
+Per impostare correttamente le condizioni al bordo in modo automatizzato è stato realizzato uno snippet ripetitivo con delle variabili di comando che permette di automatizzare la procedure. In particolare, volendo applicare una deformazione costante rispettivamente su $x$, $y$ o  di scorrimento è necessaria una mappa sulle condizioni di spostamento che permette di mappare ogni punto  nel valore desiderato. Si usano quindi la funzione \texttt{Function[{n, X, Y}, a*X + b*Y }, dove a seconda che sia nullo $a$ o $b$ lo spostamento sarà lineare rispettivamente in Y o in X. 
+
+ Questo permette di impostare le condizioni sui quadrato bordi del quadrato mediante tre parametri $\{a,\:b,\:c\}$. Questi parametri vengono passati alla funzione \texttt{TEST[]} che provvede a mapparli come indicato nello snippet  \ref{code_displacem} andando ad impostare condizioni al contorno di tipo essenziale.  
+
+\subsubsection{Verifica dei limiti superiore ed inferiore}
+
+I limiti di Reuss e Voigt vengono calcolati tramite la funzione \texttt{VoigtReussTest[]} alla quale vengono passate le proprietà materiale dei singoli componenti insieme alla volume fraction. Quindi viene calcolata la matrice di rigidezza e di cedevolezza per un materiale isotropo e le approssimazioni di Reuss e Voigt. 
+
+Vengono quindi verificati i due limiti verificando che $\mathbb C_{inf}=\mathbb C^{(om)}-\mathbb C_{Reuss} $ e $\mathbb C_{sup}=\mathbb C_{Voigt} - \mathbb C^{(om)}$ siano definite positive. In caso contrario il codice procede ma verrà comunicato che i limiti non sono verificati. 
 
 \subsection{Analisi di convergenza}
 \label{sec:convergenza}
 
-Per effettuare l'analisi a convergenza è stata implementata una routine che ripete diverse volte l'omogenizzazione citata in \cref{sec:homogen} andando ad infittire la mesh. I risultati sono presenti in Tabella \ref{tab:convergence} e in \cref{fig:convergence}.
+Per effettuare l'analisi a convergenza è stata implementata una routine che ripete diverse volte l'omogenizzazione citata in \cref{sec:homogen} andando ad infittire la mesh. 
 
-Analizzando i risultati è stato preso come valore ottimo quello ottenuto nell'iterazione 8 che presenta un errore rispetto il risultato ideale dello $0.11\%$ a fronte di differenza di impegno computazionale del $83\%$. 
+Vengono analizzati il modulo di $C_{11}$ e la norma della matrice $\| \mathbb C^{(om)}\|=\mathbb C^T\mathbb C$ e i loro valori normalizzati rispetto il valore vero. Viene assunto come valore vero quello dell'iterazione ultima, tale da considerare il risultato essere arrivato a convergenza. 
+I risultati sui moduli estratti sono presenti nella Tabella \ref{tab:convergence} e nei due grafici dell'errore in \cref{fig:convergence} e in \cref{fig:convergence1}.
+
+Analizzando i risultati è stato preso come valore ottimo quello ottenuto nell'iterazione 8 che presenta un errore rispetto il risultato ideale dello $0.11\%$ sul $\mathbb C_{11}$ e dello $0.23\%$ su $\|\mathbb C^{(om)}\|$a fronte di differenza di impegno computazionale del $83\%$. 
 
 
 
 \begin{figure}[bt!] %% preferably at bottom or top of column
 	\centering
 	\includegraphics[width=\linewidth]{test_data.pdf}
-	\caption{Analisi di convergenza sul parametro $\mathbb C_{11}$}\label{fig:convergence}
+	\caption{Analisi dell'errore sul parametro $\mathbb C_{11}$}\label{fig:convergence}
 \end{figure}
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\includegraphics[width=\linewidth]{test_data.pdf}
+	\caption{Analisi dell'errore su $\|\mathbb C\|$}\label{fig:convergence1}
+\end{figure}
+
 
 \begin{table}[bt!]
 	\caption{Analisi di convergenza}\label{tab:convergence}
-	\begin{tabular}{l r r l}
+	\begin{tabular}{l c c c l}
 		\toprule
-Iterazione&	$C_{11}^{(om)}$ & DoF &  Time (s)\\
+\#&	$\mathbb C_{11}^{(om)}$ & $\| \mathbb C^{(om)}\| $ &DoF &  Time (s)\\
 		\midrule
-	1&		$845.289$ &$3368 $ &  $4.8125 $\\
-			2&	$846.427$ & $3384$ &  $4.7500 $\\
-			3&	$ 772.214$ &$ 16874$  &  $ 8.5625$\\
-			4&$ 763.611$ &$ 39022$  &$ 14.0625$   \\
-			5&$ 759.333$ &$ 253262$  & $ 60.7656$     \\
-		6&	$ 759.333$ & $ 253316$ & $ 59.2188$     \\
-		7&	$758.829 $ &$ 263104$  & $ 61.6563$     \\
-		8&	$ 756.787$ &$ 453436$  & $95.2344 $     \\
-		9&	$ 755.942$ &$2800338 $  &  $509.141 0$    \\
-		10&	$755.903 $ &$ 3024312$  &  $ 555.0630$    \\
+
+		
+	1&		$845.289$ &$1450730 $ &$3368 $ &  $ 5.0625 $\\
+			2&	$846.427$ &$145680 $& $3384$ &  $4.6719  $\\
+			3&	$ 772.214$ &$1208530 $&$ 16874$  &  $ 8.9375 $\\
+			4&$ 763.611$ &$ 1181190$&$ 39022$  &$ 14.875$   \\
+			5&$ 759.333$ &$1168040 $&$ 253262$  & $ 64.0313$     \\
+		6&	$ 759.333$ &$1168040 $& $ 253316$  &$ 60.5156$     \\
+		7&	$758.829 $ &$1166450 $&$ 263104$   &$ 60.5781$     \\
+		8&	$ 756.787$ &$ 1160210$&$ 453436$ &$ 94.8281 $     \\
+		9&	$ 755.942$ &$1157590 $&$2800338 $  &  $ 507.0310$    \\
+		10&	$755.903 $ &$ 1157470$&$ 3024312$  & $550.5780 $    \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
 
+\begin{lstlisting}[language=Mathematica,caption=Generazione RVE,label=code_displacem]
+	SMTAddEssentialBoundary[Line[{{0, 0}, {0, Ly}}],
+	1 -> Function[{n, X, Y}, b Y],
+	2 -> Function[{n, X, Y}, c Y], 	"Set" -> True];
+	SMTAddEssentialBoundary[Line[{{0, Ly}, {Lx, Ly}}],
+		1 -> Function[{n, X, Y}, b*Ly + a*X],
+		2 -> Function[{n, X, Y}, c*Ly + b*X], "Set" -> True];
+	SMTAddEssentialBoundary[Line[{{Lx, Ly}, {Lx, 0}}], 
+	1 -> Function[{n, X, Y}, a*Lx + b*Y],
+	2 -> Function[{n, X, Y}, b*Lx + c*Y], "Set" -> True];
+	SMTAddEssentialBoundary[Line[{{0, 0}, {Lx, 0}}],
+	1 -> Function[{n, X, Y}, a*X],
+	2 -> Function[{n, X, Y}, b*X], 	"Set" -> True];
+\end{lstlisting}
 
 \section{Disponibilità del codice e materiale aggiuntivo}
 
+Tutto il codice, le immagini, file di processamento e risultati ottenuti sono disponibili alla repository online al link: \url{https://github.com/mastroalex/bone-homogenization}. 
 
+Il codice per l'analisi di convergenza (\cref{sec:convergenza}) è presente nel file \texttt{test\_analisi\_conv.nb}.
 
 
 \subsection{Lista delle abbreviazioni}
@@ -368,8 +410,8 @@ Iterazione&	$C_{11}^{(om)}$ & DoF &  Time (s)\\
 \begin{itemize}
 	\item RVE , rappresentative volume element 
 	\item $\mathbb C^{(om)}$:,matrice di rigidezza ottenuta dall'omogenizzazione
-	\item $\cdot_b$, parametri che fanno riferimento all'osso
-	\item $\cdot_m$, parametri che fanno riferimento al midollo
+	\item $\square_b$, parametri che fanno riferimento all'osso
+	\item $\square_m$, parametri che fanno riferimento al midollo
 	\item DoF, degrees of freedom
 \end{itemize}
  
