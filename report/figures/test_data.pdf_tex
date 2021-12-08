@@ -65,5 +65,6 @@
     \put(0.8103317,-0.01093841){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^6$\end{tabular}}}}%
     \put(0.51805968,-0.01052011){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^5$\end{tabular}}}}%
     \put(0.70076299,-0.01052011){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^5$\end{tabular}}}}%
+    \put(0.71554418,0.07469866){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\color{red}0.0011$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
