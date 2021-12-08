@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 271.61 199.54"
+   version="1.1"
+   id="svg122"
+   sodipodi:docname="test_data.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview124"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="4.129498"
+     inkscape:cx="135.73078"
+     inkscape:cy="128.46598"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg122" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1,.cls-4,.cls-5{fill:none;}.cls-1{stroke:#a57c52;stroke-linecap:square;stroke-width:1.15px;}.cls-1,.cls-4{stroke-miterlimit:9.21;}.cls-2,.cls-3,.cls-6{isolation:isolate;}.cls-3{font-size:6.48px;fill:#a57c52;font-family:ArialMT, Arial;}.cls-4{stroke:#000;stroke-width:0.36px;}.cls-5{stroke:#fa0f0c;stroke-miterlimit:11.34;stroke-width:0.44px;}.cls-6{font-size:12px;font-family:HelveticaNeueBlackCond, HelveticaNeue;}</style>
+  </defs>
+  <g
+     id="Livello_2"
+     data-name="Livello 2">
+    <g
+       id="Livello_1-2"
+       data-name="Livello 1">
+      <g
+         id="layer1">
+        <g
+           id="g59655">
+          <path
+             id="path19"
+             class="cls-1"
+             d="M37,11.53l.16-2.18L91.44,151.86l28.3,16.53,63.15,8.21h0l1.28,1,18.38,3.92L264,183.11l2.6.08" />
+          <g
+             id="text39"
+             class="cls-2">
+            <text
+               class="cls-3"
+               transform="translate(34.7 13.78)"
+               id="text7">●</text>
+            <text
+               class="cls-3"
+               transform="translate(34.86 11.59)"
+               id="text9">●</text>
+            <text
+               class="cls-3"
+               transform="translate(89.11 154.11)"
+               id="text11">●</text>
+            <text
+               class="cls-3"
+               transform="translate(117.42 170.63)"
+               id="text13">●</text>
+            <text
+               class="cls-3"
+               transform="translate(180.56 178.85)"
+               id="text15">●</text>
+            <text
+               class="cls-3"
+               transform="translate(180.57 178.85)"
+               id="text17">●</text>
+            <text
+               class="cls-3"
+               transform="translate(181.85 179.81)"
+               id="text19">●</text>
+            <text
+               class="cls-3"
+               transform="translate(200.23 183.74)"
+               id="text21">●</text>
+            <text
+               class="cls-3"
+               transform="translate(261.7 185.36)"
+               id="text23">●</text>
+            <text
+               class="cls-3"
+               transform="translate(264.3 185.43)"
+               id="text25">●</text>
+          </g>
+          <path
+             id="path41"
+             class="cls-4"
+             d="M50.37,183.19v-2.5" />
+          <path
+             id="path47"
+             class="cls-4"
+             d="M73.78,183.19v-2.5" />
+          <path
+             id="path65"
+             class="cls-4"
+             d="M128.12,183.19v-2.5" />
+          <path
+             id="path83"
+             class="cls-4"
+             d="M151.52,183.19v-2.5" />
+          <path
+             id="path101"
+             class="cls-4"
+             d="M205.86,183.19v-2.5" />
+          <path
+             id="path119"
+             class="cls-4"
+             d="M229.26,183.19v-2.5" />
+          <path
+             id="path137"
+             class="cls-4"
+             d="M33.12,183.19v-1.25" />
+          <path
+             id="path139"
+             class="cls-4"
+             d="M42.84,183.19v-1.25" />
+          <path
+             id="path141"
+             class="cls-4"
+             d="M56.53,183.19v-1.25" />
+          <path
+             id="path143"
+             class="cls-4"
+             d="M61.73,183.19v-1.25" />
+          <path
+             id="path145"
+             class="cls-4"
+             d="M66.24,183.19v-1.25" />
+          <path
+             id="path147"
+             class="cls-4"
+             d="M70.22,183.19v-1.25" />
+          <path
+             id="path149"
+             class="cls-4"
+             d="M97.18,183.19v-1.25" />
+          <path
+             id="path151"
+             class="cls-4"
+             d="M110.87,183.19v-1.25" />
+          <path
+             id="path153"
+             class="cls-4"
+             d="M120.58,183.19v-1.25" />
+          <path
+             id="path155"
+             class="cls-4"
+             d="M134.27,183.19v-1.25" />
+          <path
+             id="path157"
+             class="cls-4"
+             d="M139.48,183.19v-1.25" />
+          <path
+             id="path159"
+             class="cls-4"
+             d="M144,183.19v-1.25" />
+          <path
+             id="path161"
+             class="cls-4"
+             d="M148,183.19v-1.25" />
+          <path
+             id="path163"
+             class="cls-4"
+             d="M174.92,183.19v-1.25" />
+          <path
+             id="path165"
+             class="cls-4"
+             d="M188.61,183.19v-1.25" />
+          <path
+             id="path167"
+             class="cls-4"
+             d="M198.32,183.19v-1.25" />
+          <path
+             id="path169"
+             class="cls-4"
+             d="M212,183.19v-1.25" />
+          <path
+             id="path171"
+             class="cls-4"
+             d="M217.22,183.19v-1.25" />
+          <path
+             id="path173"
+             class="cls-4"
+             d="M221.73,183.19v-1.25" />
+          <path
+             id="path175"
+             class="cls-4"
+             d="M225.71,183.19v-1.25" />
+          <path
+             id="path177"
+             class="cls-4"
+             d="M252.67,183.19v-1.25" />
+          <path
+             id="path179"
+             class="cls-4"
+             d="M266.35,183.19v-1.25" />
+          <path
+             id="path181"
+             class="cls-4"
+             d="M22.38,183.19H271.61" />
+          <path
+             id="path183"
+             class="cls-4"
+             d="M27.37,183.19h3.25" />
+          <path
+             id="path185"
+             class="cls-4"
+             d="M27.37,175.93h1.95" />
+          <path
+             id="path187"
+             class="cls-4"
+             d="M27.37,168.67h1.95" />
+          <path
+             id="path189"
+             class="cls-4"
+             d="M27.37,161.41h1.95" />
+          <path
+             id="path191"
+             class="cls-4"
+             d="M27.37,154.15h3.25" />
+          <path
+             id="path197"
+             class="cls-4"
+             d="M27.37,146.89h1.95" />
+          <path
+             id="path199"
+             class="cls-4"
+             d="M27.37,139.64h1.95" />
+          <path
+             id="path201"
+             class="cls-4"
+             d="M27.37,132.38h1.95" />
+          <path
+             id="path203"
+             class="cls-4"
+             d="M27.37,125.12h3.25" />
+          <path
+             id="path209"
+             class="cls-4"
+             d="M27.37,117.86h1.95" />
+          <path
+             id="path211"
+             class="cls-4"
+             d="M27.37,110.61h1.95" />
+          <path
+             id="path213"
+             class="cls-4"
+             d="M27.37,103.35h1.95" />
+          <path
+             id="path215"
+             class="cls-4"
+             d="M27.37,96.09h3.25" />
+          <path
+             id="path221"
+             class="cls-4"
+             d="M27.37,88.83h1.95" />
+          <path
+             id="path223"
+             class="cls-4"
+             d="M27.37,81.57h1.95" />
+          <path
+             id="path225"
+             class="cls-4"
+             d="M27.37,74.32h1.95" />
+          <path
+             id="path227"
+             class="cls-4"
+             d="M27.37,67.06h3.25" />
+          <path
+             id="path233"
+             class="cls-4"
+             d="M27.37,59.8h1.95" />
+          <path
+             id="path235"
+             class="cls-4"
+             d="M27.37,52.54h1.95" />
+          <path
+             id="path237"
+             class="cls-4"
+             d="M27.37,45.28h1.95" />
+          <path
+             id="path239"
+             class="cls-4"
+             d="M27.37,38h3.25" />
+          <path
+             id="path245"
+             class="cls-4"
+             d="M27.37,30.77h1.95" />
+          <path
+             id="path247"
+             class="cls-4"
+             d="M27.37,23.51h1.95" />
+          <path
+             id="path249"
+             class="cls-4"
+             d="M27.37,16.25h1.95" />
+          <path
+             id="path251"
+             class="cls-4"
+             d="M27.37,9h3.25" />
+          <path
+             id="path257"
+             class="cls-4"
+             d="M27.37,1.73h1.95" />
+          <path
+             id="path259"
+             class="cls-4"
+             d="M27.37,186.92V0" />
+          <path
+             id="path10618"
+             class="cls-5"
+             d="M201.2,181.53l-173.67,0" />
+          <g
+             id="text36241"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(47.1 196.11)"
+               id="text85">$5000$</text>
+          </g>
+          <g
+             id="text39233"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(68.36 196.19)"
+               id="text88">$10^4$</text>
+          </g>
+          <g
+             id="text39233-1"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(148.06 195.7)"
+               id="text91">$10^5$</text>
+          </g>
+          <g
+             id="text39933"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(123.32 196.48)"
+               id="text94">$5\cdot 10^4$</text>
+          </g>
+          <g
+             id="text39933-7"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(224.44 196.78)"
+               id="text97">$10^6$</text>
+          </g>
+          <g
+             id="text39933-7-9"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(0.32 157.41)"
+               id="text100">$0.02$</text>
+          </g>
+          <g
+             id="text39933-7-9-6"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(0.72 128.51)"
+               id="text103">$0.04$</text>
+          </g>
+          <g
+             id="text39933-7-9-62"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(1.08 100.7)"
+               id="text106">$0.06$</text>
+          </g>
+          <g
+             id="text39933-7-9-64"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(0.72 71.8)"
+               id="text109">$0.08$</text>
+          </g>
+          <g
+             id="text39933-7-9-3"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(0.36 42.9)"
+               id="text112">$0.10$</text>
+          </g>
+          <g
+             id="text39933-7-9-5"
+             class="cls-2">
+            <text
+               class="cls-6"
+               transform="translate(0 15.09)"
+               id="text115">$0.12$</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
