@@ -68,7 +68,7 @@
 
 \usepackage[euler]{textgreek}
 
-
+\definecolor{myred}{rgb}{0.545, 0.172, 0.031}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[italian, english]{babel}
@@ -372,7 +372,8 @@ Analizzando i risultati è stato preso come valore ottimo quello ottenuto nell'i
 
 \begin{figure}[bt!] %% preferably at bottom or top of column
 	\centering
-	\includegraphics[width=\linewidth]{test_data.pdf}
+  \def\svgwidth{\linewidth}
+\input{test_data1.pdf_tex}
 	\caption{Analisi dell'errore su $\|\mathbb C\|$}\label{fig:convergence1}
 \end{figure}
 
