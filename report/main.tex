@@ -111,7 +111,7 @@
 \begin{frontmatter}
 \maketitle
 \begin{abstract}
-The Abstract (250 words maximum) should be structured to include the following details:
+
 
  \textbf{Background}, the context and purpose of the study;
  
@@ -148,8 +148,29 @@ Lo scopo della seguente analisi è quello di indagare l'influenza delle propriet
 
 \section{Struttura multiscala}
 
+Il tessuto osseo è una forma specializzata di tessuto connettivo caratterizzata dalla mineralizzazione della matrice extracellulare. Questo conferisce al tessuto una notevole durezza e resistenza. È un tessuto in continua evoluzione, continuamente rinnovato e rimodellato per tutta la durata della vita. Costituisce l'impalcatura dello scheletro, da inserzione a muscoli e tendi e al suo interno contiene midollo osseo. 
 
-DESCRIVI OSSO TRABECOLARE DA COWIN e LIBRO ISTOLOGIA
+Il tessuto osseo è costituito da cellule e da una matrice extracellulare, organica ed inorganica. La parte organica contiene fibre collagene e sostanza amorfa formata da glicoproteine e proteoglicani. 
+
+Si possono distinguere due tipologie di osso: osso compatto e osso spugnoso \citep{Monesi}. 
+L'osso compatto appare, all'esame macroscopico, come una singola massa solida. L'osso spugnoso invece ha un aspetto alveolare ed è costituito da sottili trabecole, che si anastomizzano in una rete tridimensionale. All'interno delle maglie che si formano con le spine trabecolari vi è accolto il midollo osseo.
+
+
+
+
+
+
+ESCRIVI OSSO TRABECOLARE DA COWIN e LIBRO ISTOLOGIA
+
+DESCRIVI BREVEMENTE PROPRIETà MECCANICHE NOTE DALLA LETTERATURA
+
+TIPO:
+
+Inoltre, è noto in letteratura che il parametro fondamentale e più influente nel legare la microstruttura alla risposta di rigidezza è la frazione volumetrica di pori. INSERISCI CITAZIONI
+
+Ci sono però anche altri aspetti. Bisogna tenere conto che l'osso è un tessuto biologico e quindi soggetto al rimodellamento. In particolare è noto che l'osso risponde molto bene a stimoli di compressione andando ad aumentare la sua sezione trasversa ed inspessendo lo strato di osso compatto. Anche nell'osso spugnoso si vedono alcuni cambiamenti tra cui l'allineamento delle trabecole lungo le linee di forza.  INSERISCI CITAZIONI 
+
+
 
 \textcolor{blue}{\lipsum[1-8]}
 
@@ -231,12 +252,18 @@ Queste matrici vengono calcolate e per ogni iterazione del processo di omogenizz
 Viene quindi strutturata una campagna di simulazioni tale da analizzare il RVE ed estrarre una matrice di rigidezza omogenizzata. Ulteriori considerazioni vengono fatte sul parametro $\mathbb C_{11}^{(om)}$.
 
 L'approccio all'omogenizzazione segue condizioni al bordo omogenee di tipo spostamento.  
-In particolare, applicheremo un campo di spostamento alla macroscala supponendo che sia rappresentativo di quello alla microscala. Quindi otterremo un certo campo di tensione alla microscala, funzione del punto. Possiamo quindi considerare il campo di tensione alla macroscala come la media di quello alla microscala. In particolare, queste condizioni sono garantite dall'Average Strain Theorem. Quindi applicando un campo di deformazione alla macroscala otterrei le deformazioni alla microscala e potrei estrarre le tensioni semplicemente risolvendo il problema dell'equilibrio elastico:
+In particolare, applicheremo un campo di spostamento alla macroscala supponendo che sia rappresentativo di quello alla microscala. Quindi otterremo un certo campo di tensione alla microscala, funzione del punto. Possiamo quindi considerare il campo di tensione alla macroscala come la media di quello alla microscala. In particolare, queste condizioni sono garantite dall'Average Strain Theorem.
+Quindi le tensioni medie misurate nel RVE sono definite come:
 \begin{equation}
-\underline{\sigma}=\langle\tilde{\sigma}\rangle=\mathbb C\langle\tilde{\varepsilon}\rangle=\mathbb C \underline{\varepsilon}
+	\left< \boldsymbol{\sigma}\right> ={1\over \|\tilde \Omega\|}\int _{\tilde \Omega} \boldsymbol{\varepsilon} \:d\tilde \Omega
 \end{equation}
-In particolare, applicando condizioni di deformazione unitaria su $\varepsilon_1$,$\varepsilon_2$ e $\gamma_{12}$ otterrei rispettivamente prima, seconda e terza colonna di $\mathbb C$. È possibile farlo in tre processi carico separati e considerare il contributo complessivo in quanto siamo in elasticità lineare sotto l'ipotesi di piccole deformazioni per cui vale la sovrapposizione degli effetti,
+dove $\tilde \Omega$ è l'area del RVE.
 
+Applicando un campo di deformazione alla macroscala otterrei le deformazioni alla microscala e potrei estrarre le tensioni semplicemente risolvendo il problema dell'equilibrio elastico:
+\begin{equation}
+\boldsymbol{\sigma}=\tilde{\left<{\boldsymbol{\sigma}}\right>}=\mathbb C\tilde{\left<{\boldsymbol{\varepsilon}}\right>}=\mathbb C \boldsymbol{\varepsilon}
+\end{equation}
+In particolare, applicando condizioni di deformazione unitaria su $\varepsilon_1$,$\varepsilon_2$ e $\gamma_{12}$ otterrei rispettivamente prima, seconda e terza colonna di $\mathbb C$. È possibile farlo in tre processi carico separati e considerare il contributo complessivo in quanto siamo in elasticità lineare sotto l'ipotesi di piccole deformazioni per cui vale la sovrapposizione degli effetti.
 
 Questo viene implementato tramite una campagna di simulazioni in \texttt{Mathematica} sfruttando il tool \texttt{AceFEM}. 
 
@@ -283,6 +310,17 @@ Ulteriori informazioni sull'automazione e sulla convergenza di questo risultato 
 
 
 \section{Variazione della microstruttura}
+
+\subsection{Variazione della simmetria}
+
+\subsection{Estensione dell'area di indagine}
+
+\subsection{Analisi paziente specifica}
+
+
+\section{Parametri materiali}
+
+Per il primo studio di omogenizzazione sono stati considerati dei parametri materiali medi tra quanto noto in letteratura. Tuttavia è noto anche che il modulo elastico delle strutture ossee può variare in relazione all'età o a particolari patologie. Diversi risultati mostrano che persone giovani hanno moduli di rigidezza più elevati delle persone anziane \citep{Cowin1}
 
 \section{Effetto del carico sulla struttura macroscopica}
 
@@ -441,6 +479,8 @@ Il codice per l'analisi di convergenza (\cref{sec:convergenza}) è presente nel 
 
 
 %% Specify your .bib file name here, without the extension
+\newpage
+%\onecolumn
 \bibliography{paper-refs}
 
 

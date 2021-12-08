@@ -1,7 +1,12 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
+
+\bibitem[{Monesi(2012)Monesi, V}]{Monesi}
+Monesi V.
+\newblock Istologia.
+\newblock Piccin; 2012.
 
 \bibitem[{Doktor et~al.(2011)Doktor, Tomáš and Valach, Jaroslav and Kytyr,
   Dan and Jiroušek, Ondřej}]{Doktor:2011}
