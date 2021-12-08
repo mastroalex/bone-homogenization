@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{203.70748901bp}%
+    \setlength{\unitlength}{197.20500183bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,31 +50,28 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.73465632)%
+  \begin{picture}(1,0.76047769)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{test_data.pdf}}%
-    \put(0.12775672,0.68392181){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
-    \put(0.1283458,0.69198484){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
-    \put(0.32808072,0.16726187){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
-    \put(0.43231106,0.10643936){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
-    \put(0.66477674,0.07617538){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
-    \put(0.66481356,0.07617538){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
-    \put(0.66952619,0.0726409){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
-    \put(0.73719676,0.05817162){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
-    \put(0.96351391,0.05220719){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
-    \put(0.97308646,0.05194946){\color[rgb]{0.64705882,0.48627451,0.32156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}●\end{tabular}}}}%
+    \put(0.11504526,0.00840498){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^3$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{test_data.pdf}}%
-    \put(0.17341041,0.01262838){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5000$\end{tabular}}}}%
-    \put(0.25168441,0.01233384){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^4$\end{tabular}}}}%
-    \put(0.54511987,0.01413789){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^5$\end{tabular}}}}%
-    \put(0.45403338,0.01126613){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^4$\end{tabular}}}}%
-    \put(0.82633192,0.0101616){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^6$\end{tabular}}}}%
-    \put(0.00117816,0.15511209){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.02$\end{tabular}}}}%
-    \put(0.00265086,0.26151466){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.04$\end{tabular}}}}%
-    \put(0.00397629,0.36390412){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.06$\end{tabular}}}}%
-    \put(0.00265086,0.47030669){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.08$\end{tabular}}}}%
-    \put(0.00132543,0.57670926){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.10$\end{tabular}}}}%
-    \put(0,0.67909872){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.12$\end{tabular}}}}%
+    \put(0,0.14402528){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.02$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{test_data.pdf}}%
+    \put(0,0.25443069){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.04$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{test_data.pdf}}%
+    \put(0,0.36483611){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.06$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{test_data.pdf}}%
+    \put(0,0.47527955){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.08$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{test_data.pdf}}%
+    \put(0,0.58568497){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.10$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{test_data.pdf}}%
+    \put(0,0.69609038){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.12$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{test_data.pdf}}%
+    \put(0.22921579,0.00840498){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^4$\end{tabular}}}}%
+    \put(0.80710427,0.00798664){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^6$\end{tabular}}}}%
+    \put(0.51483228,0.00840498){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^5$\end{tabular}}}}%
+    \put(0.69753555,0.00840498){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^5$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{test_data.pdf}}%
   \end{picture}%
 \endgroup%
