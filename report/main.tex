@@ -126,6 +126,13 @@
 \maketitle
 \begin{abstract}
 
+Nel seguente report vengono introdotte diverse campagne di simulazione volte all'omogeneizzazione del tessuto osseo trabecolare. 
+COMPLETE
+
+COMPLETA
+
+COMPLETAA
+
 
  \textbf{Background}, the context and purpose of the study;
  
@@ -212,9 +219,10 @@ Ci sono però anche altri aspetti. Bisogna tenere conto che l'osso è un tessuto
 	\node (pro2a) [process3, left of=conv, xshift=- 2.2cm] {Variazioni:
 		\begin{itemize}
 			\item geometria
-			\item materiali
+			\item proprietà materiali
+			\item finestra di interesse
 	\end{itemize}};
-	\node (pro2b) [process2, right of=conv, xshift=2cm] {Mesh refinement};
+	\node (pro2b) [process2, right of=conv, xshift=2cm] {Mesh};
 	\draw [arrow] (start) -- (in1);
 	\draw [arrow] (in1) -- (pro1);
 	\draw [arrow] (pro1) -- (out1);
@@ -471,8 +479,23 @@ INTRODUZIONE SUGLI EFFETTI DEL CARICO ESTERNO E DEL RIMODELLAMENTO OSSEO
 
 
 \section{Parametri materiali}
-
+\label{sec:variazioni_materiali}
 Per il primo studio di omogenizzazione sono stati considerati dei parametri materiali medi tra quanto noto in letteratura. Tuttavia è noto anche che il modulo elastico delle strutture ossee può variare in relazione all'età o a particolari patologie. Diversi risultati mostrano che persone giovani hanno moduli di rigidezza più elevati delle persone anziane \citep{Cowin1}
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\def\svgwidth{\linewidth}
+	\input{variazione_Ebone.pdf_tex}
+	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_b$}\label{fig:var_Ebone}
+\end{figure}
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\def\svgwidth{\linewidth}
+	\input{variazione_Enarrow.pdf_tex}
+	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_m$}\label{fig:var_Ebone}
+\end{figure}
+
 
 \section{Effetto del carico sulla struttura macroscopica}
 
@@ -535,11 +558,19 @@ Per impostare correttamente le condizioni al bordo in modo automatizzato è stat
 
  Questo permette di impostare le condizioni sui quadrato bordi del quadrato mediante tre parametri $\{a,\:b,\:c\}$. Questi parametri vengono passati alla funzione \texttt{TEST[]} che provvede a mapparli come indicato nello snippet  \ref{code_displacem} andando ad impostare condizioni al contorno di tipo essenziale.  
 
+Il test di omogenizzazione viene effettuato dalla funzione \texttt{Checkconvergence[]}. Questa funzione viene richiamata all'interno di un ciclo \texttt{Do} e nelle diverse iterazioni posso essere variati alcuni parametri come l'accuratezza della mesh, i parametri materiali o geometrici. 
+
+
 \subsubsection{Verifica dei limiti superiore ed inferiore}
 
 I limiti di Reuss e Voigt vengono calcolati tramite la funzione \texttt{VoigtReussTest[]} alla quale vengono passate le proprietà materiale dei singoli componenti insieme alla volume fraction. Quindi viene calcolata la matrice di rigidezza e di cedevolezza per un materiale isotropo e le approssimazioni di Reuss e Voigt. 
 
 Vengono quindi verificati i due limiti verificando che $\mathbb C_{inf}=\mathbb C^{(om)}-\mathbb C_{Reuss} $ e $\mathbb C_{sup}=\mathbb C_{Voigt} - \mathbb C^{(om)}$ siano definite positive. In caso contrario il codice procede ma verrà comunicato che i limiti non sono verificati. 
+
+
+\subsubsection{Variazioni proprietà}
+
+Nel variare le proprietà materiali (\cref{sec:variazioni_materiali}) o della simmetria (\cref{sec:variazione_simmetria}) è stato sfruttata la funzione base di omogenizzazione (\texttt{Checkconvergence[]}) passandogli un vettore con i diversi parametri di interesse. Sono stati svolti test separati nel variare il modulo elastico della matrice ossea o dei pori.
 
 \subsection{Analisi di convergenza}
 \label{sec:convergenza}
@@ -614,7 +645,9 @@ Tutto il codice, le immagini, file di processamento e risultati ottenuti sono di
 
 Il codice per l'analisi di convergenza (\cref{sec:convergenza}) è presente nel file: \texttt{FEM->homogen->test\_analisi\_conv.nb}.
 
-Il codice per la variazione delle proprietà di simmetria e la geometria del RVE (\cref{sec:variazione_simmetria}) è presente nel file: \texttt{FEM->variazioni\_geometrie->test\_geometrie.nb}.
+Il codice per la variazione delle proprietà di simmetria e la geometria del RVE (\cref{sec:variazione_simmetria}) è presente nel file:  \texttt{FEM->variazioni\_geometrie->test\_geometrie.nb}.
+
+I codici per le variazioni delle proprietà materiali (\cref{sec:variazioni_materiali}) sono presenti nel file: \texttt{FEM->variazioni\_materiali->test\_materiali.nb}.
 
 
 \subsection{Lista delle abbreviazioni}
