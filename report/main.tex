@@ -364,7 +364,106 @@ Ulteriori informazioni sull'automazione e sulla convergenza di questo risultato 
 
 \section{Variazione della microstruttura}
 
+INTRODUZIONE SUGLI EFFETTI DEL CARICO ESTERNO E DEL RIMODELLAMENTO OSSEO
+
 \subsection{Variazione della simmetria}
+\label{sec:variazione_simmetria}
+\begin{figure*} \label{figurozza} 
+	\centering
+	\begin{minipage}[b]{0.19\linewidth}
+		\centering
+		$\operatorname{AxR}=0.8	$
+	\end{minipage}
+	\begin{minipage}[b]{0.19\linewidth}
+		\centering
+		$\operatorname{AxR}=0.6	$
+	\end{minipage}
+	\begin{minipage}[b]{0.19\linewidth}
+		\centering
+		$	\operatorname{AxR}=0.5$
+	\end{minipage}
+	\begin{minipage}[b]{0.19\linewidth}
+		\centering
+		$	\operatorname{AxR}=0.3$
+	\end{minipage}
+	\begin{minipage}[b]{0.19\linewidth}
+		\centering
+		$	\operatorname{AxR}=0.1$
+	\end{minipage} 
+	\begin{minipage}[b]{0.19\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.8.png}
+	\end{minipage} 
+	\begin{minipage}[b]{0.19\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.6.png}
+	\end{minipage} 
+	\begin{minipage}[b]{0.19\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.5.png}
+	\end{minipage}
+	\begin{minipage}[b]{0.19\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.3.png}
+	\end{minipage} 
+	\begin{minipage}[b]{0.19\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.1.png}
+	\end{minipage} 
+	
+	\begin{minipage}[b]{0.19\linewidth}
+		\footnotesize{$
+			\begin{bmatrix}
+				869.46 & 198.19 & 0.02 \\
+				198.19 & 1857.50 & 0.01 \\
+				0.03 & 0.01& 103.37 \\
+			\end{bmatrix}
+			$}
+	\end{minipage}
+	\begin{minipage}[b]{0.19\linewidth}
+		\footnotesize{$
+			\begin{bmatrix}
+				1010.09 & 325.62 & 0.03 \\
+				325.62 & 2883.80 & 0.01\\
+				0.03 & 0.01 & 196.39 \\
+			\end{bmatrix}
+			$}
+	\end{minipage}
+	\begin{minipage}[b]{0.19\linewidth}
+		\footnotesize{$
+			\begin{bmatrix}
+				1092.62 & 394.85 & 0.03\\
+				394.85 & 3396.74 & 0.015 \\
+				0.02 & 0.015 & 266.84 \\
+			\end{bmatrix}
+			$}
+	\end{minipage}
+	\begin{minipage}[b]{0.19\linewidth}
+		\footnotesize{$
+			\begin{bmatrix}
+				1279.47 & 538.93 & 0.05 \\
+				538.93 & 4416.36 & 0.02 \\
+				0.05 & 0.02 & 483.75 \\
+			\end{bmatrix}
+			$}
+	\end{minipage}
+	\begin{minipage}[b]{0.19\linewidth}
+		\footnotesize{$
+			\begin{bmatrix}
+				1462.51 & 653.01 & 0.62 \\
+				653.01 & 5376.01 & 0.30 \\
+				0.62 & 0.30 & 826.25 \\
+			\end{bmatrix}
+			$}
+	\end{minipage} 
+	
+	\caption{Variazione della matrice di rigidezza al variare del rapporto assiale dei pori}
+\end{figure*}
+
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\def\svgwidth{\linewidth}
+	\input{var_geometr.pdf_tex}
+	\caption{Relazione tra $C_{11}$, $C_{22}$ e $\operatorname{AxR}$ }
+	\label{fig:geometric_variation}
+\end{figure}
+
 
 \subsection{Estensione dell'area di indagine}
 
@@ -513,7 +612,9 @@ Analizzando i risultati è stato preso come valore ottimo quello ottenuto nell'i
 
 Tutto il codice, le immagini, file di processamento e risultati ottenuti sono disponibili alla repository online al link: \url{https://github.com/mastroalex/bone-homogenization}. 
 
-Il codice per l'analisi di convergenza (\cref{sec:convergenza}) è presente nel file \texttt{FEM->homogen->test\_analisi\_conv.nb}.
+Il codice per l'analisi di convergenza (\cref{sec:convergenza}) è presente nel file: \texttt{FEM->homogen->test\_analisi\_conv.nb}.
+
+Il codice per la variazione delle proprietà di simmetria e la geometria del RVE (\cref{sec:variazione_simmetria}) è presente nel file: \texttt{FEM->variazioni\_geometrie->test\_geometrie.nb}.
 
 
 \subsection{Lista delle abbreviazioni}
@@ -524,11 +625,9 @@ Il codice per l'analisi di convergenza (\cref{sec:convergenza}) è presente nel 
 	\item $\square_b$, parametri che fanno riferimento all'osso
 	\item $\square_m$, parametri che fanno riferimento al midollo
 	\item DoF, degrees of freedom
+	\item $\operatorname{AxR}$, rapporto assiale nelle inclusioni ellissoidali
 \end{itemize}
  
-
-
-
 
 
 
