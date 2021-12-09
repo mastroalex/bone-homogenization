@@ -68,6 +68,20 @@
 
 \usepackage[euler]{textgreek}
 
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=backcolour]
+\tikzstyle{startstop2} = [rectangle, rounded corners, minimum width=3cm, minimum height=2cm,text centered, draw=black, fill=backcolour]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=1cm, text centered,text width=2cm, draw=black, fill=backcolour]
+\tikzstyle{io2} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=backcolour]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered,text width=4cm, draw=black, fill=backcolour]
+\tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=backcolour]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{process2} = [rectangle, minimum width=2cm, text width=2cm,minimum height=1cm, text centered, draw=black, fill=backcolour]
+\tikzstyle{process3} = [rectangle, minimum width=2cm,text width=2cm, minimum height=1cm, text centered, draw=black, fill=backcolour]
+
+
 \definecolor{myred}{rgb}{0.545, 0.172, 0.031}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -173,6 +187,45 @@ Ci sono però anche altri aspetti. Bisogna tenere conto che l'osso è un tessuto
 
 
 \textcolor{blue}{\lipsum[1-8]}
+
+\begin{tikzpicture}
+	\node (start) [startstop] {Osso trabecolare};
+	\node (in1) [io, below of=start, yshift=-0.5cm] {Idealizzazione RVE};
+	
+	\node (pro1) [process, below of=in1, yshift=-1cm] {Omogenizzazione:
+		\begin{itemize}
+			\item condizioni al contorno
+			\item soluzione FEM
+			\item average stress
+		\end{itemize}
+	};
+	\node (out1) [io2, below of=pro1, yshift=-1cm] {$\mathbb C^{(om)}$};
+	\node (conv) [decision, below of=out1, yshift=-1.5cm] {Convergenza};
+	
+	\node (export) [startstop2, below of=conv, yshift=-2cm] {$\mathbb C^{(om)}=
+		\begin{pmatrix}
+			C_{11}&C_{12}&\cdot\\
+			C_{21}&C_{22}&\cdot\\
+			\cdot&\cdot&C_{66}
+		\end{pmatrix}
+		$};
+	\node (pro2a) [process3, left of=conv, xshift=- 2.2cm] {Variazioni:
+		\begin{itemize}
+			\item geometria
+			\item materiali
+	\end{itemize}};
+	\node (pro2b) [process2, right of=conv, xshift=2cm] {Mesh refinement};
+	\draw [arrow] (start) -- (in1);
+	\draw [arrow] (in1) -- (pro1);
+	\draw [arrow] (pro1) -- (out1);
+	\draw [arrow] (out1) -- (conv);
+	\draw [arrow] (conv) -- (export);
+	\draw [arrow] (conv) -- (pro2b);
+	\draw [arrow] (pro2b) |- (pro1);
+	\draw [arrow] (pro2a) |- (export);
+	\draw [arrow] (pro1) -| (pro2a);
+\end{tikzpicture}
+
 
 \section{Omogenizzazione}
 
@@ -416,6 +469,8 @@ Analizzando i risultati è stato preso come valore ottimo quello ottenuto nell'i
 \end{figure}
 
 
+
+
 \begin{table}[bt!]
 	\caption{Analisi di convergenza}\label{tab:convergence}
 	\begin{tabular}{l c c c l}
@@ -471,7 +526,6 @@ Il codice per l'analisi di convergenza (\cref{sec:convergenza}) è presente nel 
 	\item DoF, degrees of freedom
 \end{itemize}
  
-
 
 
 
