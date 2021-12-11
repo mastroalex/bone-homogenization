@@ -154,20 +154,15 @@ trabecular bone; homogenization; composite material
 
 Lo scopo della seguente analisi è quello di indagare l'influenza delle proprietà microstrutturali sul comportamento macroscopico di un materiale composito.
 
+Il flusso logico delle campagne di simulazioni è riportato in \cref{fig:flowchart}. 
 
+Si parte dall'analizzare la struttura dell'osso trabecolare arrivando ad un volume rappresentativo idealizzato con una geometria tale da rispettare il rapporto tra i pori e la massa ossea trabecolare. Viene quindi discretizzato il RVE e il passaggio successivo prevede di ottimizzare la mesh in modo tale da avere un risultato sufficientemente accurato riducendo le richieste di sforzo computazionale. 
 
+Si ottiene quindi una prima matrice di omogenizzazione che rispecchia le proprietà strutturali del RVE e dell'osso trabecolare così idealizzato. 
 
-\begin{figure*}%[b!]  %% Add a [b!] if you prefer the wide image to be at the bottm of the page
-	\centering
-	\def\svgwidth{\textwidth}
-	\input{homogen.pdf_tex}
-	\caption{Idealizzazione del RVE. (a) Ricostruzione tridimensionale; (b) Slice di riferimento no. 650; (c) ingrandimento del volume di interesse; (d) idealizzazione geometrica} 
-	
-\label{fig:homogen_RVE}
-\end{figure*}
+Vengono poi analizzate diverse proprietà geometriche e materiali seguendo le risposte dell'osso al carico, fenomeno noto come adattamento e rimodellamento osseo. 
 
-
-\section{Struttura multiscala}
+\section{Tessuto osseo}
 
 Il tessuto osseo è una forma specializzata di tessuto connettivo caratterizzata dalla mineralizzazione della matrice extracellulare. Questo conferisce al tessuto una notevole durezza e resistenza. È un tessuto in continua evoluzione, continuamente rinnovato e rimodellato per tutta la durata della vita. Costituisce l'impalcatura dello scheletro, da inserzione a muscoli e tendi e al suo interno contiene midollo osseo. 
 
@@ -189,13 +184,20 @@ TIPO:
 
 Inoltre, è noto in letteratura che il parametro fondamentale e più influente nel legare la microstruttura alla risposta di rigidezza è la frazione volumetrica di pori. INSERISCI CITAZIONI
 
-Ci sono però anche altri aspetti. Bisogna tenere conto che l'osso è un tessuto biologico e quindi soggetto al rimodellamento. In particolare è noto che l'osso risponde molto bene a stimoli di compressione andando ad aumentare la sua sezione trasversa ed inspessendo lo strato di osso compatto. Anche nell'osso spugnoso si vedono alcuni cambiamenti tra cui l'allineamento delle trabecole lungo le linee di forza.  INSERISCI CITAZIONI 
+Ci sono però anche altri aspetti. Bisogna tenere conto che l'osso è un tessuto biologico e quindi soggetto al rimodellamento. In particolare è noto che l'osso risponde molto bene a stimoli di compressione andando ad aumentare la sua sezione trasversa ed inspessendo lo strato di osso compatto. Anche nell'osso spugnoso si vedono alcuni cambiamenti tra cui l'allineamento delle trabecole lungo le linee di forza.  \citep{Ferguson:2003}
 
 
-
-\textcolor{blue}{\lipsum[1-8]}
-
+\begin{figure*}%[b!]  %% Add a [b!] if you prefer the wide image to be at the bottm of the page
+	\centering
+	\def\svgwidth{\textwidth}
+	\input{homogen.pdf_tex}
+	\caption{Idealizzazione del RVE. (a) Ricostruzione tridimensionale; (b) Slice di riferimento no. 650; (c) ingrandimento del volume di interesse; (d) idealizzazione geometrica} 
+	
+\label{fig:homogen_RVE}
+\end{figure*}
+\begin{figure}[b!]
 \begin{tikzpicture}
+	\label{fig:flusso logico}
 	\node (start) [startstop] {Osso trabecolare};
 	\node (in1) [io, below of=start, yshift=-0.5cm] {Idealizzazione RVE};
 	
@@ -232,7 +234,26 @@ Ci sono però anche altri aspetti. Bisogna tenere conto che l'osso è un tessuto
 	\draw [arrow] (pro2b) |- (pro1);
 	\draw [arrow] (pro2a) |- (export);
 	\draw [arrow] (pro1) -| (pro2a);
-\end{tikzpicture}
+\end{tikzpicture} 
+\caption{Flusso logico della campagna di simulazione}
+\label{fig:flowchart}
+\end{figure}
+
+\section{Struttura multiscala}
+
+
+In questa analisi viene presa come riferimento una vertebra lombare, L3. Le considerazioni sono comunque estensibili a qualunque altro osso trabecolare ma i parametri materiali fanno riferimento a dati selezionati per vertebre lombari.  
+Le vertebre lombari sono solo alcune delle 33-34 vertebre che formano la colonna vertebrale umana. Il corpo vertebrale è formato principalmente da osso trabecolare con le singole trabecole allineate lungo le linee di forza. Questa disposizione fornisce un contributo importante per la distribuzione dei carichi e il sostegno del busto. Circa tre quarti dell'intero carico strutturale ricadono sulla colonna anteriore, ovvero sul corpo vertebrale, dischi intervertebrali e sulle placche terminali delle vertebre. La struttura ossea trabecolare può subire diversi cambiamenti con l'invecchiamento o a causa di alcune patologie \citep{Ferguson:2003} come la perdita di densità minerale, cambiamenti morfologici come un aumento della frazione volumetrica di pori, ispessimento o assottigliamento delle trabecole e perdita di connettività. Questi cambiamenti influenzano notevolmente la risposta meccanica del tessuto. 
+
+L'osso è composto da diverse fasi. Contiene una fase organica, una inorganica e acqua. La fase organica è composta da collagene e proteine mentre la fase inorganica da fosfato di calcio, simile all'idrossiapatite \citep{Hamed:2012}. Alla nanoscala si trovano le molecole di collagene e i cristalli di idrossiapatite. Si passa poi ad una scala leggermente maggiore dove delle fibrille mineralizzate si uniscono a formare una singola lamella di spessore alcuni $\mu m$. Le singole lamelle si impacchettano a formare delle trabecole con uno spessore medio di 50$\mu m$ e una lunghezza di circa 1mm. Siamo alla microscala. Si passa poi ad una scala intermedia dove possiamo considerare il volume di interesse di questa analisi dove troviamo sia trabecole che i pori riempiti di midollo fino ad arrivare alla macroscala dove si guarda all'osso nel suo insieme. 
+
+L'obiettivo della seguente analisi è quello di portare in conto le differenze alla microscala, considerando un volume rappresentativo, e omogenizzare le proprietà meccaniche ottenendo un'unica matrice di rigidezza omogenizzata.    
+
+
+
+
+
+
 
 
 \section{Omogenizzazione}
@@ -326,6 +347,8 @@ Applicando un campo di deformazione alla macroscala otterrei le deformazioni all
 \end{equation}
 In particolare, applicando condizioni di deformazione unitaria su $\varepsilon_1$,$\varepsilon_2$ e $\gamma_{12}$ otterrei rispettivamente prima, seconda e terza colonna di $\mathbb C$. È possibile farlo in tre processi carico separati e considerare il contributo complessivo in quanto siamo in elasticità lineare sotto l'ipotesi di piccole deformazioni per cui vale la sovrapposizione degli effetti.
 
+DESCRIVI IL METODO FEM 
+
 Questo viene implementato tramite una campagna di simulazioni in \texttt{Mathematica} sfruttando il tool \texttt{AceFEM}. 
 
 Viene sfruttata la procedura \texttt{TEST[]} che permette di applicare in sequenza le tre condizioni di spostamento e ottenere così la matrice di rigidezza:
@@ -372,11 +395,46 @@ Ulteriori informazioni sull'automazione e sulla convergenza di questo risultato 
 
 \section{Variazione della microstruttura}
 
-INTRODUZIONE SUGLI EFFETTI DEL CARICO ESTERNO E DEL RIMODELLAMENTO OSSEO
+Il carico della colonna vertebrale ricade per la maggior parte sul corpo vertebrale e sui dischi intervertebrali. Il corpo vetebrale è fornato da osso trabecolare ad alta porosità con un guscio esterno altamente denso. Tuttavia, il guscio esterno è molto sottile ed è formato da un addensamento di osso trabecolare molto compatto, istologicamente differente dall'osso corticale. Diverse analisi agli elementi finito hanno stimato che il guscio esterno contribuisce per meno del 15\% alla Capacità di carico globale della vertebra \citep{Ferguson:2003, Silva:1997}.
+
+Inoltre, diversi campioni di osso trabecolare hanno mostrato diverse proprietà meccaniche a seconda della regione dove vengono prelevati. \citep{Keller:1989,Keller:1993}. Questo è segno della risposta dell'osso che, essendo un tessuto vivo, è in continuo rimodellamento. L'aumento delle proprietà do resisitenza a compressione nella parte centrale dell'osso è di fatto un risposta al maggior quota parte di stress verticali trasmessi dalla parte polposa del disco vertebrale rispetto all'adicente regione periferica di anelli fibrosi. 
 
 \subsection{Variazione della simmetria}
 \label{sec:variazione_simmetria}
-\begin{figure*} \label{figurozza} 
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\def\svgwidth{\linewidth}
+	\input{var_geometr.pdf_tex}
+	\caption{Relazione tra $C_{11}$, $C_{22}$ e $\operatorname{AxR}$ }
+	\label{fig:geometric_variation}
+\end{figure}
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\def\svgwidth{\linewidth}
+	\input{variazione_Ebone.pdf_tex}
+	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_b$}\label{fig:var_Ebone}
+\end{figure}
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\def\svgwidth{\linewidth}
+	\input{variazione_Enarrow.pdf_tex}
+	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_m$}\label{fig:var_Emarrow}
+\end{figure}
+
+Le trabecole quindi rispondono al carico verticale posizionandosi prevalentemente lungo le linee di forza del carico e aumentano la loro densità e il loro spessore. Per indagare l'aumento delle proprietà materiali è stato considerato un RVE con pori variabili. Un modo semplice, ma accurato, di analizzare questo comportamento è quello di considerare pori ellittici. Introducendo pori ellittici la risposta dell'osso al carico verticale può essere interpretata come una riduzione del rapporto assiale e quindi un restringimento dell'ellisse lungo la direzione x. 
+
+Le campagne di simulazione condotte mostrano diversi cambiamenti nella matrice di rigidezza e quindi nelle proprietà meccaniche. Partendo da un rapporto assiale molto basso, quindi un'ellisse molto schiacciata, si osserva un grande aumento nel parametro $C_{11}$ e un lieve aumento anche del parametro $C_{22}$ rispetto al caso di riferimento (\cref{sec:homogen}). Viene completamente meno la simmetria materiale e l'isotropia della matrice di rigidezza, segno che la risposta di rigidezza lungo la direzione del semidiametro maggiore è più grande di quella nella direzione del semidiametro maggiore. Questo rispecchia quanto produce l'osso con la sua risposta di rimodellamento. 
+
+Con un rapporto assiale di $\operatorname{AxR}=0.1$ il coefficiente $C_{22}$ arriva a 1.462 GPa contro un $C_{11}=0.653$ GPa. Questa differenza del 44\% si riduce diminuendo il rapporto assiale. I due coefficienti convergono nel caso in cui il rapporto assiale tende a 1 ovvero nel caso in cui $C_{11}=C_{22}=C_{11}^{(om)}$. I limiti di Reuss e Voigt sono verificati in tutti i casi. I dati sono presenti in \cref{fig:geometry_variation} e\cref{fig:geometric_variation}. Nel diminuire il rapporto assiale il calo dei coefficienti di rigidezza segue un andamento lineare. Il coefficiente $C_{22}$ risente notevolmente di questo effetto mostrando una tasso di diminuzione del coefficiente $C_{11}$ con un andamento quasi costante. 
+
+Rimane evidente come al diminuire del rapporto assiale, e quindi anche della volume fraction, sia i limiti di Reuss e Voigt sia l'omogenizzazione numerica mostrino il coefficiente maggiore tendere al coefficiente $C_{22}^{(b)}$ della sola matrice ossea pur rimanendo inferiore al 20\%.  
+
+Lo stesso ragionamento può essere fatto nel caso contrario in cui malattie, come l'osteoporosi, portano ad una riduzione della massa ossea. Questo, rivisto come un aumento del rapporto assiale, mostra come l'osso trabecolare tende a ridurre le sue proprietà strutturali anche in zone dove precedentemente il rimodellamento osseo potrebbe aver apportato un precedentemente miglioramento strutturale (meno pori e maggior resistenza). Cambiamenti morfologici tra cui l'assottigliamento delle trabecole, aumento dello spazio inter-trabecolare e la perdita di connettività posso portare ad un calo drastico della resistenza fino al rischio di frattura vertebrale \citep{Ferguson:2003}.
+
+
+\begin{figure*} 
 	\centering
 	\begin{minipage}[b]{0.19\linewidth}
 		\centering
@@ -461,45 +519,28 @@ INTRODUZIONE SUGLI EFFETTI DEL CARICO ESTERNO E DEL RIMODELLAMENTO OSSEO
 	\end{minipage} 
 	
 	\caption{Variazione della matrice di rigidezza al variare del rapporto assiale dei pori}
+\label{fig:geometry_variation} 
 \end{figure*}
 
 
-\begin{figure}[bt!] %% preferably at bottom or top of column
-	\centering
-	\def\svgwidth{\linewidth}
-	\input{var_geometr.pdf_tex}
-	\caption{Relazione tra $C_{11}$, $C_{22}$ e $\operatorname{AxR}$ }
-	\label{fig:geometric_variation}
-\end{figure}
+
 
 
 \subsection{Estensione dell'area di indagine}
 
-\subsection{Analisi paziente specifica}
+
+\subsection{Analisi caso specifica}
 
 
 \section{Parametri materiali}
 \label{sec:variazioni_materiali}
+
+
+
 Per il primo studio di omogenizzazione sono stati considerati dei parametri materiali medi tra quanto noto in letteratura. Tuttavia è noto anche che il modulo elastico delle strutture ossee può variare in relazione all'età o a particolari patologie. Diversi risultati mostrano che persone giovani hanno moduli di rigidezza più elevati delle persone anziane \citep{Cowin1}
 
-\begin{figure}[bt!] %% preferably at bottom or top of column
-	\centering
-	\def\svgwidth{\linewidth}
-	\input{variazione_Ebone.pdf_tex}
-	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_b$}\label{fig:var_Ebone}
-\end{figure}
-
-\begin{figure}[bt!] %% preferably at bottom or top of column
-	\centering
-	\def\svgwidth{\linewidth}
-	\input{variazione_Enarrow.pdf_tex}
-	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_m$}\label{fig:var_Ebone}
-\end{figure}
 
 
-\section{Effetto del carico sulla struttura macroscopica}
-
-\textcolor{blue}{\lipsum[1-8]}
 
 \section{Conclusioni}
 
@@ -542,7 +583,7 @@ $\Omega$,"RegionHoles"->None,"RegionMarker"->marker];
 \end{lstlisting}
 
 
-\begin{figure}[bt!] %% preferably at bottom or top of column
+\begin{figure}[b!]%[bt!] %% preferably at bottom or top of column
 	\centering
 	\includegraphics[width=\linewidth]{test_mesh_8.png}
 	\caption{Mesh del volume rappresentativo con 756.787 DoF. I bordi appaiono neri e più spessi, questo è dovuto al refinement della mesh molto più fitta nei punti di bordo.}\label{fig:Mesh}
@@ -572,6 +613,9 @@ Vengono quindi verificati i due limiti verificando che $\mathbb C_{inf}=\mathbb 
 
 Nel variare le proprietà materiali (\cref{sec:variazioni_materiali}) o della simmetria (\cref{sec:variazione_simmetria}) è stato sfruttata la funzione base di omogenizzazione (\texttt{Checkconvergence[]}) passandogli un vettore con i diversi parametri di interesse. Sono stati svolti test separati nel variare il modulo elastico della matrice ossea o dei pori.
 
+Per variare le proprietà di simmetria è stato introdotto il rapporto assiale definito come il rapporto tra i due raggi: $\operatorname{AxR}=\frac{r_{x}}{r_y}$. 
+Quindi tale parametri viene passato alla funzione \texttt{GeometrySet[]} per generare il RVE. 
+
 \subsection{Analisi di convergenza}
 \label{sec:convergenza}
 
@@ -583,21 +627,27 @@ I risultati sui moduli estratti sono presenti nella Tabella \ref{tab:convergence
 Analizzando i risultati è stato preso come valore ottimo quello ottenuto nell'iterazione 8 che presenta un errore rispetto il risultato ideale dello $0.11\%$ sul $\mathbb C_{11}$ e dello $0.23\%$ su $\|\mathbb C^{(om)}\|$a fronte di differenza di impegno computazionale del $83\%$. 
 
 
+COMPLETA DA TEORIAAAAAAA
 
-\begin{figure}[bt!] %% preferably at bottom or top of column
-	\centering
-  \def\svgwidth{\linewidth}
-\input{test_data.pdf_tex}
-	\caption{Analisi dell'errore sul parametro $\mathbb C_{11}$}\label{fig:convergence}
-\end{figure}
 
-\begin{figure}[bt!] %% preferably at bottom or top of column
+
+
+\begin{figure*}[b]
 	\centering
-  \def\svgwidth{\linewidth}
-\input{test_data1.pdf_tex}
+	\begin{minipage}[b]{0.49\linewidth}
+
+	\def\svgwidth{\linewidth}
+	\input{test_data1.pdf_tex}
+		\caption{Analisi dell'errore sul parametro $\mathbb C_{11}$}\label{fig:convergence}
+	\end{minipage} 
+	\begin{minipage}[b]{0.49\linewidth}
+	\def\svgwidth{\linewidth}
+	\input{test_data1.pdf_tex}
 	\caption{Analisi dell'errore su $\|\mathbb C\|$}\label{fig:convergence1}
-\end{figure}
-
+	\end{minipage} 
+	\hfill
+	\label{fig:convergenza} 
+\end{figure*}
 
 
 
@@ -663,10 +713,11 @@ I codici per le variazioni delle proprietà materiali (\cref{sec:variazioni_mate
  
 
 
-
 %% Specify your .bib file name here, without the extension
-\newpage
+%\newpage
 %\onecolumn
+
+\newpage
 \bibliography{paper-refs}
 
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -8,12 +8,23 @@ Monesi V.
 \newblock Istologia.
 \newblock Piccin; 2012.
 
+\bibitem[{Ferguson and Steffen(2003)Ferguson, Stephen J, and Thomas
+  Steffen}]{Ferguson:2003}
+Ferguson SJ, Steffen T.
+\newblock Biomechanics of the aging spine.
+\newblock European spine journal 2003;12:S97--S103.
+
+\bibitem[{Hamed et~al.(2012)Hamed, Elham and Jasiuk, Iwona and Yoo,
+  Andrew}]{Hamed:2012}
+Hamed E, Jasiuk I, Yoo A.
+\newblock Multi-scale modelling of elastic moduli of trabecular bone.
+\newblock Soc Interface 2012;9.
+
 \bibitem[{Doktor et~al.(2011)Doktor, Tomáš and Valach, Jaroslav and Kytyr,
   Dan and Jiroušek, Ondřej}]{Doktor:2011}
 Doktor T, Valach J, Kytyr D, Jiroušek O.
 \newblock Pore Size Distribution of Human Trabecular Bone - Comparison of
-  Intrusion Measurements with Image Analysis.
-\newblock Engineering Mechanics 2011;Mat.
+  Intrusion Measurements with Image Analysis; 2011. p. 115--118.
 
 \bibitem[{Cowin(2001)Cowin, Sthepen}]{Cowin1}
 Cowin S.
@@ -51,6 +62,27 @@ Jansen LE, Birch NP, Schiffman JD, Crosby AJ, Peyton SR.
 \newblock Journal of the mechanical behavior of biomedical materials
   2015;50:299--307.
 \newblock \urlprefix\url{https://doi.org/10.1016/j.jmbbm.2015.06.023}.
+
+\bibitem[{Silva et~al.(1997)Silva, M. J. and Keaveny, T. M. and Hayes, W.
+  C.}]{Silva:1997}
+Silva MJ, Keaveny TM, Hayes WC.
+\newblock Load sharing between the shell and centrum in the lumbar vertebral
+  body.
+\newblock Spine 1997;22,2:140--50.
+
+\bibitem[{Keller et~al.(1989)Keller, T. S. and Hansson, T. H. and Abram, A. C.
+  and Spengler, D. M. and Panjabi, M.}]{Keller:1989}
+Keller TS, Hansson TH, Abram AC, Spengler DM, Panjabi M.
+\newblock Regional variations in the compressive properties of lumbar vertebral
+  trabeculae. Effects of disc degeneration.
+\newblock Spine 1989;14:1012--1019.
+
+\bibitem[{Keller et~al.(1993)Keller, T. S. and Ziv, I., Moeljanto, E. and
+  Spengler, D.}]{Keller:1993}
+Keller TS, Ziv ME I, Spengler D.
+\newblock Interdependence of lumbar disc and subdiscal bone properties: a
+  report of the normal and degenerated spine.
+\newblock Journal of spinal disorders 1993;6:106--113.
 
 \bibitem[{Mastrofini(2021)Mastrofini, Alessandro}]{Mastrofini:21}
 Mastrofini A.

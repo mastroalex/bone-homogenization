@@ -3,47 +3,54 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: vancouver-authoryear.bst
 Database file #1: paper-refs.bib
+Name 1 in "Ferguson, Stephen J, and Thomas Steffen" has a comma at the end for entry Ferguson:2003
+while executing---line 3463 of file vancouver-authoryear.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Name 1 in "Ferguson, Stephen J, and Thomas Steffen" has a comma at the end for entry Ferguson:2003
+while executing---line 3607 of file vancouver-authoryear.bst
+Warning--empty booktitle in Doktor:2011
+Too many commas in name 2 of "Keller, T.  S.  and Ziv, I. , Moeljanto, E.  and Spengler, D. " for entry Keller:1993
+while executing---line 3607 of file vancouver-authoryear.bst
 Warning--empty journal in ESA:2005
-You've used 10 entries,
+You've used 15 entries,
             3097 wiz_defined-function locations,
-            745 strings with 6923 characters,
-and the built_in function-call counts, 16834 in all, are:
-= -- 2055
-> -- 144
-< -- 5
-+ -- 98
-- -- 36
-* -- 1431
-:= -- 1840
-add.period$ -- 33
-call.type$ -- 10
+            780 strings with 7791 characters,
+and the built_in function-call counts, 24304 in all, are:
+= -- 2955
+> -- 208
+< -- 7
++ -- 150
+- -- 52
+* -- 2053
+:= -- 2660
+add.period$ -- 47
+call.type$ -- 15
 change.case$ -- 2
-chr.to.int$ -- 10
-cite$ -- 11
-duplicate$ -- 1432
-empty$ -- 1621
-format.name$ -- 53
-if$ -- 3897
+chr.to.int$ -- 15
+cite$ -- 17
+duplicate$ -- 2060
+empty$ -- 2336
+format.name$ -- 81
+if$ -- 5626
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 101
-newline$ -- 59
-num.names$ -- 22
-pop$ -- 190
+missing$ -- 154
+newline$ -- 83
+num.names$ -- 32
+pop$ -- 287
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 145
+skip$ -- 223
 stack$ -- 0
-substring$ -- 3143
-swap$ -- 206
-text.length$ -- 1
+substring$ -- 4491
+swap$ -- 320
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
-warning$ -- 1
-while$ -- 89
+type$ -- 86
+warning$ -- 2
+while$ -- 134
 width$ -- 0
-write$ -- 140
-(There was 1 warning)
+write$ -- 203
+(There were 3 error messages)

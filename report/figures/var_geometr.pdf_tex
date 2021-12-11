@@ -54,18 +54,19 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{var_geometr.pdf}}%
-    \put(0.14512976,-0.00228999){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
-    \put(0.2689599,-0.00228999){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
-    \put(0.39278997,-0.00228999){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.6\end{tabular}}}}%
-    \put(0.5166201,-0.00228999){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.8\end{tabular}}}}%
-    \put(0.64045024,-0.00228999){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
+    \put(0.21369163,-0.00897897){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
+    \put(0.39103349,-0.00897893){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0.57673645,-0.0106512){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.6\end{tabular}}}}%
+    \put(0.75575054,-0.01232346){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.8\end{tabular}}}}%
+    \put(0.93142014,-0.01232342){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
     \put(-0.0402666,0.10482246){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1000\end{tabular}}}}%
     \put(-0.0402666,0.18847948){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2000\end{tabular}}}}%
     \put(-0.0402666,0.2721626){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3000\end{tabular}}}}%
     \put(-0.0402666,0.35584571){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4000\end{tabular}}}}%
     \put(-0.0402666,0.43952881){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5000\end{tabular}}}}%
-    \put(0.15416308,0.45921128){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C_{22}$\end{tabular}}}}%
-    \put(0.14323996,0.16965734){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C_{11}$\end{tabular}}}}%
-    \put(0.71725848,0.02067325){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\operatorname{AxR}$\end{tabular}}}}%
+    \put(0.33643731,0.40904406){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C_{22}$\end{tabular}}}}%
+    \put(0.02057151,0.53277286){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\left[\text{MPa}\right]$s\end{tabular}}}}%
+    \put(0.1900627,0.16631285){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C_{11}$\end{tabular}}}}%
+    \put(0.99819491,-0.01109931){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\operatorname{AxR}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
