@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.28)  11 DEC 2021 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.28)  12 DEC 2021 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2345,10 +2345,72 @@ Overfull \hbox (0.76555pt too wide) in paragraph at lines 503--510
 []$[]$ 
  []
 
+(./figures//distribution_100.pdf_tex
+<figures//distribution_100.pdf, id=203, page=1, 260.975pt x 156.585pt>
+File: figures//distribution_100.pdf Graphic file (type pdf)
+<use figures//distribution_100.pdf, page 1>
+Package pdftex.def Info: figures//distribution_100.pdf , page1 used on input li
+ne 56.
+(pdftex.def)             Requested size: 117.17737pt x 70.30728pt.
+) (./figures//distribution_300.pdf_tex
+<figures//distribution_300.pdf, id=204, page=1, 260.975pt x 156.585pt>
+File: figures//distribution_300.pdf Graphic file (type pdf)
+<use figures//distribution_300.pdf, page 1>
+Package pdftex.def Info: figures//distribution_300.pdf , page1 used on input li
+ne 56.
+(pdftex.def)             Requested size: 117.17737pt x 70.30728pt.
+)
+<figures//real_mesh_n1.png, id=205, 1504.62125pt x 1504.62125pt>
+File: figures//real_mesh_n1.png Graphic file (type png)
+<use figures//real_mesh_n1.png>
+Package pdftex.def Info: figures//real_mesh_n1.png  used on input line 562.
+(pdftex.def)             Requested size: 117.17737pt x 117.15794pt.
+<figures//real_mesh_n2.png, id=206, 2501.345pt x 2501.345pt>
+File: figures//real_mesh_n2.png Graphic file (type png)
+<use figures//real_mesh_n2.png>
+Package pdftex.def Info: figures//real_mesh_n2.png  used on input line 567.
+(pdftex.def)             Requested size: 117.17737pt x 117.17392pt.
+<figures//mesh_100.png, id=207, 5264.66875pt x 5264.66875pt>
+File: figures//mesh_100.png Graphic file (type png)
+<use figures//mesh_100.png>
+Package pdftex.def Info: figures//mesh_100.png  used on input line 572.
+(pdftex.def)             Requested size: 117.17737pt x 117.12445pt.
 
-Underfull \vbox (badness 1057) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
 
- [4 <./figures//var_geometr.pdf> <./figures//variazione_Ebone.pdf
+ []
+
+<figures//mesh_300.png, id=208, 9071.8925pt x 9071.8925pt>
+File: figures//mesh_300.png Graphic file (type png)
+<use figures//mesh_300.png>
+Package pdftex.def Info: figures//mesh_300.png  used on input line 576.
+(pdftex.def)             Requested size: 117.17737pt x 117.10818pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--578
+
+ []
+
+<figures//test_mesh_2.png, id=209, 766.062pt x 766.062pt>
+File: figures//test_mesh_2.png Graphic file (type png)
+<use figures//test_mesh_2.png>
+Package pdftex.def Info: figures//test_mesh_2.png  used on input line 580.
+(pdftex.def)             Requested size: 117.17737pt x 117.17203pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--582
+
+ []
+
+<figures//test_mesh_1.png, id=210, 768.7119pt x 768.7119pt>
+File: figures//test_mesh_1.png Graphic file (type png)
+<use figures//test_mesh_1.png>
+Package pdftex.def Info: figures//test_mesh_1.png  used on input line 584.
+(pdftex.def)             Requested size: 117.17737pt x 117.16681pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--586
+
+ []
+
+[4 <./figures//var_geometr.pdf> <./figures//variazione_Ebone.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures//variazione_Ebone.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
@@ -2356,7 +2418,17 @@ ion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./figures//variazione_Enarrow.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
->] (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+>] [5 <./figures//test_mesh_axR_0.8.png (PNG copy)> <./figures//test_mesh_axR_0
+.6.png (PNG copy)> <./figures//test_mesh_axR_0.5.png (PNG copy)> <./figures//te
+st_mesh_axR_0.3.png (PNG copy)> <./figures//test_mesh_axR_0.1.png (PNG copy)> <
+./figures//distribution_100.pdf> <./figures//distribution_300.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures//distribution_300.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+> <./figures//real_mesh_n1.png (PNG copy)> <./figures//real_mesh_n2.png (PNG co
+py)> <./figures//mesh_100.png (PNG copy)> <./figures//mesh_300.png (PNG copy)> 
+<./figures//test_mesh_2.png (PNG copy)> <./figures//test_mesh_1.png (PNG copy)>
+] (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -2369,96 +2441,95 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 570.
+nput line 682.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 6.8438pt on input line 571.
+(Font)              scaled to size 6.8438pt on input line 683.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 3.75pt on input line 571.
-LaTeX Font Info:    Calculating math sizes for size <6.8438> on input line 571.
+(Font)              scaled to size 3.75pt on input line 683.
+LaTeX Font Info:    Calculating math sizes for size <6.8438> on input line 683.
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 6.8438pt on input line 571.
+(Font)              scaled to size 6.8438pt on input line 683.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 5.70291pt on input line 571.
+(Font)              scaled to size 5.70291pt on input line 683.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 4.79063pt on input line 571.
+(Font)              scaled to size 4.79063pt on input line 683.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 5.70291pt on input line 571.
+(Font)              scaled to size 5.70291pt on input line 683.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 4.79063pt on input line 571.
+(Font)              scaled to size 4.79063pt on input line 683.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 6.8438pt on input line 571.
+(Font)              scaled to size 6.8438pt on input line 683.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 5.70291pt on input line 571.
+(Font)              scaled to size 5.70291pt on input line 683.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 4.79063pt on input line 571.
+(Font)              scaled to size 4.79063pt on input line 683.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6.8438> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 581.
-<figures//test_mesh_8.png, id=228, 803.1606pt x 801.7152pt>
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 693.
+<figures//test_mesh_8.png, id=245, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_8.png Graphic file (type png)
 <use figures//test_mesh_8.png>
-Package pdftex.def Info: figures//test_mesh_8.png  used on input line 588.
+Package pdftex.def Info: figures//test_mesh_8.png  used on input line 700.
 (pdftex.def)             Requested size: 235.11394pt x 234.68118pt.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/sl' in size <7.5> not availa
 ble
 (Font)              Font shape `T1/Merriwthr-OsF/b/it' tried instead on input l
-ine 596.
+ine 708.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/it' will be
-(Font)              scaled to size 7.5pt on input line 596.
+(Font)              scaled to size 7.5pt on input line 708.
 
-Underfull \hbox (badness 1281) in paragraph at lines 602--603
+Underfull \vbox (badness 4531) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 714--715
 []\T1/Merriwthr-OsF/m/up/7.5 (+20) Il test di omog-e-niz-zazione viene ef-fet-t
 uato dalla fun-zione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
 \T1/Merriwthr-OsF/m/up/7.5 (+20) Nel vari-are le pro-pri-età ma-te-ri-ali (Ÿ[][
 ]6[][]) o della sim-me-tria
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 614--615
+Underfull \hbox (badness 1983) in paragraph at lines 726--727
 \T1/Merriwthr-OsF/m/up/7.5 (+20) (Ÿ[][]5.1[][]) è stato sfrut-tata la fun-zione
  base di omog-e-niz-zazione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
 \T1/Merriwthr-OsF/m/up/7.5 (+20) (\T1/lmtt/m/n/7.5 Checkconvergence[]\T1/Merriw
 thr-OsF/m/up/7.5 (+20) ) pas-san-dogli un vet-tore con i di-versi
  []
 
-[5 <./figures//test_mesh_axR_0.8.png (PNG copy)> <./figures//test_mesh_axR_0.6.
-png (PNG copy)> <./figures//test_mesh_axR_0.5.png (PNG copy)> <./figures//test_
-mesh_axR_0.3.png (PNG copy)> <./figures//test_mesh_axR_0.1.png (PNG copy)> <./f
-igures//test_mesh_8.png (PNG copy)>] (./figures//test_data1.pdf_tex
-<figures//test_data1.pdf, id=257, page=1, 197.94452pt x 150.5324pt>
-File: figures//test_data1.pdf Graphic file (type pdf)
-<use figures//test_data1.pdf, page 1>
-Package pdftex.def Info: figures//test_data1.pdf , page1 used on input line 56.
-
-(pdftex.def)             Requested size: 239.23433pt x 181.93802pt.
-)
 (./figures//test_data1.pdf_tex
+<figures//test_data1.pdf, id=253, page=1, 197.94452pt x 150.5324pt>
 File: figures//test_data1.pdf Graphic file (type pdf)
 <use figures//test_data1.pdf, page 1>
 Package pdftex.def Info: figures//test_data1.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 239.23433pt x 181.93802pt.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 698--699
+) (./figures//test_data1.pdf_tex
+File: figures//test_data1.pdf Graphic file (type pdf)
+<use figures//test_data1.pdf, page 1>
+Package pdftex.def Info: figures//test_data1.pdf , page1 used on input line 56.
+
+(pdftex.def)             Requested size: 239.23433pt x 181.93802pt.
+) [6 <./figures//test_mesh_8.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 810--811
 []\T1/Merriwthr-OsF/m/up/7.5 (+20) Il codice per la vari-azione delle pro-pri-e
 tà di sim-me-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--699
+Underfull \hbox (badness 10000) in paragraph at lines 810--811
 \T1/Merriwthr-OsF/m/up/7.5 (+20) tria e la ge-ome-tria del RVE (Ÿ[][]5.1[][]) è
  pre-sente nel file:
  []
 
-[6 <./figures//test_data1.pdf>] (./main.bbl
+[7 <./figures//test_data1.pdf>] (./main.bbl
 Underfull \hbox (badness 1412) in paragraph at lines 88--92
 \T1/Merriwthr-OsF/m/up/7.5 (+20) beco-lare.  web-site 2021;[][]$\T1/lmtt/m/n/7.
 5 https : / / alessandromastrofini . it /
@@ -2466,7 +2537,7 @@ Underfull \hbox (badness 1412) in paragraph at lines 88--92
 
 ) 
 AED: lastpage setting LastPage
-[7
+[8
 
 ] (./main.aux)
 
@@ -2480,11 +2551,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 061F6281DC6F0588929AAA0882E4311A;3986.
  ) 
 Here is how much of TeX's memory you used:
- 48826 strings out of 478579
- 941409 string characters out of 5857457
- 2681305 words of memory out of 5000000
- 65317 multiletter control sequences out of 15000+600000
- 1846387 words of font info for 554 fonts, out of 8000000 for 9000
+ 48910 strings out of 478579
+ 943830 string characters out of 5857457
+ 2678146 words of memory out of 5000000
+ 65381 multiletter control sequences out of 15000+600000
+ 1847386 words of font info for 558 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,149p,945b,8857s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2021/tex
@@ -2506,10 +2577,10 @@ mf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb><c:/texlive/2021/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2021/texmf-dist/fo
 nts/type1/public/stmaryrd/stmary7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/p
 ublic/wasy-type1/wasy7.pfb>
-Output written on main.pdf (7 pages, 20935099 bytes).
+Output written on main.pdf (8 pages, 24006271 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
- 220937 words of extra memory for PDF output out of 221844 (max. 10000000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 344 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 220977 words of extra memory for PDF output out of 221844 (max. 10000000)
 
