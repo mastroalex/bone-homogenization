@@ -84,12 +84,6 @@ Keller TS, Ziv ME I, Spengler D.
   report of the normal and degenerated spine.
 \newblock Journal of spinal disorders 1993;6:106--113.
 
-\bibitem[{Mastrofini(2021)Mastrofini, Alessandro}]{Mastrofini:21}
-Mastrofini A.
-\newblock Image processing volumetrico su osso trabecolare.
-\newblock website
-  2021;\urlprefix\url{https://alessandromastrofini.it/image-volumetric-bone/}.
-
 \bibitem[{Beller et~al.(2005)Beller, Gisela and Burkhart, Markus and
   Felsenberg, Dieter and Gowin, Wolfgang and Hege, Hans-Christian and Koller,
   Bruno and Prohaska, Steffen and Saparin, Peter I. and Thomsen, Jesper
@@ -97,6 +91,12 @@ Mastrofini A.
 Beller G, Burkhart M, Felsenberg D, Gowin W, Hege HC, Koller B, et~al.
 \newblock Vertebral Body Data Set ESA29-99-L3
   2005;\urlprefix\url{http://bone3d.zib.de/data/2005/ESA29-99-L3/}.
+
+\bibitem[{Mastrofini(2021)Mastrofini, Alessandro}]{Mastrofini:21}
+Mastrofini A.
+\newblock Image processing volumetrico su osso trabecolare.
+\newblock website
+  2021;\urlprefix\url{https://alessandromastrofini.it/image-volumetric-bone/}.
 
 \bibitem[{Cowin(2001)Cowin, Sthepen}]{CC21}
 Cowin S.

@@ -527,6 +527,7 @@ Lo stesso ragionamento può essere fatto nel caso contrario in cui malattie, com
 
 
 \subsection{Estensione dell'area di indagine}
+\label{sec:estensione}
 
 \begin{figure*} 
 \begin{center}
@@ -633,16 +634,42 @@ Lo stesso ragionamento può essere fatto nel caso contrario in cui malattie, com
 \end{figure*}
 
 
---> scrivi che non avrebbe senso estendere semplicemente l'area
+Un'ulteriore indagine può essere quella di analizzare se e come varia la risposta meccanica variando la finestra di interesse. Avendo idealizzato un RVE simmetrico con pori simmetrici disposti su una griglia regolare è chiaro che, aumentando semplicemente il lato, si andrebbero ad includere semplicemente più pori. La volume fraction rimarrà la stessa così come la risposta meccanica. Anche se aumenta la somma delle tensioni queste vengono mediate su un area più grande e il loro rapporto, quindi la matrice di omogenizzazione, rimangono costanti. 
+
+Lo studio si sposta alla su un RVE differente. I casi di interesse sono mostrati in \cref{fig:area}. L'analisi è divisa secondo due casistiche: 
+\begin{itemize}
+\item Analisi della risposta meccanica con una disposizione causale dei pori secondo una distribuzione nota  \citep{Doktor:2011}. 
+\item Analisi della risposta meccanica con una distribuzione di pori ipotizzata a partire da un caso reale \citep{ESA:2005}.
+\end{itemize}
+
+Nell'analizzare i pori disposti secondo una distribuzione precisa vengono considerate diverse inclusioni di raggio fisso $\{0.1,\: 0.15,\: 0.2,\:0.03,\: 0.35\}$. Questi pori vengono disposti casualmente considerandone 100 (\cref{{fig:area}} (a)) o 300 (\cref{fig:area} (b)).
+
+Si ottengono dei coefficienti della matrice di rigidezza $C_{11},C_{22}$ superiori al caso \cref{sec:homogen}. Questo in parte è dovuto ad una pore fraction minore, ovvero ad una presenza maggiore di matrice ossea che contribuisce ad aumentare la rigidezza complessiva. È interessante notare che il contributo della frazione volumetrica di pori si riflette in una matrice complessivamente più rigida lungo le direzioni principali anche se la struttura nel caso \cref{sec:homogen} sembra avere la matrice ossea lungo le direzioni di carico. 
+
+Ad rafforzare queste conclusioni sono anche i risultati della precedente analisi (\cref{sec:variazione_simmetria}) . Confrontandoli con questi dati si vede come il fattore dominante rimane la pore fraction ma come aumenta la quantità di matrice ossea disposta lungo la direzione di carico aumenta la rigidezza in tale direzione. 
+
+Nell'aumentare la regione di interesse vengono considerati 300 pori e viene aumentato il lato del RVE. Questo permette di includere un numero maggiore di pori e la loro distribuzione è tale da ridurre leggermente i coefficienti della matrice di rigidezza.
+
+COMPLETA QUEST ODISCROS
+
+PARLA DELLA PERDITA DI SIMMETRIA NELLA MATRICE
+
+COMMENTA I COEFFICNENTI NU NU
+
+
+
+COMMENTA SUI VALORI OTTENUTI RISPETTO QUELLI DELLA PRIMA OMOGENIZZAZIONE 
+
+
+
+\subsection{Analisi caso specifica}
+
 
 --> ESTENSIONE SU CASO SPECIFICA 
 
 -->> DISTRIBUZIONE DI PORI 
 
 --> MANTENENDO UNA PORE FRACTION DEL 60\%
-
-\subsection{Analisi caso specifica}
-
 
 \section{Parametri materiali}
 \label{sec:variazioni_materiali}
@@ -727,6 +754,11 @@ Nel variare le proprietà materiali (\cref{sec:variazioni_materiali}) o della si
 
 Per variare le proprietà di simmetria è stato introdotto il rapporto assiale definito come il rapporto tra i due raggi: $\operatorname{AxR}=\frac{r_{x}}{r_y}$. 
 Quindi tale parametri viene passato alla funzione \texttt{GeometrySet[]} per generare il RVE. 
+
+\subsection{Estensione regione di interesse}
+
+DESCRIVI IL NUOVO JOIN FATTO SU IMPLIIT REGION
+
 
 \subsection{Analisi di convergenza}
 \label{sec:convergenza}
