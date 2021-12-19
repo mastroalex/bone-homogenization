@@ -184,6 +184,7 @@
     \textcolor{jcolour}{doi: xx.xxxx/xxxx}\par
 	Progetto 1\par
     Omogenizzazione del tessuto osseo\par
+     Ingegneria Medica\par
     \@papercat\par
     \vspace{\dimexpr 8pt-1em\relax}%
     {\color{black!15}\rule{\linewidth}{2pt}}\par
