@@ -152,37 +152,61 @@ trabecular bone; homogenization; composite material
 
 \section{Introduzione}
 
-Lo scopo della seguente analisi è quello di indagare l'influenza delle proprietà microstrutturali sul comportamento macroscopico di un materiale composito.
+Lo scopo della seguente analisi è quello di indagare l'influenza delle proprietà microstrutturali sul comportamento macroscopico dell'osso trabecolare.
 
 Il flusso logico delle campagne di simulazioni è riportato in \cref{fig:flowchart}. 
 
-Si parte dall'analizzare la struttura dell'osso trabecolare arrivando ad un volume rappresentativo idealizzato con una geometria tale da rispettare il rapporto tra i pori e la massa ossea trabecolare. Viene quindi discretizzato il RVE e il passaggio successivo prevede di ottimizzare la mesh in modo tale da avere un risultato sufficientemente accurato riducendo le richieste di sforzo computazionale. 
+Si parte dall'analizzare la struttura generica dell'osso trabecolare arrivando a scegliere un volume rappresentativo (RVE) idealizzato con una geometria tale da rispettare il rapporto tra i pori e la massa ossea trabecolare. Viene quindi discretizzato tale RVE e dunque il passaggio successivo prevede di ottimizzare la scelta della mesh in modo tale da avere un risultato sufficientemente accurato riducendo le richieste di sforzo computazionale. 
 
 Si ottiene quindi una prima matrice di omogenizzazione che rispecchia le proprietà strutturali del RVE e dell'osso trabecolare così idealizzato. 
 
-Vengono poi analizzate diverse proprietà geometriche e materiali seguendo le risposte dell'osso al carico, fenomeno noto come adattamento e rimodellamento osseo. 
+Vengono poi analizzate diverse proprietà geometriche e materiali seguendo le risposte dell'osso al carico, fenomeno noto come adattamento e rimodellamento osseo. In questa campagna di simulazione viene analizzato come la variazione dei pori, della loro volume fraction e della loro distribuzione influenza il comportamento meccanico macroscopico. 
+
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+
+
+COMPLETA CON DISCUSSIONE SU COSA ANDRò A FARE NEI TEST 
+
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+
 
 \section{Tessuto osseo}
 
-Il tessuto osseo è una forma specializzata di tessuto connettivo caratterizzata dalla mineralizzazione della matrice extracellulare. Questo conferisce al tessuto una notevole durezza e resistenza. È un tessuto in continua evoluzione, continuamente rinnovato e rimodellato per tutta la durata della vita. Costituisce l'impalcatura dello scheletro, da inserzione a muscoli e tendi e al suo interno contiene midollo osseo. 
+Il tessuto osseo è il tessuto biologico che forma le ossa. È caratterizzato da una notevole durezza e resistenza, dovute alla mineralizzazione della matrice extracellulare. È un tessuto in continua evoluzione, continuamente rinnovato e rimodellato per tutta la durata della vita. Costituisce l'impalcatura dello scheletro, da inserzione a muscoli e tendi e al suo interno contiene midollo osseo. 
 
 Il tessuto osseo è costituito da cellule e da una matrice extracellulare, organica ed inorganica. La parte organica contiene fibre collagene e sostanza amorfa formata da glicoproteine e proteoglicani. 
 
 Si possono distinguere due tipologie di osso: osso compatto e osso spugnoso \citep{Monesi}. 
-L'osso compatto appare, all'esame macroscopico, come una singola massa solida. L'osso spugnoso invece ha un aspetto alveolare ed è costituito da sottili trabecole, che si anastomizzano in una rete tridimensionale. All'interno delle maglie che si formano con le spine trabecolari vi è accolto il midollo osseo.
+L'osso compatto appare, all'esame macroscopico, come una singola massa solida. L'osso spugnoso invece ha un aspetto alveolare ed è costituito da sottili trabecole, un'insieme di piccole piastre ed aste che si anastomizzano in una rete tridimensionale. All'interno delle maglie che si formano con le spine trabecolari vi è accolto il midollo osseo. L'osso trabecolare costituisce il 20\% della massa ossea complessiva ed è situato all'interno delle strutture ossee. La sua distribuzione varia fortemente da osso ad osso. 
 
+Osso corticale e trabecolare differiscono, oltre che per la loro architettura, anche per la velocità di sviluppo, funzione, vicinanza al midollo osseo, irrorazione sanguigna, rapidità nel turnover, fratture e risposta agli stimoli. Tutti questi fattori forniscono comportamenti materiali diversi. 
+È bene sottolineare che l'osso, nel suo complesso, è costituito sia da una parte di osso compatto che una di osso spugnoso, quindi la risposta dell'intera struttura avrà entrambi i contributi. 
 
+Tipicamente il tessuto osseo spugnoso è meno resistente di quello compatto.  In letteratura sono stati condotti molti test per valutare le proprietà materiali dell'osso spugnoso ed esistono molti risultati, alcuni anche controversi. Tipicamente vengo eseguite prove di: compressione, flessione, trazione uniassiale, misure ultrasoniche, calcolo a ritroso tramite simulazioni FEM 2D/3D e microindentazione \citep{Cowin1}. Il range per il modulo elastico va da 076 GPa a 20 GPa. È ormai accettato che il modulo dell'osso trabecolare è il $20\div30\%$ inferiore a quello dell'osso compatto. 
 
-
-
-
-ESCRIVI OSSO TRABECOLARE DA COWIN e LIBRO ISTOLOGIA
-
-DESCRIVI BREVEMENTE PROPRIETà MECCANICHE NOTE DALLA LETTERATURA
-
-TIPO:
-
-Inoltre, è noto in letteratura che il parametro fondamentale e più influente nel legare la microstruttura alla risposta di rigidezza è la frazione volumetrica di pori. INSERISCI CITAZIONI
+Inoltre, è noto in letteratura che il parametro fondamentale e più influente nel legare la microstruttura alla risposta di rigidezza è la frazione volumetrica di pori.\citep{Nazarian}
 
 Ci sono però anche altri aspetti. Bisogna tenere conto che l'osso è un tessuto biologico e quindi soggetto al rimodellamento. In particolare è noto che l'osso risponde molto bene a stimoli di compressione andando ad aumentare la sua sezione trasversa ed inspessendo lo strato di osso compatto. Anche nell'osso spugnoso si vedono alcuni cambiamenti tra cui l'allineamento delle trabecole lungo le linee di forza.  \citep{Ferguson:2003}
 
@@ -245,9 +269,9 @@ Ci sono però anche altri aspetti. Bisogna tenere conto che l'osso è un tessuto
 In questa analisi viene presa come riferimento una vertebra lombare, L3. Le considerazioni sono comunque estensibili a qualunque altro osso trabecolare ma i parametri materiali fanno riferimento a dati selezionati per vertebre lombari.  
 Le vertebre lombari sono solo alcune delle 33-34 vertebre che formano la colonna vertebrale umana. Il corpo vertebrale è formato principalmente da osso trabecolare con le singole trabecole allineate lungo le linee di forza. Questa disposizione fornisce un contributo importante per la distribuzione dei carichi e il sostegno del busto. Circa tre quarti dell'intero carico strutturale ricadono sulla colonna anteriore, ovvero sul corpo vertebrale, dischi intervertebrali e sulle placche terminali delle vertebre. La struttura ossea trabecolare può subire diversi cambiamenti con l'invecchiamento o a causa di alcune patologie \citep{Ferguson:2003} come la perdita di densità minerale, cambiamenti morfologici come un aumento della frazione volumetrica di pori, ispessimento o assottigliamento delle trabecole e perdita di connettività. Questi cambiamenti influenzano notevolmente la risposta meccanica del tessuto. 
 
-L'osso è composto da diverse fasi. Contiene una fase organica, una inorganica e acqua. La fase organica è composta da collagene e proteine mentre la fase inorganica da fosfato di calcio, simile all'idrossiapatite \citep{Hamed:2012}. Alla nanoscala si trovano le molecole di collagene e i cristalli di idrossiapatite. Si passa poi ad una scala leggermente maggiore dove delle fibrille mineralizzate si uniscono a formare una singola lamella di spessore alcuni $\mu m$. Le singole lamelle si impacchettano a formare delle trabecole con uno spessore medio di 50$\mu m$ e una lunghezza di circa 1mm. Siamo alla microscala. Si passa poi ad una scala intermedia dove possiamo considerare il volume di interesse di questa analisi dove troviamo sia trabecole che i pori riempiti di midollo fino ad arrivare alla macroscala dove si guarda all'osso nel suo insieme. 
+L'osso è composto da diverse fasi. Contiene una fase organica, una inorganica e acqua. La fase organica è composta da collagene e proteine mentre la fase inorganica da fosfato di calcio, simile all'idrossiapatite \citep{Hamed:2012}. Alla nanoscala si trovano le molecole di collagene e i cristalli di idrossiapatite. Si passa poi ad una scala leggermente maggiore dove delle fibrille mineralizzate si uniscono a formare una singola lamella di spessore alcuni $\mu m$. Le singole lamelle si impacchettano a formare delle trabecole con uno spessore medio di 50$\mu m$ e una lunghezza di circa 1mm. Siamo alla microscala. Si passa poi ad una scala intermedia dove possiamo considerare il volume di interesse di questa analisi dove troviamo sia trabecole che i pori riempiti di midollo fino ad arrivare alla macroscala dove si guarda all'osso nel suo insieme, le singole proprietà materiali e la struttura forniscono una risposta struttura ben definita. 
 
-L'obiettivo della seguente analisi è quello di portare in conto le differenze alla microscala, considerando un volume rappresentativo, e omogenizzare le proprietà meccaniche ottenendo un'unica matrice di rigidezza omogenizzata.    
+L'obiettivo della seguente analisi è quello di portare in conto le differenze alla microscala, considerando un volume rappresentativo ben definito, e omogenizzare le proprietà meccaniche ottenendo un'unica matrice di rigidezza omogenizzata.  Tale matrice omogenizzata descrive il comportamento materiale complessivo, tenendo conto sia delle singole proprietà materiali che della loro distribuzione spaziale e geometrica.
 
 
 
@@ -258,11 +282,11 @@ L'obiettivo della seguente analisi è quello di portare in conto le differenze a
 
 \section{Omogenizzazione}
 
-L'obiettivo è quindi quello di ottenere delle proprietà materiali alla macroscala a partire dalle proprietà alla microscala come le rigidezza dei due materiali, matrice ossea e pori.
+L'obiettivo è quindi quello di ottenere delle proprietà materiali alla macroscala a partire dalle proprietà alla microscala come le rigidezza dei due  materiali principali, matrice ossea e contenuto dei pori. 
 
-Ad una sclaa sufficientemente grande rispetto le singole trabecolee è possibile considerare la matrice di midollo e le trabecole ossee come due materiali diversi ma entrambi eterogenei e dal comportamento isotropo. L'isootropia è una prima approssimazione che però ci permette di procedere in modo più efficiente nell'omogenizzazione andando a vedere come la struttura e la disposizione dei pori influenzi il comportamento macroscopico. 
+Ad una scala sufficientemente grande rispetto le singole trabecole è possibile considerare i pori, ripieni di midollo osseo, e le trabecole ossee come due materiali diversi tra loro ma entrambi eterogenei e dal comportamento isotropo. L'isootropia è una prima approssimazione che però ci permette di procedere in modo più efficiente nell'omogenizzazione andando a vedere come la geometria, la disposizione e la frazione volumetrica dei pori influenzi il comportamento macroscopico. 
 
-Con la procedura di omogenizzazione andremo a considerare una media delle proprietà meccaniche di osso e matrice ma questa media viene intesa in senso più ampio e il significato può variare a seconda dell'approccio. 
+Con la procedura di omogenizzazione andremo a considerare una media delle proprietà meccaniche di osso e matrice ma questa media viene intesa in senso più ampio e il significato può variare a seconda dell'approccio. I contributi delle singole proprietà materiali vengono influenza dalla geometria della struttura e dalle loro distribuzioni. 
 
 \subsection{Volume di interesse}
 \label{sec:RVE}
@@ -273,7 +297,7 @@ Sulla base di queste considerazioni vengono inseriti 25 pori equidistanti e tali
 
 Maggiori informazioni sulla procedura di automazione del calcolo del RVE sono nella sezione \ref{sec:RVE_code}.
 
-Inoltre, per fare le opportune considerazioni nel considerare le tensioni medie, i pori vengono considerati pieni di un materiale a bassa rigidezza rappresentativo del midollo osseo. Questo serve sia a considerare un fenomeno più rappresentativo della realtà sia a permettere una corretta applicazione del teorema della media delle tensioni. 
+Inoltre, per fare le opportune considerazioni nell'analizzare le tensioni medie, i pori vengono considerati pieni di un materiale a bassa rigidezza rappresentativo del midollo osseo. Questo serve sia a considerare un fenomeno più rappresentativo della realtà sia a permettere una corretta applicazione del teorema della media delle tensioni. 
 
 
 
@@ -293,9 +317,9 @@ Le stime di Reuss sono analoghe ma in cedevolezza:
 	\mathbb S_{\operatorname{Voigt}}=(1-v_f)\mathbb S_b+v_f \mathbb S_m
 \end{equation}
 
-Vengono considerate queste due stime per via del teorema di Hill che garantisce, sotto le opportune ipotesi, che la matrice di rigidezza sia compresa tra queste \citep{ABOUDI201387}. Reuss costituisce il limite inferiore e Voigt il limite superiore dell'omogenizzazione. 
+Vengono considerate queste due stime per via del teorema di Hill che garantisce, sotto le opportune ipotesi, che la matrice di rigidezza sia compresa tra esse \citep{ABOUDI201387}. Reuss costituisce il limite inferiore e Voigt il limite superiore dell'omogenizzazione. 
 
-I due materiali vengono con considerati singolarmente isotropi, quindi tali da avere un comportamento materiale descritto dalla matrice di cedevolezza  \eqref{eq:isotropic_S}.
+I due materiali vengono con considerati singolarmente isotropi, quindi tali da avere un comportamento materiale descritto dalla matrice di cedevolezza  nell'equazione \ref{eq:isotropic_S}.
 
 \begin{equation}
 [\mathbb S]_{\operatorname{iso}}=\left[\begin{array}{cccccc}
@@ -331,27 +355,25 @@ Queste matrici vengono calcolate e per ogni iterazione del processo di omogenizz
 \subsection{Omogenizzazione numerica}
 \label{sec:homogen}
 
-Viene quindi strutturata una campagna di simulazioni tale da analizzare il RVE ed estrarre una matrice di rigidezza omogenizzata. Ulteriori considerazioni vengono fatte sul parametro $\mathbb C_{11}^{(om)}$.
+Viene quindi strutturata una campagna di simulazioni tale da analizzare il RVE ed estrarre una matrice di rigidezza omogenizzata. Ulteriori considerazioni vengono poi fatte sul parametro $\mathbb C_{11}^{(om)}$.
 
 L'approccio all'omogenizzazione segue condizioni al bordo omogenee di tipo spostamento.  
-In particolare, applicheremo un campo di spostamento alla macroscala supponendo che sia rappresentativo di quello alla microscala. Quindi otterremo un certo campo di tensione alla microscala, funzione del punto. Possiamo quindi considerare il campo di tensione alla macroscala come la media di quello alla microscala. In particolare, queste condizioni sono garantite dall'Average Strain Theorem.
+In particolare, viene applicato un campo di spostamento alla macroscala supponendo che sia rappresentativo di quello alla microscala. Quindi si ottiene un certo campo di tensione alla microscala, funzione del punto. Dunque è possibile considerare il campo di tensione alla macroscala come la media di quello alla microscala. In particolare, queste condizioni sono garantite dall'Average Strain Theorem.
 Quindi le tensioni medie misurate nel RVE sono definite come:
 \begin{equation}
 	\left< \boldsymbol{\sigma}\right> ={1\over \|\tilde \Omega\|}\int _{\tilde \Omega} \boldsymbol{\varepsilon} \:d\tilde \Omega
 \end{equation}
 dove $\tilde \Omega$ è l'area del RVE.
 
-Applicando un campo di deformazione alla macroscala otterrei le deformazioni alla microscala e potrei estrarre le tensioni semplicemente risolvendo il problema dell'equilibrio elastico:
+Applicando un campo di deformazione alla macroscala si ottengono le deformazioni alla microscala da cui è possibile estrarre le tensioni semplicemente risolvendo il problema dell'equilibrio elastico:
 \begin{equation}
 \boldsymbol{\sigma}=\tilde{\left<{\boldsymbol{\sigma}}\right>}=\mathbb C\tilde{\left<{\boldsymbol{\varepsilon}}\right>}=\mathbb C \boldsymbol{\varepsilon}
 \end{equation}
-In particolare, applicando condizioni di deformazione unitaria su $\varepsilon_1$,$\varepsilon_2$ e $\gamma_{12}$ otterrei rispettivamente prima, seconda e terza colonna di $\mathbb C$. È possibile farlo in tre processi carico separati e considerare il contributo complessivo in quanto siamo in elasticità lineare sotto l'ipotesi di piccole deformazioni per cui vale la sovrapposizione degli effetti.
+In particolare, applicando condizioni di deformazione unitaria su $\varepsilon_1$,$\varepsilon_2$ e $\gamma_{12}$ si ottengono rispettivamente prima, seconda e terza colonna di $\mathbb C$. Quindi è possibile farlo in tre processi carico separati e considerare il contributo complessivo in quanto siamo in elasticità lineare sotto l'ipotesi di piccole deformazioni per cui vale la sovrapposizione degli effetti.
 
-DESCRIVI IL METODO FEM 
+La campagna di simulazione numerica viene risolta tramite il metodo agli elementi finiti utilizzando elementi quadrilateri a quattro nodi. Questo viene implementato tramite il software \texttt{Mathematica} sfruttando il tool agli elementi finiti \texttt{AceFEM}. 
 
-Questo viene implementato tramite una campagna di simulazioni in \texttt{Mathematica} sfruttando il tool \texttt{AceFEM}. 
-
-Viene sfruttata la procedura \texttt{TEST[]} che permette di applicare in sequenza le tre condizioni di spostamento e ottenere così la matrice di rigidezza:
+Viene sfruttata la procedura \texttt{TEST[]}, scritta ad hoc, che permette di applicare in sequenza le tre condizioni di spostamento e ottenere così la matrice di rigidezza:
 
 \begin{equation}
 \mathbb C^{(om)}=\left(
@@ -361,13 +383,14 @@ Viene sfruttata la procedura \texttt{TEST[]} che permette di applicare in sequen
 	0.00 & 0.00 & 40.87\\
 \end{array}
 \right)
-\end{equation}.
+\end{equation}
 
 Da questa matrice è possibile innanzitutto verificare che sono soddisfatti i limiti inferiore e superiore (Reuss e Voigt). 
-Si vede inoltre un comportamento isotropo e come l'elevata pore fraction e quindi la grande presenza di materiale a bassa rigidezza va ad abbassare la rigidezza della matrice ossea. 
+Inoltre, si osserva un comportamento isotropo e come l'elevata pore fraction e quindi la grande presenza di materiale a bassa rigidezza va ad abbassare la rigidezza della matrice ossea. 
 
 Ulteriori informazioni sull'automazione e sulla convergenza di questo risultato sono presenti nella sezione dell'analisi a convergenza \cref{sec:convergenza}.
 
+Sebbene questo primo risultato di omogenizzazione possa sembrare sufficiente a considerare matrice ossea e pori come un'unica entità con tali proprietà materiali, è bene verificare cosa succede se le proprietà del singolo componente o della sua disposizione spaziale variano. I passaggi seguenti cercano di studiare se questo accade e come influenza il comportamento complessivo. 
 
 \begin{table}[bt!]
 	\caption{Parametri materiali}\label{tab:example}
@@ -695,6 +718,8 @@ Per il primo studio di omogenizzazione sono stati considerati dei parametri mate
 
 
 \section{Conclusioni}
+
+Possibili sviluppi futuri potrebbero essere COMPLETA INTEGRANDO DA pg 14-15 e 14-16 del Cowin
 
 \section{???}
 

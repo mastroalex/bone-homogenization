@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -7,6 +7,13 @@
 Monesi V.
 \newblock Istologia.
 \newblock Piccin; 2012.
+
+\bibitem[{Nazarian(2007)Nazarian, A., von Stechow, D., Zurakowski, D., Müller,
+  R., & Snyder, B. D.}]{Nazarian}
+Nazarian vSDZDMRSBD A.
+\newblock Bone volume fraction explains the variation in strength and stiffness
+  of cancellous bone affected by metastatic cancer and osteoporosis.e.
+\newblock Calcified tissue international 2007;83:368--379.
 
 \bibitem[{Ferguson and Steffen(2003)Ferguson, Stephen J, and Thomas
   Steffen}]{Ferguson:2003}
