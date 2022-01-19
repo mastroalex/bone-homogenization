@@ -40,45 +40,46 @@ Warning--empty booktitle in Doktor:2011
 Too many commas in name 2 of "Keller, T.  S.  and Ziv, I. , Moeljanto, E.  and Spengler, D. " for entry Keller:1993
 while executing---line 1804 of file vancouver-authoryear.bst
 Warning--empty journal in ESA:2005
-You've used 16 entries,
+Warning--empty journal in Hough
+You've used 17 entries,
             3097 wiz_defined-function locations,
-            788 strings with 8062 characters,
-and the built_in function-call counts, 26044 in all, are:
-= -- 3176
-> -- 212
-< -- 8
-+ -- 158
-- -- 53
-* -- 2202
-:= -- 2848
-add.period$ -- 50
-call.type$ -- 16
+            793 strings with 8184 characters,
+and the built_in function-call counts, 26582 in all, are:
+= -- 3235
+> -- 216
+< -- 9
++ -- 160
+- -- 54
+* -- 2238
+:= -- 2916
+add.period$ -- 52
+call.type$ -- 17
 change.case$ -- 2
-chr.to.int$ -- 16
-cite$ -- 18
-duplicate$ -- 2207
-empty$ -- 2507
-format.name$ -- 83
-if$ -- 6031
+chr.to.int$ -- 17
+cite$ -- 20
+duplicate$ -- 2264
+empty$ -- 2559
+format.name$ -- 85
+if$ -- 6152
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 163
-newline$ -- 88
-num.names$ -- 34
-pop$ -- 300
+missing$ -- 170
+newline$ -- 92
+num.names$ -- 36
+pop$ -- 315
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 235
+skip$ -- 247
 stack$ -- 0
-substring$ -- 4844
-swap$ -- 337
+substring$ -- 4898
+swap$ -- 348
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 92
-warning$ -- 2
-while$ -- 141
+type$ -- 98
+warning$ -- 3
+while$ -- 147
 width$ -- 0
-write$ -- 216
+write$ -- 227
 (There were 17 error messages)

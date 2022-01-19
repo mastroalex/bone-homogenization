@@ -127,20 +127,12 @@
 \begin{abstract}
 
 Nel seguente report vengono introdotte diverse campagne di simulazione volte all'omogeneizzazione del tessuto osseo trabecolare. 
-COMPLETE
-
-COMPLETA
-
-COMPLETAA
-
-
- \textbf{Background}, the context and purpose of the study;
+ \textbf{Background}, analizzando la struttura dell'osso trabecolare è evidente come la forma dei pori e la struttura trabecolare influenza la rigidezza e la risposta strutturale. Viene analizzato come la variazione della geometria dei pori e la loro distribuzione influenza i parametri di omogenizzazione. Inoltre vengono fatte delle analisi caso specifiche.;
  
-  \textbf{Results}, the main findings;
+  \textbf{Risultati}, si ottiene una matrice di omogenizzazione e diverse analisi sulle variazione dei suoi parametri legate alle variazioni dei pori. Il parametro più influente è la frazione di pori ma può esserci anche un grande contributo dato dalla variazione del rapporto assiale;
   
-   \textbf{Conclusions}, brief summary and potential implications. 
-   
-   Please minimize the use of abbreviations and do not cite references in the abstract.
+   \textbf{Conclusioni}, i risultati ottenuti mostrano come il rimodellamento osseo contribuisce fortemente ad aumentare la rigidezza nella direzione di carico. Una matrice di omogenizzazione per considerare insieme entrambi i costituenti può essere usata ma con l'accortezza di rispettare la frazione volumetrica e verificare che il rapporto assiale sia vicino ad 1. 
+
 \end{abstract}
 
 \begin{keywords}
@@ -162,34 +154,9 @@ Si ottiene quindi una prima matrice di omogenizzazione che rispecchia le proprie
 
 Vengono poi analizzate diverse proprietà geometriche e materiali seguendo le risposte dell'osso al carico, fenomeno noto come adattamento e rimodellamento osseo. In questa campagna di simulazione viene analizzato come la variazione dei pori, della loro volume fraction e della loro distribuzione influenza il comportamento meccanico macroscopico. 
 
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
+Inoltre, vengono fatte ulteriori analisi andando a vedere come il rapporto assiale, la variazione dei parametri materiali dei singoli elementi, quali matrice ossea e contenuto dei pori, influenzano la struttura. 
 
-
-COMPLETA CON DISCUSSIONE SU COSA ANDRò A FARE NEI TEST 
-
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
-%%
+Vengono poi fatte ulteriori analisi andando a variare la finestra di interesse e considerando un caso paziente specifico.
 
 
 \section{Tessuto osseo}
@@ -371,7 +338,7 @@ Applicando un campo di deformazione alla macroscala si ottengono le deformazioni
 \end{equation}
 In particolare, applicando condizioni di deformazione unitaria su $\varepsilon_1$,$\varepsilon_2$ e $\gamma_{12}$ si ottengono rispettivamente prima, seconda e terza colonna di $\mathbb C$. Quindi è possibile farlo in tre processi carico separati e considerare il contributo complessivo in quanto siamo in elasticità lineare sotto l'ipotesi di piccole deformazioni per cui vale la sovrapposizione degli effetti.
 
-La campagna di simulazione numerica viene risolta tramite il metodo agli elementi finiti utilizzando elementi quadrilateri a quattro nodi. Questo viene implementato tramite il software \texttt{Mathematica} sfruttando il tool agli elementi finiti \texttt{AceFEM}. 
+La campagna di simulazione numerica viene risolta tramite il metodo agli elementi finiti utilizzando elementi triangolari a tre nodi. Questo viene implementato tramite il software \texttt{Mathematica} sfruttando il tool agli elementi finiti \texttt{AceFEM}. 
 
 Viene sfruttata la procedura \texttt{TEST[]}, scritta ad hoc, che permette di applicare in sequenza le tre condizioni di spostamento e ottenere così la matrice di rigidezza:
 
@@ -418,11 +385,11 @@ Sebbene questo primo risultato di omogenizzazione possa sembrare sufficiente a c
 
 \section{Variazione della microstruttura}
 
-Il carico della colonna vertebrale ricade per la maggior parte sul corpo vertebrale e sui dischi intervertebrali. Il corpo vetebrale è fornato da osso trabecolare ad alta porosità con un guscio esterno altamente denso. Tuttavia, il guscio esterno è molto sottile ed è formato da un addensamento di osso trabecolare molto compatto, istologicamente differente dall'osso corticale. Diverse analisi agli elementi finito hanno stimato che il guscio esterno contribuisce per meno del 15\% alla Capacità di carico globale della vertebra \citep{Ferguson:2003, Silva:1997}.
+Il carico della colonna vertebrale ricade per la maggior parte sul corpo vertebrale e sui dischi intervertebrali. Il corpo vertebrale è formato da osso trabecolare ad alta porosità con un guscio esternoz altamente denso. Tuttavia, il guscio esterno è molto sottile ed è formato da un addensamento di osso trabecolare molto compatto, istologicamente differente dall'osso corticale. Diverse analisi agli elementi finito hanno stimato che il guscio esterno contribuisce per meno del 15\% alla capacità di carico globale della vertebra \citep{Ferguson:2003, Silva:1997}.
 
-Inoltre, diversi campioni di osso trabecolare hanno mostrato diverse proprietà meccaniche a seconda della regione dove vengono prelevati. \citep{Keller:1989,Keller:1993}. Questo è segno della risposta dell'osso che, essendo un tessuto vivo e in continuo rimodellamento, è variabile e si adatta all'ambiente. L'aumento delle proprietà di resisitenza a compressione nella parte centrale dell'osso è di fatto un risposta al maggior carico verticale trasmesso dalla parte polposa del disco vertebrale rispetto all'adicente regione periferica di anelli fibrosi. 
+Inoltre, diversi campioni di osso trabecolare hanno mostrato  proprietà meccaniche differenti a seconda della regione dove vengono prelevati \citep{Keller:1989,Keller:1993}. Questo è segno della risposta dell'osso che, essendo un tessuto vivo e in continuo rimodellamento, è variabile e si adatta all'ambiente. L'aumento delle proprietà di resistenza a compressione nella parte centrale dell'osso non è nient'altro che la risposta al maggior carico verticale trasmesso dalla parte polposa del disco vertebrale rispetto all'adicente regione periferica di anelli fibrosi. 
 
-Sulla base di queste considerazioni sono state condotte ulteriori analisi variando la geometria del RVE e osservando come varia la risposta materiale risultante. Le variazioni considerate seguono dall'idealizzazione di alcuni fenomeni fisiologici che portano al rimodellamento osseo indotto dall'ambiente meccanico in cui si trova.
+Sulla base di queste considerazioni sono state condotte ulteriori analisi variando la geometria del RVE e osservando come varia la risposta materiale risultante. Le variazioni considerate seguono dall'idealizzazione di alcuni fenomeni fisiologici che portano al rimodellamento osseo indotto dall'ambiente meccanico in cui si trova immerso.
 
 
 
@@ -467,7 +434,7 @@ Sulla base di queste considerazioni sono state condotte ulteriori analisi varian
 	\end{minipage} 
 	
 	\begin{minipage}[b]{0.19\linewidth}
-		\footnotesize{$
+		\scriptsize	{$
 			\begin{bmatrix}
 				869.46 & 198.19 & 0.02 \\
 				198.19 & 1857.50 & 0.01 \\
@@ -476,7 +443,7 @@ Sulla base di queste considerazioni sono state condotte ulteriori analisi varian
 			$}
 	\end{minipage}
 	\begin{minipage}[b]{0.19\linewidth}
-		\footnotesize{$
+		\scriptsize	{$
 			\begin{bmatrix}
 				1010.09 & 325.62 & 0.03 \\
 				325.62 & 2883.80 & 0.01\\
@@ -485,7 +452,7 @@ Sulla base di queste considerazioni sono state condotte ulteriori analisi varian
 			$}
 	\end{minipage}
 	\begin{minipage}[b]{0.19\linewidth}
-		\footnotesize{$
+		\scriptsize	{$
 			\begin{bmatrix}
 				1092.62 & 394.85 & 0.03\\
 				394.85 & 3396.74 & 0.015 \\
@@ -494,7 +461,7 @@ Sulla base di queste considerazioni sono state condotte ulteriori analisi varian
 			$}
 	\end{minipage}
 	\begin{minipage}[b]{0.19\linewidth}
-		\footnotesize{$
+		\scriptsize	{$
 			\begin{bmatrix}
 				1279.47 & 538.93 & 0.05 \\
 				538.93 & 4416.36 & 0.02 \\
@@ -503,7 +470,7 @@ Sulla base di queste considerazioni sono state condotte ulteriori analisi varian
 			$}
 	\end{minipage}
 	\begin{minipage}[b]{0.19\linewidth}
-		\footnotesize{$
+		\scriptsize	{$
 			\begin{bmatrix}
 				1462.51 & 653.01 & 0.62 \\
 				653.01 & 5376.01 & 0.30 \\
@@ -530,31 +497,16 @@ Sulla base di queste considerazioni sono state condotte ulteriori analisi varian
 
 
 
-\begin{figure}[bt!] %% preferably at bottom or top of column
-	\centering
-	\def\svgwidth{0.9\linewidth}
-	\input{variazione_Ebone.pdf_tex}
-	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_b$}\label{fig:var_Ebone}
-\end{figure}
 
-\begin{figure}[bt!] %% preferably at bottom or top of column
-	\centering
-	\def\svgwidth{0.9\linewidth}
-	\input{variazione_Enarrow.pdf_tex}
-	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_m$}\label{fig:var_Emarrow}
-\end{figure}
+Le trabecole quindi rispondono al carico verticale posizionandosi prevalentemente lungo le linee di forza del carico e aumentano la loro densità e il loro spessore. Per indagare la variazione delle proprietà materiali è stato considerato un RVE con pori variabili. Un modo semplice, ma accurato, di analizzare questo comportamento è quello di considerare pori ellittici. Introducendo pori ellittici la risposta dell'osso al carico verticale può essere interpretata come una riduzione del rapporto assiale e quindi un restringimento dell'ellisse lungo la direzione x. 
 
+Le campagne di simulazione condotte mostrano diversi cambiamenti nella matrice di rigidezza e quindi nelle proprietà meccaniche. Partendo da un rapporto assiale molto basso, quindi un'ellisse molto schiacciata, si osserva un grande aumento nel parametro $C_{22}$ e un lieve aumento anche del parametro $C_{11}$ rispetto al caso di riferimento (\cref{sec:homogen}). Viene completamente meno la simmetria materiale e l'isotropia della matrice di rigidezza, segno che la risposta di rigidezza lungo la direzione del semidiametro maggiore è più grande di quella nella direzione del semidiametro maggiore. Questo rispecchia quanto produce l'osso con la sua risposta di rimodellamento. 
 
+Con un rapporto assiale di $\operatorname{AxR}=0.1$ il coefficiente $C_{22}$ arriva a 5,376 GPa contro un $C_{11}=1.462$ GPa. Questa differenza si riduce diminuendo il rapporto assiale. I due coefficienti convergono nel caso in cui il rapporto assiale tende a 1 ovvero nel caso in cui $C_{11}=C_{22}=C_{11}^{(om)}$. I limiti di Reuss e Voigt sono verificati in tutti i casi. I dati sono presenti in \cref{fig:geometry_variation} e \cref{fig:geometric_variation}. Nel diminuire il rapporto assiale la riduzione dei coefficienti di rigidezza segue un andamento lineare. Il coefficiente $C_{22}$ risente notevolmente di questo effetto mostrando una tasso di diminuzione molto più alto del coefficiente $C_{11}$ che invece segue un andamento quasi costante. 
 
-Le trabecole quindi rispondono al carico verticale posizionandosi prevalentemente lungo le linee di forza del carico e aumentano la loro densità e il loro spessore. Per indagare l'aumento delle proprietà materiali è stato considerato un RVE con pori variabili. Un modo semplice, ma accurato, di analizzare questo comportamento è quello di considerare pori ellittici. Introducendo pori ellittici la risposta dell'osso al carico verticale può essere interpretata come una riduzione del rapporto assiale e quindi un restringimento dell'ellisse lungo la direzione x. 
+Rimane evidente come al diminuire del rapporto assiale, e quindi anche della volume fraction, sia i limiti di Reuss e Voigt sia l'omogenizzazione numerica mostrino il coefficiente maggiore tendere al coefficiente $C_{22}^{(b)}$ della sola matrice ossea pur rimanendo inferiore al suo 80\%.  
 
-Le campagne di simulazione condotte mostrano diversi cambiamenti nella matrice di rigidezza e quindi nelle proprietà meccaniche. Partendo da un rapporto assiale molto basso, quindi un'ellisse molto schiacciata, si osserva un grande aumento nel parametro $C_{11}$ e un lieve aumento anche del parametro $C_{22}$ rispetto al caso di riferimento (\cref{sec:homogen}). Viene completamente meno la simmetria materiale e l'isotropia della matrice di rigidezza, segno che la risposta di rigidezza lungo la direzione del semidiametro maggiore è più grande di quella nella direzione del semidiametro maggiore. Questo rispecchia quanto produce l'osso con la sua risposta di rimodellamento. 
-
-Con un rapporto assiale di $\operatorname{AxR}=0.1$ il coefficiente $C_{22}$ arriva a 1.462 GPa contro un $C_{11}=0.653$ GPa. Questa differenza del 44\% si riduce diminuendo il rapporto assiale. I due coefficienti convergono nel caso in cui il rapporto assiale tende a 1 ovvero nel caso in cui $C_{11}=C_{22}=C_{11}^{(om)}$. I limiti di Reuss e Voigt sono verificati in tutti i casi. I dati sono presenti in \cref{fig:geometry_variation} e\cref{fig:geometric_variation}. Nel diminuire il rapporto assiale il calo dei coefficienti di rigidezza segue un andamento lineare. Il coefficiente $C_{22}$ risente notevolmente di questo effetto mostrando una tasso di diminuzione del coefficiente $C_{11}$ con un andamento quasi costante. 
-
-Rimane evidente come al diminuire del rapporto assiale, e quindi anche della volume fraction, sia i limiti di Reuss e Voigt sia l'omogenizzazione numerica mostrino il coefficiente maggiore tendere al coefficiente $C_{22}^{(b)}$ della sola matrice ossea pur rimanendo inferiore al 20\%.  
-
-Lo stesso ragionamento può essere fatto nel caso contrario in cui malattie, come l'osteoporosi, portano ad una riduzione della massa ossea. Questo, rivisto come un aumento del rapporto assiale, mostra come l'osso trabecolare tende a ridurre le sue proprietà strutturali anche in zone dove precedentemente il rimodellamento osseo potrebbe aver apportato un precedentemente miglioramento strutturale (meno pori e maggior resistenza). Cambiamenti morfologici tra cui l'assottigliamento delle trabecole, aumento dello spazio inter-trabecolare e la perdita di connettività posso portare ad un calo drastico della resistenza fino al rischio di frattura vertebrale \citep{Ferguson:2003}.
+Lo stesso ragionamento può essere fatto nel caso contrario in cui malattie, come l'osteoporosi, portano ad una riduzione della massa ossea. Questo, rivisitato in ottica di un aumento del rapporto assiale, mostra come l'osso trabecolare tende a ridurre le sue proprietà strutturali anche in zone dove precedentemente il rimodellamento osseo potrebbe aver apportato un precedentemente miglioramento strutturale (meno pori e maggior resistenza). Cambiamenti morfologici tra cui l'assottigliamento delle trabecole, aumento dello spazio inter-trabecolare e la perdita di connettività posso portare ad un calo drastico della resistenza fino al rischio di frattura vertebrale \citep{Ferguson:2003}.
 
 
 
@@ -670,59 +622,81 @@ Lo stesso ragionamento può essere fatto nel caso contrario in cui malattie, com
 \end{figure*}
 
 
-Un'ulteriore indagine può essere quella di analizzare se e come varia la risposta meccanica variando la finestra di interesse. Avendo idealizzato un RVE simmetrico con pori simmetrici disposti su una griglia regolare è chiaro che, aumentando semplicemente il lato, si andrebbero ad includere semplicemente più pori. La volume fraction rimarrà la stessa così come la risposta meccanica. Anche se aumenta la somma delle tensioni queste vengono mediate su un area più grande e il loro rapporto, quindi la matrice di omogenizzazione, rimangono costanti. 
+Un'ulteriore indagine è stata condotta andando ad analizzare se e come varia la risposta meccanica variando la finestra di interesse. Avendo idealizzato un RVE simmetrico con pori simmetrici disposti su una griglia regolare è chiaro che, aumentando semplicemente il lato, si andrebbero ad includere soltanto più pori. La volume fraction rimarrà la stessa così come la risposta meccanica. Anche se aumenta la somma delle tensioni queste vengono mediate su un area più grande e il loro rapporto, quindi la matrice di omogenizzazione, rimane costante. 
 
-Lo studio si sposta alla su un RVE differente. I casi di interesse sono mostrati in \cref{fig:area}. L'analisi è divisa secondo due casistiche: 
+Lo studio si sposta allora su un RVE idealizzato in modo differente. I casi di interesse sono mostrati in \cref{fig:area}. L'analisi è divisa secondo due casistiche: 
 \begin{itemize}
-\item Analisi della risposta meccanica con una disposizione causale dei pori secondo una distribuzione nota  \citep{Doktor:2011}. 
-\item Analisi della risposta meccanica con una distribuzione di pori ipotizzata a partire da un caso reale \citep{ESA:2005}.
+\item Analisi della risposta meccanica con una disposizione causale dei pori secondo una distribuzione precisa identificata da \citet{Doktor:2011}. 
+\item Analisi della risposta meccanica con una distribuzione di pori ipotizzata a partire da un caso reale, paziente specifica \citep{ESA:2005}.
 \end{itemize}
 
-Nell'analizzare i pori disposti secondo una distribuzione precisa vengono considerate diverse inclusioni di raggio fisso $\{0.1,\: 0.15,\: 0.2,\:0.03,\: 0.35\}$. Questi pori vengono disposti casualmente considerandone 100 (\cref{{fig:area}} (a)) o 300 (\cref{fig:area} (b)).
+Nell'analizzare i pori disposti secondo una distribuzione nota vengono considerate diverse inclusioni di raggio fisso $r\in \{0.1,\: 0.15,\: 0.2,\:0.03,\: 0.35\}$. Questi pori vengono disposti casualmente considerandone prima 100, \cref{{fig:area}} (a), e poi 300, \cref{fig:area} (b). Per l'implementazione computazionale maggiori informazioni in \cref{sec:distribution}.
 
-Si ottengono dei coefficienti della matrice di rigidezza $C_{11},C_{22}$ superiori al caso \cref{sec:homogen}. Questo in parte è dovuto ad una pore fraction minore, ovvero ad una presenza maggiore di matrice ossea che contribuisce ad aumentare la rigidezza complessiva. È interessante notare che il contributo della frazione volumetrica di pori si riflette in una matrice complessivamente più rigida lungo le direzioni principali anche se la struttura nel caso \cref{sec:homogen} sembra avere la matrice ossea lungo le direzioni di carico. 
+Si ottengono dei coefficienti della matrice di rigidezza $C_{11},C_{22}$ superiori al caso \cref{sec:homogen}. Questo in parte è dovuto ad una pore fraction minore, ovvero ad una presenza maggiore di matrice ossea che contribuisce ad aumentare la rigidezza complessiva. È interessante notare che il contributo della frazione volumetrica di pori si riflette in una maggior rigidezza lungo le direzioni principali anche se la struttura non sembra avere una direzione preferenziale per l'accrescimento osseo come in \cref{sec:homogen}.
 
-Ad rafforzare queste conclusioni sono anche i risultati della precedente analisi (\cref{sec:variazione_simmetria}) . Confrontandoli con questi dati si vede come il fattore dominante rimane la pore fraction ma come aumenta la quantità di matrice ossea disposta lungo la direzione di carico aumenta la rigidezza in tale direzione. 
+A rafforzare queste conclusioni sono anche i risultati della precedente analisi (\cref{sec:variazione_simmetria}) . Confrontandoli con questi dati si vede come il fattore dominante rimane la pore fraction ma anche come se aumenta la quantità di matrice ossea disposta lungo la direzione di carico aumenta la rigidezza in tale direzione. 
 
-Nell'aumentare la regione di interesse vengono considerati 300 pori e viene aumentato il lato del RVE. Questo permette di includere un numero maggiore di pori e la loro distribuzione è tale da ridurre leggermente i coefficienti della matrice di rigidezza.
+Nell'aumentare la regione di interesse vengono considerati 300 pori e viene aumentato il lato del RVE. Questo permette di includere un numero maggiore di pori e la loro distribuzione è tale da ridurre leggermente i coefficienti della matrice di rigidezza. 
 
-COMPLETA QUEST ODISCROS
+Si perde la simmetria esatta della matrice di rigidezza ma rimangono dei coefficienti $C_{11}$ e $C_{22}$ relativamente stabili. L'effetto è meno evidente nel caso di un maggior numero di inclusioni. La perdita delle proprietà di isotropia della matrice è molto evidente nei coefficienti che ci si aspetterebbe fossero nulli ma anche se molto piccoli, sono numeri diversi da zero. 
 
-PARLA DELLA PERDITA DI SIMMETRIA NELLA MATRICE
-
-COMMENTA I COEFFICNENTI NU NU
-
-
-
-COMMENTA SUI VALORI OTTENUTI RISPETTO QUELLI DELLA PRIMA OMOGENIZZAZIONE 
-
+Questi ultimi risultati si discostano dall'omogenizzazione nel caso ideale e mostrano complessivamente una maggior rigidezza attribuibile all'aumento della massa ossea. Questi risultati numerici sono influenzati dalla distribuzione spaziale dei pori e differenti disposizioni possono portare a matrici di rigidezza leggermente diverse pur rimanendo sotto i limiti della perdita di isotropia osservabile nel caso \cref{sec:variazione_simmetria}.
 
 
 \subsection{Analisi caso specifica}
+\label{sec:caso_spec}
+Un ulteriore analisi di interesse, simile al caso precedente, considera una disposizione di pori identificata a partire direttamente dal set di immagini Micro CT menzionate. Prendendo una slice di riferimento e selezionandone un determinato RVE è possibile estrarre una determinata struttura ossea \cref{fig:area} (c) e (d). Sono stati considerati dei pori circolari disegnati manualmente tali da essere tangenti alla matrice ossea e da soddisfare la pore fraction compatibili con i dati disponibili in letteratura (circa 60\%). 
 
-
---> ESTENSIONE SU CASO SPECIFICA 
-
--->> DISTRIBUZIONE DI PORI 
-
---> MANTENENDO UNA PORE FRACTION DEL 60\%
+Il primo risultato evidente di questi test è l'aumento di rigidezza chiarimente dovuto alla minor pore fraction considerata, ovvero all'aumento di massa ossea.  I coefficienti $C_{11}$ e $C_{22}$ pur essendo numericamente diversi rimangono molto simili ma più grandi dei casi precedenti ma inferiori ai casi limite riscontrati con la riduzione del rapporto assiale.
 
 \section{Parametri materiali}
 \label{sec:variazioni_materiali}
 
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\def\svgwidth{0.9\linewidth}
+	\input{variazione_Ebone.pdf_tex}
+	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_b$. Il coefficiente segue un andamento quasi lineare con un incremento costante al crescere di $E_b$.}\label{fig:var_Ebone}
+\end{figure}
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	\centering
+	\def\svgwidth{0.9\linewidth}
+	\input{variazione_Enarrow.pdf_tex}
+	\caption{Variazione di $\mathbb C_{11}$ al variare di $E_m$, quest'ultimo rappresentato in scala logaritmica. Il valore di $C_{11}$ rimane quasi costante, si osservi che la scala è molto grande.}\label{fig:var_Emarrow}
+\end{figure}
 
 
-Per il primo studio di omogenizzazione sono stati considerati dei parametri materiali medi tra quanto noto in letteratura. Tuttavia è noto anche che il modulo elastico delle strutture ossee può variare in relazione all'età o a particolari patologie. Diversi risultati mostrano che persone giovani hanno moduli di rigidezza più elevati delle persone anziane \citep{Cowin1}
+Per il primo studio di omogenizzazione sono stati considerati dei parametri materiali medi tra quanto identificato in letteratura. Tuttavia è noto anche che il modulo elastico delle strutture ossee può variare in relazione all'età o a particolari patologie. Diversi risultati mostrano che persone giovani hanno moduli di rigidezza più elevati delle persone anziane \citep{Cowin1}.
 
+È stato analizzato sia il contributo del modulo elastico della massa ossea, $E_b$, che dei pori, $E_m$. 
 
+In particolare, l'aumento del modulo elastico della massa ossea conferisce sempre più rigidezza e un incremento costante del parametri $C_{11}$. Al variare di $E_b$ da meno di 2 GPa a poco più di 6 GPa il coefficiente $C_{11}$ passa da poco meno di 300 a 1000. Nel mezzo si trova il caso affrontato nel primo studio (\ref{sec:homogen}).  
 
+Può anche essere fatto un fitting polinomiale soddisfatto dalla relazione: 
+
+\begin{equation}
+	\mathbb{C}_{11}=	\mathbb{C}_{11}\left(E_b\right)=0.184 + 0.151 \cdot E_b
+\end{equation}
+
+Al contrario, variando il modulo dei pori, $E_m$, non si osservano grandi cambiamenti. Variando da 0.15 MPa fino a 1000 MPa si osserva una variazione inferiore all'1 \%. 
+
+Questo  rispecchia il fatto che il maggior contributo di rigidezza è dato dalla matrice ossea. Allo stesso tempo ci dice che, a livello numerico, è possibile utilizzare anche un modulo leggermente più alto di quanto ipotizzato in modo da evitare numeri troppo piccoli che possono dare problemi computazionali andando oltre la precisione numerica del calcolatore. 
 
 \section{Conclusioni}
 
-Possibili sviluppi futuri potrebbero essere COMPLETA INTEGRANDO DA pg 14-15 e 14-16 del Cowin
+Alla luce dei risultati ottenuti è chiaro che l'elemento predominante nell'influenzare la rigidezza complessiva è la frazione di pori. Nel fare l'omogenizzazione si può tenere conto della frazione di pori e ottenere un risultato numerico attendibile.
 
-\section{???}
+È bene però considerare che c'è una forte influenza anche del rapporto assiale nei pori. Essendo l'osso una struttura viva e in continuo rimodellamento è bene tenere conto anche delle direzioni preferenziali di carico lungo le quali si potrebbe osservare una riduzione del rapporto assiale. Trascurare questo effetto e considerare l'osso trabecolare come isotropo potrebbe portare ad una matrice di omogenizzazione con notevoli errori numerici. 
 
+Un forte peso è dato anche dai moduli di rigidezza dei singoli costituenti ma il peso maggiore è dato dalla matrice ossea che si occupa di conferire rigidezza alla struttura globale. 
+È possibile evitare uno studio caso specifico e considerare parametri medi e l'errore rimane in dei limiti accettabili. In alcuni casi però questo potrebbe sottostimare la rigidezza. 
+
+Possibili sviluppi futuri possono essere quelli di analizzare l'influenza di ulteriori parametri come lo spessore trabecolare o la connettività. Inoltre, si potrebbe passare ad un modello di osso trabecolare più avanzato considerando l'interno dei pori non più come un materiale fortemente elastico ma ripieno di fluido con possibilità di scorrere e andando a considerare un modello poroelastico. 
+
+
+\bibliography{paper-refs}
+\newpage
 
 \section{Metodi}
 
@@ -734,7 +708,7 @@ L'immagine presentata in figura \ref{fig:homogen_RVE}(a) è una ricostruzione 3D
 \subsection{Rappresentazione del volume di riferimento}
 \label{sec:RVE_code}
 
-Per la creazione dei fori viene considerata una griglia quadrata con $\sqrt{\text{N. fori}}$ per lato e viene generato un rettangolo esterno tale da garantire la volume fraction desiderata. Quindi viene generato anche un vettore contenente tutte le posizioni dei centri calcolate. Il calco viene effettuato con le funzioni \texttt{GeometryInitailization[]} e \texttt{GeometrySet[]}.
+Per la creazione dei fori viene considerata una griglia quadrata con $\sqrt{\text{N. fori}}$ per lato e viene generato un rettangolo esterno tale da garantire la volume fraction desiderata. Quindi viene generato anche un vettore contenente tutte le posizioni dei centri calcolate. Il calcolo viene effettuato con le funzioni \texttt{GeometryInitailization[]} e \texttt{GeometrySet[]}.
 
 Vengono quindi creati e fori e assegnati i marker come identificato nello snippet \ref{code_rve}.  Un esempio di questo RVE in Figura \ref{fig:Mesh}.
 
@@ -760,7 +734,7 @@ $\Omega$,"RegionHoles"->None,"RegionMarker"->marker];
 \end{lstlisting}
 
 
-\begin{figure}[b!]%[bt!] %% preferably at bottom or top of column
+\begin{figure}[bt!]%[bt!] %% preferably at bottom or top of column
 	\centering
 	\includegraphics[width=\linewidth]{test_mesh_8.png}
 	\caption{Mesh del volume rappresentativo con 756.787 DoF. I bordi appaiono neri e più spessi, questo è dovuto al refinement della mesh molto più fitta nei punti di bordo.}\label{fig:Mesh}
@@ -772,9 +746,25 @@ $\Omega$,"RegionHoles"->None,"RegionMarker"->marker];
 
 \subsubsection{Condizioni al bordo}
 
-Per impostare correttamente le condizioni al bordo in modo automatizzato è stato realizzato uno snippet ripetitivo con delle variabili di comando che permette di automatizzare la procedure. In particolare, volendo applicare una deformazione costante rispettivamente su $x$, $y$ o  di scorrimento è necessaria una mappa sulle condizioni di spostamento che permette di mappare ogni punto  nel valore desiderato. Si usano quindi la funzione \texttt{Function[{n, X, Y}, a*X + b*Y }, dove a seconda che sia nullo $a$ o $b$ lo spostamento sarà lineare rispettivamente in Y o in X. 
+Per impostare correttamente le condizioni al bordo in modo automatizzato è stato realizzato uno snippet ripetitivo con delle variabili di comando che permette di automatizzare la procedure. In particolare, volendo applicare una deformazione costante rispettivamente su $x$, $y$ o  di scorrimento è necessaria una mappa sulle condizioni di spostamento che permette di mappare ogni punto  nel valore desiderato. Si usano quindi la funzione \texttt{Function[{n, X, Y}, a*X + b*Y ]}, dove a seconda che sia nullo $a$ o $b$ lo spostamento sarà lineare rispettivamente in Y o in X. 
 
- Questo permette di impostare le condizioni sui quadrato bordi del quadrato mediante tre parametri $\{a,\:b,\:c\}$. Questi parametri vengono passati alla funzione \texttt{TEST[]} che provvede a mapparli come indicato nello snippet  \ref{code_displacem} andando ad impostare condizioni al contorno di tipo essenziale.  
+Questo permette di impostare le condizioni sui quadrato bordi del quadrato mediante tre parametri $\{a,\:b,\:c\}$. Questi parametri vengono passati alla funzione \texttt{TEST[]} che provvede a mapparli come indicato nello snippet  \ref{code_displacem} andando ad impostare condizioni al contorno di tipo essenziale.  
+
+\begin{lstlisting}[language=Mathematica,caption=Algortimo per l'applicazione automatizzate delle condizioni al bordo,label=code_displacem]
+	SMTAddEssentialBoundary[Line[{{0, 0}, {0, Ly}}],
+	1 -> Function[{n, X, Y}, b Y],
+	2 -> Function[{n, X, Y}, c Y], 	"Set" -> True];
+	SMTAddEssentialBoundary[Line[{{0, Ly}, {Lx, Ly}}],
+	1 -> Function[{n, X, Y}, b*Ly + a*X],
+	2 -> Function[{n, X, Y}, c*Ly + b*X], "Set" -> True];
+	SMTAddEssentialBoundary[Line[{{Lx, Ly}, {Lx, 0}}], 
+	1 -> Function[{n, X, Y}, a*Lx + b*Y],
+	2 -> Function[{n, X, Y}, b*Lx + c*Y], "Set" -> True];
+	SMTAddEssentialBoundary[Line[{{0, 0}, {Lx, 0}}],
+	1 -> Function[{n, X, Y}, a*X],
+	2 -> Function[{n, X, Y}, b*X], 	"Set" -> True];
+\end{lstlisting}
+
 
 Il test di omogenizzazione viene effettuato dalla funzione \texttt{Checkconvergence[]}. Questa funzione viene richiamata all'interno di un ciclo \texttt{Do} e nelle diverse iterazioni posso essere variati alcuni parametri come l'accuratezza della mesh, i parametri materiali o geometrici. 
 
@@ -793,39 +783,42 @@ Nel variare le proprietà materiali (\cref{sec:variazioni_materiali}) o della si
 Per variare le proprietà di simmetria è stato introdotto il rapporto assiale definito come il rapporto tra i due raggi: $\operatorname{AxR}=\frac{r_{x}}{r_y}$. 
 Quindi tale parametri viene passato alla funzione \texttt{GeometrySet[]} per generare il RVE. 
 
-\subsection{Estensione regione di interesse}
 
-DESCRIVI IL NUOVO JOIN FATTO SU IMPLIIT REGION
 
+\subsubsection{Estensione regione di interesse}
+
+È stata considerata la distribuzione di pori ad hoc e sono stati generati 100 o 300 fori tali da rispettare questa distribuzione di raggi. I cerchi sono stati disposti casualmente sfruttando un software di grafica vettoriale e i loro centri sono stati calcolati sfruttando la trasformata di Hough circolare in Matlab \citep{Hough} e poi importati tramite \texttt{centers.mat}.
+
+Quindi è stata modificata la funzione per disegnare l'RVE a causa di un problema computazionale del software Mathematica andando a iterare \texttt{RegionDifference[]} oltre i 40 cicli. Il problema è stato risolto andando a generare una condizione tale da risultare vera nella sola matrice ossea e utilizzando poi la funzione \texttt{ImplicitRegion[]} per realizzare correttamente la mesh. I marker di dominio sono stati aggiunti tramite il vettore dei centri importato. Vedi  listing \ref{code_distr}
+
+Discorso analogo per i cerchi generati a partire dall'immagine caso specifico.
+
+
+\begin{lstlisting}[language=Mathematica,caption=Generazione RVE importando raggi e centri,label=code_distr]
+	condition = (x - center[[1, 1]])^2 + (y - center[[1, 2]])^2 >= radi[[1]]^2  && (x - center[[2, 1]])^2 + (y - center[[2, 2]])^2 >= radi[[2]]^2
+	Do[condition = And[condition, (x - center[[i, 1]])^2 + (y - center[[i, 2]])^2 >= radi[[i]]^2];, {i, 1, mark}];
+	$\Omega$ = ImplicitRegion[condition, {{x, 0, L}, {y, 0, L}}];
+	marker = {{{Lx/100, Ly/100}, 1}};
+	Do[marker = Join[marker, {{center[[i]], 2}}], {i, 1, mark}];
+\end{lstlisting}
+
+
+\label{sec:distribution}
 
 \subsection{Analisi di convergenza}
 \label{sec:convergenza}
-
-Per effettuare l'analisi a convergenza è stata implementata una routine che ripete diverse volte l'omogenizzazione citata in \cref{sec:homogen} andando ad infittire la mesh. 
-
-Vengono analizzati il modulo di $C_{11}$ e la norma della matrice $\| \mathbb C^{(om)}\|=\mathbb C^T\mathbb C$ e i loro valori normalizzati rispetto il valore vero. Viene assunto come valore vero quello dell'iterazione ultima, tale da considerare il risultato essere arrivato a convergenza. 
-I risultati sui moduli estratti sono presenti nella Tabella \ref{tab:convergence} e nei due grafici dell'errore in \cref{fig:convergence} e in \cref{fig:convergence1}.
-
-Analizzando i risultati è stato preso come valore ottimo quello ottenuto nell'iterazione 8 che presenta un errore rispetto il risultato ideale dello $0.11\%$ sul $\mathbb C_{11}$ e dello $0.23\%$ su $\|\mathbb C^{(om)}\|$a fronte di differenza di impegno computazionale del $83\%$. 
-
-
-COMPLETA DA TEORIAAAAAAA
-
-
-
-
 \begin{figure*}[bt!]
 	\centering
 	\begin{minipage}[b]{0.49\linewidth}
-
-	\def\svgwidth{\linewidth}
-	\input{test_data1.pdf_tex}
+		
+		\def\svgwidth{\linewidth}
+		\input{test_data1.pdf_tex}
 		\caption{Analisi dell'errore sul parametro $\mathbb C_{11}$}\label{fig:convergence}
 	\end{minipage} 
 	\begin{minipage}[b]{0.49\linewidth}
-	\def\svgwidth{\linewidth}
-	\input{test_data1.pdf_tex}
-	\caption{Analisi dell'errore su $\|\mathbb C\|$}\label{fig:convergence1}
+		\def\svgwidth{\linewidth}
+		\input{test_data1.pdf_tex}
+		\caption{Analisi dell'errore su $\|\mathbb C\|$}\label{fig:convergence1}
 	\end{minipage} 
 	\hfill
 	\label{fig:convergenza} 
@@ -837,15 +830,15 @@ COMPLETA DA TEORIAAAAAAA
 	\caption{Analisi di convergenza}\label{tab:convergence}
 	\begin{tabular}{l c c c l}
 		\toprule
-\#&	$\mathbb C_{11}^{(om)}$ & $\| \mathbb C^{(om)}\| $ &DoF &  Time (s)\\
+		\#&	$\mathbb C_{11}^{(om)}$ & $\| \mathbb C^{(om)}\| $ &DoF &  Time (s)\\
 		\midrule
-
 		
-	1&		$845.289$ &$1450730 $ &$3368 $ &  $ 5.0625 $\\
-			2&	$846.427$ &$145680 $& $3384$ &  $4.6719  $\\
-			3&	$ 772.214$ &$1208530 $&$ 16874$  &  $ 8.9375 $\\
-			4&$ 763.611$ &$ 1181190$&$ 39022$  &$ 14.875$   \\
-			5&$ 759.333$ &$1168040 $&$ 253262$  & $ 64.0313$     \\
+		
+		1&		$845.289$ &$1450730 $ &$3368 $ &  $ 5.0625 $\\
+		2&	$846.427$ &$145680 $& $3384$ &  $4.6719  $\\
+		3&	$ 772.214$ &$1208530 $&$ 16874$  &  $ 8.9375 $\\
+		4&$ 763.611$ &$ 1181190$&$ 39022$  &$ 14.875$   \\
+		5&$ 759.333$ &$1168040 $&$ 253262$  & $ 64.0313$     \\
 		6&	$ 759.333$ &$1168040 $& $ 253316$  &$ 60.5156$     \\
 		7&	$758.829 $ &$1166450 $&$ 263104$   &$ 60.5781$     \\
 		8&	$ 756.787$ &$ 1160210$&$ 453436$ &$ 94.8281 $     \\
@@ -855,31 +848,32 @@ COMPLETA DA TEORIAAAAAAA
 	\end{tabular}
 \end{table}
 
+Per effettuare l'analisi a convergenza è stata implementata una routine che ripete diverse volte l'omogenizzazione citata in \cref{sec:homogen} andando ad infittire la mesh. 
 
-\begin{lstlisting}[language=Mathematica,caption=Generazione RVE,label=code_displacem]
-	SMTAddEssentialBoundary[Line[{{0, 0}, {0, Ly}}],
-	1 -> Function[{n, X, Y}, b Y],
-	2 -> Function[{n, X, Y}, c Y], 	"Set" -> True];
-	SMTAddEssentialBoundary[Line[{{0, Ly}, {Lx, Ly}}],
-		1 -> Function[{n, X, Y}, b*Ly + a*X],
-		2 -> Function[{n, X, Y}, c*Ly + b*X], "Set" -> True];
-	SMTAddEssentialBoundary[Line[{{Lx, Ly}, {Lx, 0}}], 
-	1 -> Function[{n, X, Y}, a*Lx + b*Y],
-	2 -> Function[{n, X, Y}, b*Lx + c*Y], "Set" -> True];
-	SMTAddEssentialBoundary[Line[{{0, 0}, {Lx, 0}}],
-	1 -> Function[{n, X, Y}, a*X],
-	2 -> Function[{n, X, Y}, b*X], 	"Set" -> True];
-\end{lstlisting}
+Vengono analizzati il modulo di $C_{11}$ e la norma della matrice $\| \mathbb C^{(om)}\|=\mathbb C^T\mathbb C$ e i loro valori normalizzati rispetto il valore assunto vero. Viene assunto come valore vero quello dell'iterazione ultima, tale da considerare il risultato essere arrivato a convergenza. 
+I risultati sui moduli estratti sono presenti nella Tabella \ref{tab:convergence} e nei due grafici dell'errore in \cref{fig:convergence} e in \cref{fig:convergence1}.
+
+Analizzando i risultati è stato preso come valore ottimo quello ottenuto nell'iterazione 8 che presenta un errore rispetto il risultato ideale dello $0.11\%$ sul $\mathbb C_{11}$ e dello $0.23\%$ su $\|\mathbb C^{(om)}\|$a fronte di differenza di impegno computazionale del $83\%$. 
+
+
+
+
 
 \section{Disponibilità del codice e materiale aggiuntivo}
 
 Tutto il codice, le immagini, file di processamento e risultati ottenuti sono disponibili alla repository online al link: \url{https://github.com/mastroalex/bone-homogenization}. 
+\begin{itemize}
+	\item Il codice per l'analisi di convergenza (\cref{sec:convergenza}) è presente nel file: \texttt{FEM->homogen->test\_analisi\_conv.nb}.
+	\item Il codice per la variazione delle proprietà di simmetria e la geometria del RVE (\cref{sec:variazione_simmetria}) è presente nel file:  \texttt{FEM->variazioni\_geometrie->test\_geometrie.nb}.
+	\item I codici per le variazioni delle proprietà materiali (\cref{sec:variazioni_materiali}) sono presenti nei file: \texttt{FEM->variazioni\_materiali->test\_materiali.nb} e \texttt{variazioni\_materiali->test\_mat\_n2->test\_materiali.nb}.
+	\item I codici per la variazione della disposizione dei pori (\cref{sec:caso_spec}) sono presenti nella cartella: \texttt{FEM->pore\_distribution2} .
+	
+\end{itemize}
 
-Il codice per l'analisi di convergenza (\cref{sec:convergenza}) è presente nel file: \texttt{FEM->homogen->test\_analisi\_conv.nb}.
 
-Il codice per la variazione delle proprietà di simmetria e la geometria del RVE (\cref{sec:variazione_simmetria}) è presente nel file:  \texttt{FEM->variazioni\_geometrie->test\_geometrie.nb}.
 
-I codici per le variazioni delle proprietà materiali (\cref{sec:variazioni_materiali}) sono presenti nel file: \texttt{FEM->variazioni\_materiali->test\_materiali.nb}.
+
+
 
 
 \subsection{Lista delle abbreviazioni}
@@ -899,8 +893,6 @@ I codici per le variazioni delle proprietà materiali (\cref{sec:variazioni_mate
 %\newpage
 %\onecolumn
 
-\newpage
-\bibliography{paper-refs}
 
 
 

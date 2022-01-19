@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  17 JAN 2022 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  19 JAN 2022 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -625,10 +625,6 @@ Package scrextend Info: unexpected definition of `\@makefnmark'.
 (scrextend)             Trying to patch it on input line 1593.
 Package scrextend Info: patch seems to be successfull on input line 1593.
 )
-
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 68.
-
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count266
@@ -803,10 +799,10 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absparsep=\skip157
 )
 Package newfloat Info: New float `keypoints' with options `placement=t!,name=kp
-t' on input line 296.
+t' on input line 305.
 \c@keypoints=\count288
 \newfloat@ftype=\count289
-Package newfloat Info: float type `keypoints'=8 on input line 296.
+Package newfloat Info: float type `keypoints'=8 on input line 305.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -1753,7 +1749,7 @@ File: T1Merriwthr-OsF.fd 2020/08/30 (autoinst) Font definitions for T1/Merriwth
 r-OsF.
 )
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 7.5pt on input line 112.
+(Font)              scaled to size 9.0pt on input line 112.
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2021/03/24 3.56 The Babel package
 
@@ -1974,16 +1970,15 @@ LaTeX Info: Redefining \nameref on input line 123.
 \@gsheadboxheight=\skip173
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
 (Font)              scaled to size 6.5pt on input line 123.
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 123.
 
 
 LaTeX Font Warning: Font shape `T1/Merriwthr-OsF/m/up' undefined
 (Font)              using `T1/Merriwthr-OsF/m/n' instead on input line 123.
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 6.24973pt on input line 123.
+(Font)              scaled to size 7.0pt on input line 123.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 5.24997pt on input line 123.
+(Font)              scaled to size 5.0pt on input line 123.
 LaTeX Font Info:    Trying to load font information for U+eur on input line 123
 .
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/ueur.fd
@@ -1992,12 +1987,9 @@ File: ueur.fd 2013/01/14 v3.01 Euler Roman
 (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 123.
-
 LaTeX Font Info:    Trying to load font information for U+euf on input line 123
 .
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
@@ -2020,29 +2012,23 @@ LaTeX Font Info:    Trying to load font information for U+euex on input line 12
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/ueuex.fd
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 )
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 123.
-
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 6.24973pt on input line 123.
+(Font)              scaled to size 7.0pt on input line 123.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 5.24997pt on input line 123.
+(Font)              scaled to size 5.0pt on input line 123.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 7.5pt on input line 123.
+(Font)              scaled to size 9.0pt on input line 123.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 6.24973pt on input line 123.
+(Font)              scaled to size 7.0pt on input line 123.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 5.24997pt on input line 123.
+(Font)              scaled to size 5.0pt on input line 123.
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
 23.
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-
-LaTeX Font Warning: Font shape `U/stmry/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 123.
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 123
 .
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -2064,10 +2050,6 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 12
 (/usr/local/texlive/2021/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 123.
-
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 123.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
@@ -2097,15 +2079,15 @@ File: T1MerriwthrSans-OsF.fd 2020/08/30 (autoinst) Font definitions for T1/Merr
 iwthrSans-OsF.
 )
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 7.5pt on input line 123.
+(Font)              scaled to size 9.0pt on input line 123.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `MerriwthrSans-OsF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 6.24973pt on input line 123.
+(Font)              scaled to size 7.0pt on input line 123.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 5.24997pt on input line 123.
+(Font)              scaled to size 5.0pt on input line 123.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 23.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
@@ -2117,396 +2099,582 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 TextBlockOrigin set to 4pc+6.64pt x 4pc+6pt
-<figures//logo.png, id=108, 336.384pt x 337.698pt>
+<figures//logo.png, id=104, 336.384pt x 337.698pt>
 File: figures//logo.png Graphic file (type png)
 <use figures//logo.png>
-Package pdftex.def Info: figures//logo.png  used on input line 149.
-(pdftex.def)             Requested size: 77.12544pt x 77.428pt.
+Package pdftex.def Info: figures//logo.png  used on input line 141.
+(pdftex.def)             Requested size: 75.63179pt x 75.928pt.
 
-Overfull \hbox (54.64pt too wide) in paragraph at lines 149--149
+Overfull \hbox (54.64pt too wide) in paragraph at lines 141--141
 [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 14.0pt on input line 149.
+(Font)              scaled to size 14.0pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 8.99997pt on input line 149.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 149.
+(Font)              scaled to size 10.79997pt on input line 141.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 14.0pt on input line 149.
+(Font)              scaled to size 14.0pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 11.66617pt on input line 149.
+(Font)              scaled to size 11.66617pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 9.79996pt on input line 149.
+(Font)              scaled to size 9.79996pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 11.66617pt on input line 149.
+(Font)              scaled to size 11.66617pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 9.79996pt on input line 149.
+(Font)              scaled to size 9.79996pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 14.0pt on input line 149.
+(Font)              scaled to size 14.0pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 11.66617pt on input line 149.
+(Font)              scaled to size 11.66617pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 9.79996pt on input line 149.
+(Font)              scaled to size 9.79996pt on input line 141.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 14.0pt on input line 149.
+(Font)              scaled to size 14.0pt on input line 141.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 11.66617pt on input line 149.
+(Font)              scaled to size 11.66617pt on input line 141.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 9.79996pt on input line 149.
+(Font)              scaled to size 9.79996pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 18.0pt on input line 149.
+(Font)              scaled to size 18.0pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 13.0pt on input line 149.
+(Font)              scaled to size 13.0pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 6.5pt on input line 149.
+(Font)              scaled to size 6.5pt on input line 141.
 
-Overfull \hbox (54.64pt too wide) in paragraph at lines 149--149
+Overfull \hbox (54.64pt too wide) in paragraph at lines 141--141
 [][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 149.
+(Font)              scaled to size 10.0pt on input line 141.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 149.
+(Font)              scaled to size 8.0pt on input line 141.
 
-Overfull \hbox (54.64pt too wide) in paragraph at lines 149--149
+Overfull \hbox (54.64pt too wide) in paragraph at lines 141--141
 [][][] 
  []
 
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 7.5pt on input line 207.
+
+Underfull \hbox (badness 3250) in paragraph at lines 157--158
+\T1/Merriwthr-OsF/m/n/9 (+20) vedere come il rap-porto as-siale, la vari-azione
+ dei
+ []
+
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 7.8pt on input line 208.
+(Font)              scaled to size 7.8pt on input line 170.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 7.8pt on input line 208.
+(Font)              scaled to size 7.8pt on input line 170.
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figures//logo.png>] (./figures//homogen.pdf_tex
-<figures//homogen.pdf, id=128, page=1, 7085.04192pt x 1418.76546pt>
+ <./figures//logo.png>]
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
+(Font)              scaled to size 9.0pt on input line 174.
+ (./figures//homogen.pdf_tex
+<figures//homogen.pdf, id=123, page=1, 7085.04192pt x 1418.76546pt>
 File: figures//homogen.pdf Graphic file (type pdf)
 <use figures//homogen.pdf, page 1>
 Package pdftex.def Info: figures//homogen.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 488.22787pt x 97.76503pt.
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 57.
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 7.0pt on input line 57.
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 5.0pt on input line 57.
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 57.
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 57.
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 5.0pt on input line 57.
-LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 57.
-LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 57.
 )
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 218.
+(Font)              scaled to size 6.0pt on input line 185.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 6.0pt on input line 218.
-LaTeX Font Info:    Trying to load font information for TS1+Merriwthr-OsF on in
-put line 230.
+(Font)              scaled to size 6.0pt on input line 185.
 
+Overfull \hbox (3.69191pt too wide) in paragraph at lines 193--193
+ [][]\T1/Merriwthr-OsF/m/up/9 (-20) Idealizzazione 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+Merriwthr-OsF on in
+put line 197.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/merriweather/TS1Merriwthr-OsF.fd
 File: TS1Merriwthr-OsF.fd 2020/08/30 (autoinst) Font definitions for TS1/Merriw
 thr-OsF.
 )
 LaTeX Font Info:    Font shape `TS1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 7.5pt on input line 230.
+(Font)              scaled to size 9.0pt on input line 197.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Merriwthr-OsF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (3.59795pt too wide) in paragraph at lines 261--262
+Overfull \hbox (4.59785pt too wide) in paragraph at lines 228--229
 [][] 
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 236--238
+\T1/Merriwthr-OsF/m/up/9 (+20) es-ten-si-bili a qualunque al-tro osso tra-beco-
+lare ma i
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 7.8pt on input line 289.
- [2 <./figures//homogen.pdf>]
+(Font)              scaled to size 7.8pt on input line 238.
+
+
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[2 <./figures//homogen.pdf>]
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 8.5pt on input line 291.
+(Font)              scaled to size 8.5pt on input line 258.
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+\T1/Merriwthr-OsF/m/up/9 (+20) Il primo passo, per poter pro-cedere ad
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 261--262
+\T1/Merriwthr-OsF/m/up/9 (+20) codice cal-cola au-to-mati-ca-mente il lato nel 
+range di
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Maggiori in-for-mazioni sulla pro-ce-dura di a
+u-
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 265--266
+\T1/Merriwthr-OsF/m/up/9 (+20) tomazione del cal-colo del RVE sono nella sezion
+e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Inoltre, per fare le op-por-tune con-sid-er-az
+ioni
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 267--268
+\T1/Merriwthr-OsF/m/up/9 (+20) nell'analizzare le ten-sioni me-die, i pori ven-
+gono
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 267--268
+\T1/Merriwthr-OsF/m/up/9 (+20) con-siderati pieni di un ma-te-ri-ale a bassa ri
+gidezza
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 267--268
+\T1/Merriwthr-OsF/m/up/9 (+20) con-sid-er-are un fenomeno più rap-p-re-sen-ta-t
+ivo della
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 289--290
+\T1/Merriwthr-OsF/m/up/9 (+20) mente isotropi, quindi tali da avere un com-por-
+ta-
+ []
+
+
+Underfull \vbox (badness 7832) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[3]
+Overfull \hbox (5.1118pt too wide) detected at line 319
+\U/msb/m/n/9 C[] \T1/Merriwthr-OsF/m/n/9 = \U/msb/m/n/9 S[] \T1/Merriwthr-OsF/m
+/n/9 = []
+ []
 
 
 LaTeX Font Warning: Font shape `T1/Merriwthr-OsF/b/up' undefined
-(Font)              using `T1/Merriwthr-OsF/b/n' instead on input line 364.
+(Font)              using `T1/Merriwthr-OsF/b/n' instead on input line 331.
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 7.5pt on input line 364.
+(Font)              scaled to size 9.0pt on input line 331.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/up' will be
-(Font)              scaled to size 6.24973pt on input line 364.
+(Font)              scaled to size 7.0pt on input line 331.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/up' will be
-(Font)              scaled to size 5.24997pt on input line 364.
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 364.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 364.
-
+(Font)              scaled to size 5.0pt on input line 331.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 6.24973pt on input line 364.
+(Font)              scaled to size 7.0pt on input line 331.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 5.24997pt on input line 364.
+(Font)              scaled to size 5.0pt on input line 331.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/it' will be
-(Font)              scaled to size 7.5pt on input line 364.
+(Font)              scaled to size 9.0pt on input line 331.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/it' will be
-(Font)              scaled to size 6.24973pt on input line 364.
+(Font)              scaled to size 7.0pt on input line 331.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/it' will be
-(Font)              scaled to size 5.24997pt on input line 364.
+(Font)              scaled to size 5.0pt on input line 331.
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 364.
+(Font)              using `U/stmry/m/n' instead on input line 331.
 
 
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7.5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 364.
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 331.
 
 
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 364.
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 331.
 
 
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6.24973> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 364.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5.24997> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 364.
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 331.
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 364.
+(amsmath)                 on input line 331.
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/up' will be
-(Font)              scaled to size 7.5pt on input line 364.
+(Font)              scaled to size 9.0pt on input line 331.
 
-LaTeX Font Warning: Font shape `U/stmry/b/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 364.
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Applicando un campo di de-for-mazione alla
+ []
 
-[3]
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 396.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 6.0pt on input line 414.
+(Font)              scaled to size 6.0pt on input line 381.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 414.
+(Font)              scaled to size 6.0pt on input line 381.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 414.
-<figures//test_mesh_axR_0.8.png, id=190, 803.1606pt x 801.7152pt>
+(Font)              scaled to size 6.0pt on input line 381.
+
+
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[4]
+<figures//test_mesh_axR_0.8.png, id=199, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.8.png Graphic file (type png)
 <use figures//test_mesh_axR_0.8.png>
-Package pdftex.def Info: figures//test_mesh_axR_0.8.png  used on input line 454
+Package pdftex.def Info: figures//test_mesh_axR_0.8.png  used on input line 421
 .
 (pdftex.def)             Requested size: 92.76448pt x 92.59288pt.
-<figures//test_mesh_axR_0.6.png, id=191, 803.1606pt x 801.7152pt>
+<figures//test_mesh_axR_0.6.png, id=200, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.6.png Graphic file (type png)
 <use figures//test_mesh_axR_0.6.png>
-Package pdftex.def Info: figures//test_mesh_axR_0.6.png  used on input line 457
+Package pdftex.def Info: figures//test_mesh_axR_0.6.png  used on input line 424
 .
 (pdftex.def)             Requested size: 92.76448pt x 92.59288pt.
-<figures//test_mesh_axR_0.5.png, id=192, 803.1606pt x 801.7152pt>
+<figures//test_mesh_axR_0.5.png, id=201, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.5.png Graphic file (type png)
 <use figures//test_mesh_axR_0.5.png>
-Package pdftex.def Info: figures//test_mesh_axR_0.5.png  used on input line 460
+Package pdftex.def Info: figures//test_mesh_axR_0.5.png  used on input line 427
 .
 (pdftex.def)             Requested size: 92.76448pt x 92.59288pt.
-<figures//test_mesh_axR_0.3.png, id=193, 803.1606pt x 801.7152pt>
+<figures//test_mesh_axR_0.3.png, id=202, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.3.png Graphic file (type png)
 <use figures//test_mesh_axR_0.3.png>
-Package pdftex.def Info: figures//test_mesh_axR_0.3.png  used on input line 463
+Package pdftex.def Info: figures//test_mesh_axR_0.3.png  used on input line 430
 .
 (pdftex.def)             Requested size: 92.76448pt x 92.59288pt.
-<figures//test_mesh_axR_0.1.png, id=194, 803.1606pt x 801.7152pt>
+<figures//test_mesh_axR_0.1.png, id=203, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.1.png Graphic file (type png)
 <use figures//test_mesh_axR_0.1.png>
-Package pdftex.def Info: figures//test_mesh_axR_0.1.png  used on input line 466
+Package pdftex.def Info: figures//test_mesh_axR_0.1.png  used on input line 433
 .
 (pdftex.def)             Requested size: 92.76448pt x 92.59288pt.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 6.25008pt on input line 470.
-LaTeX Font Info:    Calculating math sizes for size <6.25008> on input line 470
+(Font)              scaled to size 6.00005pt on input line 437.
+LaTeX Font Info:    Calculating math sizes for size <6.00005> on input line 437
 .
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 6.25008pt on input line 470.
+(Font)              scaled to size 6.00005pt on input line 437.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 5.20816pt on input line 470.
+(Font)              scaled to size 4.99982pt on input line 437.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 4.37503pt on input line 470.
+(Font)              scaled to size 4.20001pt on input line 437.
 
 
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.37503> not available
-(Font)              size <5> substituted on input line 470.
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.20001> not available
+(Font)              size <5> substituted on input line 437.
 
 
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.37503> not available
-(Font)              size <5> substituted on input line 470.
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.20001> not available
+(Font)              size <5> substituted on input line 437.
 
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 5.20816pt on input line 470.
+(Font)              scaled to size 4.99982pt on input line 437.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 4.37503pt on input line 470.
+(Font)              scaled to size 4.20001pt on input line 437.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 6.25008pt on input line 470.
+(Font)              scaled to size 6.00005pt on input line 437.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 5.20816pt on input line 470.
+(Font)              scaled to size 4.99982pt on input line 437.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 4.37503pt on input line 470.
+(Font)              scaled to size 4.20001pt on input line 437.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 6.25008pt on input line 470.
+(Font)              scaled to size 6.00005pt on input line 437.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 5.20816pt on input line 470.
+(Font)              scaled to size 4.99982pt on input line 437.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 4.37503pt on input line 470.
+(Font)              scaled to size 4.20001pt on input line 437.
 
-LaTeX Font Warning: Font shape `U/stmry/m/n' in size <4.37503> not available
-(Font)              size <5> substituted on input line 470.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <4.37503> not available
-(Font)              size <5> substituted on input line 470.
+LaTeX Font Warning: Font shape `U/stmry/m/n' in size <4.20001> not available
+(Font)              size <5> substituted on input line 437.
 
 
-Overfull \hbox (2.13432pt too wide) in paragraph at lines 479--486
-[]$[]$ 
- []
-
-
-Overfull \hbox (3.42186pt too wide) in paragraph at lines 488--495
-[]$[]$ 
- []
-
-
-Overfull \hbox (0.76555pt too wide) in paragraph at lines 497--504
-[]$[]$ 
- []
+LaTeX Font Warning: Font shape `U/wasy/m/n' in size <4.20001> not available
+(Font)              size <5> substituted on input line 437.
 
 (./figures//var_geometr.pdf_tex
-<figures//var_geometr.pdf, id=195, page=1, 288.77135pt x 154.77072pt>
+<figures//var_geometr.pdf, id=204, page=1, 288.77135pt x 154.77072pt>
 File: figures//var_geometr.pdf Graphic file (type pdf)
 <use figures//var_geometr.pdf, page 1>
 Package pdftex.def Info: figures//var_geometr.pdf , page1 used on input line 56
 .
 (pdftex.def)             Requested size: 211.6011pt x 113.4115pt.
-) (./figures//variazione_Ebone.pdf_tex
-<figures//variazione_Ebone.pdf, id=196, page=1, 194.9935pt x 150.5851pt>
-File: figures//variazione_Ebone.pdf Graphic file (type pdf)
-<use figures//variazione_Ebone.pdf, page 1>
-Package pdftex.def Info: figures//variazione_Ebone.pdf , page1 used on input li
-ne 56.
-(pdftex.def)             Requested size: 211.6011pt x 163.41759pt.
-)
-(./figures//variazione_Enarrow.pdf_tex
-<figures//variazione_Enarrow.pdf, id=197, page=1, 200.82779pt x 118.34966pt>
-File: figures//variazione_Enarrow.pdf Graphic file (type pdf)
-<use figures//variazione_Enarrow.pdf, page 1>
-Package pdftex.def Info: figures//variazione_Enarrow.pdf , page1 used on input 
-line 56.
-(pdftex.def)             Requested size: 211.6011pt x 124.706pt.
-)
-Underfull \vbox (badness 4060) has occurred while \output is active []
-
- [4 <./figures//test_mesh_axR_0.8.png (PNG copy)> <./figures//test_mesh_axR_0.6
-.png (PNG copy)> <./figures//test_mesh_axR_0.5.png (PNG copy)> <./figures//test
-_mesh_axR_0.3.png (PNG copy)> <./figures//test_mesh_axR_0.1.png (PNG copy)> <./
-figures//var_geometr.pdf> <./figures//variazione_Ebone.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//variazione_Ebone.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures//variazione_Enarrow.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//variazione_Enarro
-w.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (./figures//distribution_100.pdf_tex
-<figures//distribution_100.pdf, id=223, page=1, 260.975pt x 156.585pt>
+) (./figures//distribution_100.pdf_tex
+<figures//distribution_100.pdf, id=209, page=1, 260.975pt x 156.585pt>
 File: figures//distribution_100.pdf Graphic file (type pdf)
 <use figures//distribution_100.pdf, page 1>
 Package pdftex.def Info: figures//distribution_100.pdf , page1 used on input li
 ne 56.
 (pdftex.def)             Requested size: 117.17737pt x 70.30728pt.
-) (./figures//distribution_300.pdf_tex
-<figures//distribution_300.pdf, id=224, page=1, 260.975pt x 156.585pt>
+)
+(./figures//distribution_300.pdf_tex
+<figures//distribution_300.pdf, id=210, page=1, 260.975pt x 156.585pt>
 File: figures//distribution_300.pdf Graphic file (type pdf)
 <use figures//distribution_300.pdf, page 1>
 Package pdftex.def Info: figures//distribution_300.pdf , page1 used on input li
 ne 56.
 (pdftex.def)             Requested size: 117.17737pt x 70.30728pt.
 )
-<figures//real_mesh_n1.png, id=225, 1504.62125pt x 1504.62125pt>
+<figures//real_mesh_n1.png, id=211, 1504.62125pt x 1504.62125pt>
 File: figures//real_mesh_n1.png Graphic file (type png)
 <use figures//real_mesh_n1.png>
-Package pdftex.def Info: figures//real_mesh_n1.png  used on input line 599.
+Package pdftex.def Info: figures//real_mesh_n1.png  used on input line 551.
 (pdftex.def)             Requested size: 117.17737pt x 117.15794pt.
-<figures//real_mesh_n2.png, id=226, 2501.345pt x 2501.345pt>
+<figures//real_mesh_n2.png, id=212, 2501.345pt x 2501.345pt>
 File: figures//real_mesh_n2.png Graphic file (type png)
 <use figures//real_mesh_n2.png>
-Package pdftex.def Info: figures//real_mesh_n2.png  used on input line 604.
+Package pdftex.def Info: figures//real_mesh_n2.png  used on input line 556.
 (pdftex.def)             Requested size: 117.17737pt x 117.17392pt.
-<figures//mesh_100.png, id=227, 5264.66875pt x 5264.66875pt>
+<figures//mesh_100.png, id=213, 5264.66875pt x 5264.66875pt>
 File: figures//mesh_100.png Graphic file (type png)
 <use figures//mesh_100.png>
-Package pdftex.def Info: figures//mesh_100.png  used on input line 609.
+Package pdftex.def Info: figures//mesh_100.png  used on input line 561.
 (pdftex.def)             Requested size: 117.17737pt x 117.12445pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 609--611
+Underfull \hbox (badness 10000) in paragraph at lines 561--563
 
  []
 
-<figures//mesh_300.png, id=228, 9071.8925pt x 9071.8925pt>
+<figures//mesh_300.png, id=214, 9071.8925pt x 9071.8925pt>
 File: figures//mesh_300.png Graphic file (type png)
 <use figures//mesh_300.png>
-Package pdftex.def Info: figures//mesh_300.png  used on input line 613.
+Package pdftex.def Info: figures//mesh_300.png  used on input line 565.
 (pdftex.def)             Requested size: 117.17737pt x 117.10818pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--615
+Underfull \hbox (badness 10000) in paragraph at lines 565--567
 
  []
 
-<figures//test_mesh_2.png, id=229, 766.062pt x 766.062pt>
+<figures//test_mesh_2.png, id=215, 766.062pt x 766.062pt>
 File: figures//test_mesh_2.png Graphic file (type png)
 <use figures//test_mesh_2.png>
-Package pdftex.def Info: figures//test_mesh_2.png  used on input line 617.
+Package pdftex.def Info: figures//test_mesh_2.png  used on input line 569.
 (pdftex.def)             Requested size: 117.17737pt x 117.17203pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--619
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
 
  []
 
-<figures//test_mesh_1.png, id=230, 768.7119pt x 768.7119pt>
+<figures//test_mesh_1.png, id=216, 768.7119pt x 768.7119pt>
 File: figures//test_mesh_1.png Graphic file (type png)
 <use figures//test_mesh_1.png>
-Package pdftex.def Info: figures//test_mesh_1.png  used on input line 621.
+Package pdftex.def Info: figures//test_mesh_1.png  used on input line 573.
 (pdftex.def)             Requested size: 117.17737pt x 117.16681pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--623
+Underfull \hbox (badness 10000) in paragraph at lines 573--575
+
+ []
+
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
+(Font)              scaled to size 7.50009pt on input line 579.
+LaTeX Font Info:    Calculating math sizes for size <7.50009> on input line 579
+.
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
+(Font)              scaled to size 7.50009pt on input line 579.
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
+(Font)              scaled to size 6.2498pt on input line 579.
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
+(Font)              scaled to size 5.25003pt on input line 579.
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.50009> not available
+(Font)              size <8> substituted on input line 579.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.50009> not available
+(Font)              size <8> substituted on input line 579.
+
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
+(Font)              scaled to size 6.2498pt on input line 579.
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
+(Font)              scaled to size 5.25003pt on input line 579.
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
+(Font)              scaled to size 7.50009pt on input line 579.
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
+(Font)              scaled to size 6.2498pt on input line 579.
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
+(Font)              scaled to size 5.25003pt on input line 579.
+LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
+(Font)              scaled to size 7.50009pt on input line 579.
+LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
+(Font)              scaled to size 6.2498pt on input line 579.
+LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
+(Font)              scaled to size 5.25003pt on input line 579.
+
+LaTeX Font Warning: Font shape `U/stmry/m/n' in size <7.50009> not available
+(Font)              size <8> substituted on input line 579.
+
+
+LaTeX Font Warning: Font shape `U/wasy/m/n' in size <7.50009> not available
+(Font)              size <8> substituted on input line 579.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 630--631
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Analisi della risposta mec-ca-nica con una dis
+-
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[5 <./figures//test_mesh_axR_0.8.png (PNG copy)> <./figures//test_mesh_axR_0.6.
+png (PNG copy)> <./figures//test_mesh_axR_0.5.png (PNG copy)> <./figures//test_
+mesh_axR_0.3.png (PNG copy)> <./figures//test_mesh_axR_0.1.png (PNG copy)> <./f
+igures//var_geometr.pdf>]
+Underfull \hbox (badness 3514) in paragraph at lines 633--634
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Nell'analizzare i pori dis-posti sec-ondo una 
+dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--644
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Questi ul-timi risul-tati si dis-costano
+ []
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 643--644
+\T1/Merriwthr-OsF/m/up/9 (+20) dall'omogenizzazione nel caso ide-ale e mostrano
 
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 681--682
-[]\T1/Merriwthr-OsF/m/up/7.5 (+20) Nell'analizzare i pori dis-posti sec-ondo un
-a dis-tribuzione
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[6 <./figures//distribution_100.pdf> <./figures//distribution_300.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//distribution_300.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures//real_mesh_n1.png (PNG copy)> <./figures//real_mesh_n2.png (PNG co
+py)> <./figures//mesh_100.png (PNG copy)> <./figures//mesh_300.png (PNG copy)> 
+<./figures//test_mesh_2.png (PNG copy)> <./figures//test_mesh_1.png (PNG copy)>
+] (./figures//variazione_Ebone.pdf_tex
+<figures//variazione_Ebone.pdf, id=248, page=1, 194.9935pt x 150.5851pt>
+File: figures//variazione_Ebone.pdf Graphic file (type pdf)
+<use figures//variazione_Ebone.pdf, page 1>
+Package pdftex.def Info: figures//variazione_Ebone.pdf , page1 used on input li
+ne 56.
+(pdftex.def)             Requested size: 211.6011pt x 163.41759pt.
+) (./figures//variazione_Enarrow.pdf_tex
+<figures//variazione_Enarrow.pdf, id=249, page=1, 200.82779pt x 118.34966pt>
+File: figures//variazione_Enarrow.pdf Graphic file (type pdf)
+<use figures//variazione_Enarrow.pdf, page 1>
+Package pdftex.def Info: figures//variazione_Enarrow.pdf , page1 used on input 
+line 56.
+(pdftex.def)             Requested size: 211.6011pt x 124.706pt.
+) (./main.bbl
+Overfull \hbox (0.55548pt too wide) in paragraph at lines 18--22
+\T1/Merriwthr-OsF/m/up/9 (-20) poro-sis.e.  Cal-ci-fied tis-sue in-ter-na-tiona
+l 2007;83:368--
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 722--723
-\T1/Merriwthr-OsF/m/up/7.5 (+20) Possibili sviluppi fu-turi potreb-bero es-sere
- COM-PLETA IN-TE-
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[7 <./figures//variazione_Ebone.pdf> <./figures//variazione_Enarrow.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//variazione_Enarro
+w.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 2221) in paragraph at lines 43--49
+\T1/Merriwthr-OsF/m/up/9 (+20) BA, ed-i-tors. Mi-crome-chan-ics of Com-pos-ite 
+Ma-
  []
 
-[5] (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+
+Underfull \hbox (badness 2197) in paragraph at lines 59--64
+\T1/Merriwthr-OsF/m/up/9 (+20) simulation of the prox-i-mal fe-mur.  Jour-nal o
+f
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 98--101
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Beller G, Burkhart M, Felsen-berg D, Gowin W,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
+\T1/Merriwthr-OsF/m/up/9 (+20) ESA29-99-L3 2005;[][]$\T1/lmtt/m/n/9 http : / / 
+bone3d . zib . de / data /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--107
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Mastrofini A.  Im-age pro-cess-ing vol-u-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--107
+\T1/Merriwthr-OsF/m/up/9 (+20) met-rico su osso tra-beco-lare.  web-site
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--107
+\T1/Merriwthr-OsF/m/up/9 (+20) 2021;[][]$\T1/lmtt/m/n/9 https : / / alessandrom
+astrofini . it /
+ []
+
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -2519,132 +2687,201 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 747.
+nput line 721.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 6.8438pt on input line 748.
+(Font)              scaled to size 8.21255pt on input line 722.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 3.75pt on input line 748.
-LaTeX Font Info:    Calculating math sizes for size <6.8438> on input line 748.
-
+(Font)              scaled to size 4.5pt on input line 722.
+LaTeX Font Info:    Calculating math sizes for size <8.21255> on input line 722
+.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 6.8438pt on input line 748.
+(Font)              scaled to size 8.21255pt on input line 722.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 5.70291pt on input line 748.
+(Font)              scaled to size 6.84349pt on input line 722.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
-(Font)              scaled to size 4.79063pt on input line 748.
+(Font)              scaled to size 5.74875pt on input line 722.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 5.70291pt on input line 748.
+(Font)              scaled to size 6.84349pt on input line 722.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/n' will be
-(Font)              scaled to size 4.79063pt on input line 748.
+(Font)              scaled to size 5.74875pt on input line 722.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 6.8438pt on input line 748.
+(Font)              scaled to size 8.21255pt on input line 722.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 5.70291pt on input line 748.
+(Font)              scaled to size 6.84349pt on input line 722.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
-(Font)              scaled to size 4.79063pt on input line 748.
+(Font)              scaled to size 5.74875pt on input line 722.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 6.8438pt on input line 748.
+(Font)              scaled to size 8.21255pt on input line 722.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 5.70291pt on input line 748.
+(Font)              scaled to size 6.84349pt on input line 722.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
-(Font)              scaled to size 4.79063pt on input line 748.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6.8438> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 758.
-<figures//test_mesh_8.png, id=259, 803.1606pt x 801.7152pt>
+(Font)              scaled to size 5.74875pt on input line 722.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8.21255> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 732.
+<figures//test_mesh_8.png, id=280, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_8.png Graphic file (type png)
 <use figures//test_mesh_8.png>
-Package pdftex.def Info: figures//test_mesh_8.png  used on input line 765.
+Package pdftex.def Info: figures//test_mesh_8.png  used on input line 739.
 (pdftex.def)             Requested size: 235.11394pt x 234.68118pt.
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/sl' in size <7.5> not availa
-ble
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/sl' in size <9> not availabl
+e
 (Font)              Font shape `T1/Merriwthr-OsF/b/it' tried instead on input l
-ine 773.
+ine 747.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/it' will be
-(Font)              scaled to size 7.5pt on input line 773.
+(Font)              scaled to size 9.0pt on input line 747.
 
-Underfull \hbox (badness 1281) in paragraph at lines 779--780
-[]\T1/Merriwthr-OsF/m/up/7.5 (+20) Il test di omog-e-niz-zazione viene ef-fet-t
-uato dalla fun-zione
+
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[8]
+Underfull \hbox (badness 2894) in paragraph at lines 751--752
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Questo per-me-tte di im-postare le con-dizioni
+ sui
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./figures//distribution_100.pdf> <./figures//distribution_300.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//distribution_300.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures//real_mesh_n1.png (PNG copy)> <./figures//real_mesh_n2.png (PNG co
-py)> <./figures//mesh_100.png (PNG copy)> <./figures//mesh_300.png (PNG copy)> 
-<./figures//test_mesh_2.png (PNG copy)> <./figures//test_mesh_1.png (PNG copy)>
- <./figures//test_mesh_8.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 791--792
-\T1/Merriwthr-OsF/m/up/7.5 (+20) Nel vari-are le pro-pri-età ma-te-ri-ali (Ÿ[][
-]6[][]) o della sim-me-tria
+Underfull \hbox (badness 1412) in paragraph at lines 792--793
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Quindi è stata mod-i-fi-cata la fun-zione per 
+dis-eg-
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 791--792
-\T1/Merriwthr-OsF/m/up/7.5 (+20) (Ÿ[][]5.1[][]) è stato sfrut-tata la fun-zione
- base di omog-e-niz-zazione
+Underfull \hbox (badness 10000) in paragraph at lines 792--793
+\T1/Merriwthr-OsF/m/up/9 (+20) del soft-ware Math-e-mat-ica an-dando a it-er-ar
+e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--792
-\T1/Merriwthr-OsF/m/up/7.5 (+20) (\T1/lmtt/m/n/7.5 Checkconvergence[]\T1/Merriw
-thr-OsF/m/up/7.5 (+20) ) pas-san-dogli un vet-tore con i di-versi
+Underfull \hbox (badness 2368) in paragraph at lines 792--793
+\T1/lmtt/m/n/9 RegionDifference[] \T1/Merriwthr-OsF/m/up/9 (+20) oltre i 40 ci-
+cli. Il prob-lema è
  []
 
-(./figures//test_data1.pdf_tex
-<figures//test_data1.pdf, id=288, page=1, 197.94452pt x 150.5324pt>
-File: figures//test_data1.pdf Graphic file (type pdf)
-<use figures//test_data1.pdf, page 1>
-Package pdftex.def Info: figures//test_data1.pdf , page1 used on input line 56.
 
-(pdftex.def)             Requested size: 239.23433pt x 181.93802pt.
-) (./figures//test_data1.pdf_tex
+Underfull \hbox (badness 1924) in paragraph at lines 794--795
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Discorso anal-ogo per i cer-chi generati a par
+-tire
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[9 <./figures//test_mesh_8.png (PNG copy)>] (./figures//test_data1.pdf_tex
+<figures//test_data1.pdf, id=338, page=1, 197.94452pt x 150.5324pt>
 File: figures//test_data1.pdf Graphic file (type pdf)
 <use figures//test_data1.pdf, page 1>
 Package pdftex.def Info: figures//test_data1.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 239.23433pt x 181.93802pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 880--881
-[]\T1/Merriwthr-OsF/m/up/7.5 (+20) Il codice per la vari-azione delle pro-pri-e
-tà di sim-me-
+(./figures//test_data1.pdf_tex
+File: figures//test_data1.pdf Graphic file (type pdf)
+<use figures//test_data1.pdf, page 1>
+Package pdftex.def Info: figures//test_data1.pdf , page1 used on input line 56.
+
+(pdftex.def)             Requested size: 239.23433pt x 181.93802pt.
+)
+Underfull \hbox (badness 4229) in paragraph at lines 851--852
+\T1/Merriwthr-OsF/m/up/9 (+20) Per ef-fet-tuare l'analisi a con-ver-genza è sta
+ta im-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--881
-\T1/Merriwthr-OsF/m/up/7.5 (+20) tria e la ge-ome-tria del RVE (Ÿ[][]5.1[][]) è
- pre-sente nel file:
+Underfull \hbox (badness 10000) in paragraph at lines 851--852
+\T1/Merriwthr-OsF/m/up/9 (+20) ple-men-tata una rou-tine che ripete di-verse vo
+lte
  []
 
-[7 <./figures//test_data1.pdf>] (./main.bbl
-Underfull \hbox (badness 1178) in paragraph at lines 103--107
-\T1/Merriwthr-OsF/m/up/7.5 (+20) beco-lare.  web-site 2021;[][]$\T1/lmtt/m/n/7.
-5 https : / / alessandromastrofini . it /
+
+Underfull \hbox (badness 2495) in paragraph at lines 864--866
+\T1/Merriwthr-OsF/m/up/9 (+20) e risul-tati ot-tenuti sono disponi-bili alla re
+pos-i-tory
  []
 
-) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 864--866
+\T1/Merriwthr-OsF/m/up/9 (+20) on-line al link: [][]$\T1/lmtt/m/n/9 https : / /
+ github . com / mastroalex /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 868--869
+[]\T1/Merriwthr-OsF/m/up/9 (+20) I cod-ici per le vari-azioni delle pro-pri-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 868--869
+\T1/Merriwthr-OsF/m/up/9 (+20) età ma-te-ri-ali (Ÿ[][]6[][]) sono pre-senti nei
+ file:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 868--869
+\T1/lmtt/m/n/9 FEM->variazioni_materiali->test_materiali.nb \T1/Merriwthr-OsF/m
+/up/9 (+20) e
+ []
+
+
+Overfull \hbox (23.02567pt too wide) in paragraph at lines 868--869
+\T1/lmtt/m/n/9 variazioni_materiali->test_mat_n2->test_materiali.nb\T1/Merriwth
+r-OsF/m/up/9 (-20) . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
+[]\T1/Merriwthr-OsF/m/up/9 (+20) I cod-ici per la vari-azione della dis-po-sizi
+one
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
+\T1/Merriwthr-OsF/m/up/9 (+20) dei pori (Ÿ[][]5.3[][]) sono pre-senti nella car
+tella:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
+[]$\U/msb/m/n/9 C[]$\T1/Merriwthr-OsF/m/up/9 (+20) :,matrice di rigidezza ot-te
+nuta
+ []
+
+
 AED: lastpage setting LastPage
-[8] (./main.aux)
+
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[10 <./figures//test_data1.pdf>] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.62497pt have occurred.
+(Font)              up to 0.79999pt have occurred.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BAD8EE95871BBCEC2A593CE7DD55979B;4208.
+(rerunfilecheck)             Checksum: 21AA36040FF06F7046A5C2DD3E87A803;4156.
  ) 
 Here is how much of TeX's memory you used:
- 47358 strings out of 478994
- 901032 string characters out of 5858184
- 2655890 words of memory out of 5000000
- 63329 multiletter control sequences out of 15000+600000
- 1939734 words of font info for 615 fonts, out of 8000000 for 9000
+ 47462 strings out of 478994
+ 902746 string characters out of 5858184
+ 2732393 words of memory out of 5000000
+ 63378 multiletter control sequences out of 15000+600000
+ 1992343 words of font info for 657 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  126i,19n,149p,980b,8855s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -2657,21 +2894,26 @@ merriweather/Merriwthr-Italic.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
 e1/sorkin/merriweather/Merriwthr-Regular.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2021/texmf-
 dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-d
-ist/fonts/type1/public/amsfonts/euler/euex8.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msam7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
-pe1/public/stmaryrd/stmary7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/wasy-type1/wasy7.pfb>
-Output written on main.pdf (8 pages, 23998302 bytes).
+mf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/amsfonts/euler/euex9.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2021/texmf-dist
+/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
+1/public/lm/lmtt9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
+1/public/stmaryrd/stmary8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
+ublic/wasy-type1/wasy7.pfb>
+Output written on main.pdf (10 pages, 24054967 bytes).
 PDF statistics:
- 414 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 256313 words of extra memory for PDF output out of 266212 (max. 10000000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 395 compressed objects within 4 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 258865 words of extra memory for PDF output out of 266212 (max. 10000000)
 

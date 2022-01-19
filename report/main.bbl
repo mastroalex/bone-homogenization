@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -7,6 +7,11 @@
 Monesi V.
 \newblock Istologia.
 \newblock Piccin; 2012.
+
+\bibitem[{Cowin(2001)Cowin, Sthepen}]{Cowin1}
+Cowin S.
+\newblock Bone Mechanics Handbook.
+\newblock CRC Press; 2001.
 
 \bibitem[{Nazarian(2007)Nazarian, A., von Stechow, D., Zurakowski, D., Müller,
   R., & Snyder, B. D.}]{Nazarian}
@@ -32,11 +37,6 @@ Hamed E, Jasiuk I, Yoo A.
 Doktor T, Valach J, Kytyr D, Jiroušek O.
 \newblock Pore Size Distribution of Human Trabecular Bone - Comparison of
   Intrusion Measurements with Image Analysis; 2011. p. 115--118.
-
-\bibitem[{Cowin(2001)Cowin, Sthepen}]{Cowin1}
-Cowin S.
-\newblock Bone Mechanics Handbook.
-\newblock CRC Press; 2001.
 
 \bibitem[{Aboudi et~al.(2013)Jacob Aboudi and Steven M. Arnold and Brett A.
   Bednarcyk}]{ABOUDI201387}
@@ -109,5 +109,10 @@ Mastrofini A.
 Cowin S.
 \newblock Integrated Bone Tissue Physiology.
 \newblock Bone Mechanics Handbook 2001;1:4--5.
+
+\bibitem[{Mathworks(2012)}]{Hough}
+Mathworks.
+\newblock Find circles using circular Hough transform
+  2012;\urlprefix\url{https://it.mathworks.com/help/images/ref/imfindcircles.html/}.
 
 \end{thebibliography}
