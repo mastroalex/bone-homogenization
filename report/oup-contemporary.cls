@@ -138,13 +138,17 @@
 \fancyhf{}
 \renewcommand{\headrule}{\color{black!15}\rule{\textwidth}{2pt}}
 \lhead{%
-	\hspace*{12pt}%
+	%\hspace*{12pt}%
 	\fontsize{7.8pt}{10pt}\selectfont%
 	\color{jcolour}%
-	\textbf{\thepage}%
-	\hspace{1em}\raisebox{-0.5pt}{|}\hspace{1em}%
+	%\textbf{\thepage}%
+	%\hspace{1em}\raisebox{-0.5pt}{|}\hspace{1em}%
 	%  \textit{\@jname}, \@jyear, Vol.~\@jvolume, No.~\@jnumber
 	\textit{\@jname}, \@jyear, No.~\@jnumber
+}
+\rfoot{
+	\color{jcolour}%
+\textbf{\thepage}%
 }
 %\fancyhead[LE]{%
 %  \hspace*{12pt}%

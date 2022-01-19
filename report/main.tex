@@ -161,7 +161,7 @@ Vengono poi fatte ulteriori analisi andando a variare la finestra di interesse e
 
 \section{Tessuto osseo}
 
-Il tessuto osseo è il tessuto biologico che forma le ossa. È caratterizzato da una notevole durezza e resistenza, dovute alla mineralizzazione della matrice extracellulare. È un tessuto in continua evoluzione, continuamente rinnovato e rimodellato per tutta la durata della vita. Costituisce l'impalcatura dello scheletro, da inserzione a muscoli e tendi e al suo interno contiene midollo osseo. 
+Il tessuto osseo è il tessuto biologico che forma le ossa. È caratterizzato da una notevole durezza e resistenza, dovute alla mineralizzazione della matrice extracellulare. È un tessuto in continua evoluzione, continuamente rinnovato e rimodellato per tutta la durata della vita. Costituisce l'impalcatura dello scheletro, da inserzione a muscoli e tendini e al suo interno contiene midollo osseo. 
 
 Il tessuto osseo è costituito da cellule e da una matrice extracellulare, organica ed inorganica. La parte organica contiene fibre collagene e sostanza amorfa formata da glicoproteine e proteoglicani. 
 
@@ -253,7 +253,7 @@ L'obiettivo è quindi quello di ottenere delle proprietà materiali alla macrosc
 
 Ad una scala sufficientemente grande rispetto le singole trabecole è possibile considerare i pori, ripieni di midollo osseo, e le trabecole ossee come due materiali diversi tra loro ma entrambi eterogenei e dal comportamento isotropo. L'isootropia è una prima approssimazione che però ci permette di procedere in modo più efficiente nell'omogenizzazione andando a vedere come la geometria, la disposizione e la frazione volumetrica dei pori influenzi il comportamento macroscopico. 
 
-Con la procedura di omogenizzazione andremo a considerare una media delle proprietà meccaniche di osso e matrice ma questa media viene intesa in senso più ampio e il significato può variare a seconda dell'approccio. I contributi delle singole proprietà materiali vengono influenza dalla geometria della struttura e dalle loro distribuzioni. 
+Con la procedura di omogenizzazione andremo a considerare una media delle proprietà meccaniche di osso e matrice ma questa media viene intesa in senso più ampio e il significato può variare a seconda dell'approccio. I contributi delle singole proprietà materiali vengono influenzati dalla geometria della struttura e dalle loro distribuzioni. 
 
 \subsection{Volume di interesse}
 \label{sec:RVE}
@@ -286,17 +286,17 @@ Le stime di Reuss sono analoghe ma in cedevolezza:
 
 Vengono considerate queste due stime per via del teorema di Hill che garantisce, sotto le opportune ipotesi, che la matrice di rigidezza sia compresa tra esse \citep{ABOUDI201387}. Reuss costituisce il limite inferiore e Voigt il limite superiore dell'omogenizzazione. 
 
-I due materiali vengono con considerati singolarmente isotropi, quindi tali da avere un comportamento materiale descritto dalla matrice di cedevolezza  nell'equazione \ref{eq:isotropic_S}.
+I due materiali vengono considerati singolarmente isotropi, quindi tali da avere un comportamento materiale descritto dalla matrice di cedevolezza  nell'equazione \ref{eq:isotropic_S}.
 
 \begin{equation}
-[\mathbb S]_{\operatorname{iso}}=\left[\begin{array}{cccccc}
+[\mathbb S]_{\operatorname{iso}}=\left[\begin{matrix}
 	\frac{1}{E} & -\frac{\nu}{E} & -\frac{\nu}{E} & 0 & 0 & 0 \\
 	-\frac{\nu}{E} & \frac{1}{E} & -\frac{\nu}{E} & 0 & 0 & 0 \\
 	-\frac{\nu}{E} & -\frac{\nu}{E} & \frac{1}{E} & 0 & 0 & 0 \\
 	0 & 0 & 0 & \frac{2(1+\nu)}{E} & 0 & 0 \\
 	0 & 0 & 0 & 0 & \frac{2(1+\nu)}{E} & 0 \\
 	0 & 0 & 0 & 0 & 0 & \frac{2(1+\nu)}{E}
-\end{array}\right]
+\end{matrix}\right]
 \label{eq:isotropic_S}
 \end{equation}
 
@@ -312,9 +312,9 @@ Queste matrici vengono calcolate e per ogni iterazione del processo di omogenizz
 
 \begin{equation}
 	\mathbb C_{Reuss}=\mathbb S_{Reuss}^{-1}=\begin{pmatrix}
-0.226262&0.0399292&0\\
-0.0399292&0.226262&0\\
-0&0&0.0931663
+0.2262&0.0399&0\\
+0.0399&0.2262&0\\
+0&0&0.09316
 	\end{pmatrix}
 \end{equation}
 
@@ -385,7 +385,7 @@ Sebbene questo primo risultato di omogenizzazione possa sembrare sufficiente a c
 
 \section{Variazione della microstruttura}
 
-Il carico della colonna vertebrale ricade per la maggior parte sul corpo vertebrale e sui dischi intervertebrali. Il corpo vertebrale è formato da osso trabecolare ad alta porosità con un guscio esternoz altamente denso. Tuttavia, il guscio esterno è molto sottile ed è formato da un addensamento di osso trabecolare molto compatto, istologicamente differente dall'osso corticale. Diverse analisi agli elementi finito hanno stimato che il guscio esterno contribuisce per meno del 15\% alla capacità di carico globale della vertebra \citep{Ferguson:2003, Silva:1997}.
+Il carico della colonna vertebrale ricade per la maggior parte sul corpo vertebrale e sui dischi intervertebrali. Il corpo vertebrale è formato da osso trabecolare ad alta porosità con un guscio esterno altamente denso. Tuttavia, il guscio esterno è molto sottile ed è formato da un addensamento di osso trabecolare molto compatto, istologicamente differente dall'osso corticale. Diverse analisi agli elementi finito hanno stimato che il guscio esterno contribuisce per meno del 15\% alla capacità di carico globale della vertebra \citep{Ferguson:2003, Silva:1997}.
 
 Inoltre, diversi campioni di osso trabecolare hanno mostrato  proprietà meccaniche differenti a seconda della regione dove vengono prelevati \citep{Keller:1989,Keller:1993}. Questo è segno della risposta dell'osso che, essendo un tessuto vivo e in continuo rimodellamento, è variabile e si adatta all'ambiente. L'aumento delle proprietà di resistenza a compressione nella parte centrale dell'osso non è nient'altro che la risposta al maggior carico verticale trasmesso dalla parte polposa del disco vertebrale rispetto all'adicente regione periferica di anelli fibrosi. 
 
@@ -500,7 +500,7 @@ Sulla base di queste considerazioni sono state condotte ulteriori analisi varian
 
 Le trabecole quindi rispondono al carico verticale posizionandosi prevalentemente lungo le linee di forza del carico e aumentano la loro densità e il loro spessore. Per indagare la variazione delle proprietà materiali è stato considerato un RVE con pori variabili. Un modo semplice, ma accurato, di analizzare questo comportamento è quello di considerare pori ellittici. Introducendo pori ellittici la risposta dell'osso al carico verticale può essere interpretata come una riduzione del rapporto assiale e quindi un restringimento dell'ellisse lungo la direzione x. 
 
-Le campagne di simulazione condotte mostrano diversi cambiamenti nella matrice di rigidezza e quindi nelle proprietà meccaniche. Partendo da un rapporto assiale molto basso, quindi un'ellisse molto schiacciata, si osserva un grande aumento nel parametro $C_{22}$ e un lieve aumento anche del parametro $C_{11}$ rispetto al caso di riferimento (\cref{sec:homogen}). Viene completamente meno la simmetria materiale e l'isotropia della matrice di rigidezza, segno che la risposta di rigidezza lungo la direzione del semidiametro maggiore è più grande di quella nella direzione del semidiametro maggiore. Questo rispecchia quanto produce l'osso con la sua risposta di rimodellamento. 
+Le campagne di simulazione condotte mostrano diversi cambiamenti nella matrice di rigidezza e quindi nelle proprietà meccaniche. Partendo da un rapporto assiale molto basso, quindi un'ellisse molto schiacciata, si osserva un grande aumento nel parametro $C_{22}$ e un lieve aumento anche del parametro $C_{11}$ rispetto al caso di riferimento (\cref{sec:homogen}). Viene completamente meno la simmetria materiale e l'isotropia della matrice di rigidezza, segno che la risposta di rigidezza lungo la direzione del semidiametro maggiore è più grande di quella nella direzione del semidiametro minore. Questo rispecchia quanto produce l'osso con la sua risposta di rimodellamento. 
 
 Con un rapporto assiale di $\operatorname{AxR}=0.1$ il coefficiente $C_{22}$ arriva a 5,376 GPa contro un $C_{11}=1.462$ GPa. Questa differenza si riduce diminuendo il rapporto assiale. I due coefficienti convergono nel caso in cui il rapporto assiale tende a 1 ovvero nel caso in cui $C_{11}=C_{22}=C_{11}^{(om)}$. I limiti di Reuss e Voigt sono verificati in tutti i casi. I dati sono presenti in \cref{fig:geometry_variation} e \cref{fig:geometric_variation}. Nel diminuire il rapporto assiale la riduzione dei coefficienti di rigidezza segue un andamento lineare. Il coefficiente $C_{22}$ risente notevolmente di questo effetto mostrando una tasso di diminuzione molto più alto del coefficiente $C_{11}$ che invece segue un andamento quasi costante. 
 
@@ -647,7 +647,7 @@ Questi ultimi risultati si discostano dall'omogenizzazione nel caso ideale e mos
 \label{sec:caso_spec}
 Un ulteriore analisi di interesse, simile al caso precedente, considera una disposizione di pori identificata a partire direttamente dal set di immagini Micro CT menzionate. Prendendo una slice di riferimento e selezionandone un determinato RVE è possibile estrarre una determinata struttura ossea \cref{fig:area} (c) e (d). Sono stati considerati dei pori circolari disegnati manualmente tali da essere tangenti alla matrice ossea e da soddisfare la pore fraction compatibili con i dati disponibili in letteratura (circa 60\%). 
 
-Il primo risultato evidente di questi test è l'aumento di rigidezza chiarimente dovuto alla minor pore fraction considerata, ovvero all'aumento di massa ossea.  I coefficienti $C_{11}$ e $C_{22}$ pur essendo numericamente diversi rimangono molto simili ma più grandi dei casi precedenti ma inferiori ai casi limite riscontrati con la riduzione del rapporto assiale.
+Il primo risultato evidente di questi test è l'aumento di rigidezza chiaramente dovuto alla minor pore fraction considerata, ovvero all'aumento di massa ossea.  I coefficienti $C_{11}$ e $C_{22}$ pur essendo numericamente diversi rimangono molto simili ma più grandi dei casi precedenti ma inferiori ai casi limite riscontrati con la riduzione del rapporto assiale.
 
 \section{Parametri materiali}
 \label{sec:variazioni_materiali}
@@ -748,7 +748,7 @@ $\Omega$,"RegionHoles"->None,"RegionMarker"->marker];
 
 Per impostare correttamente le condizioni al bordo in modo automatizzato è stato realizzato uno snippet ripetitivo con delle variabili di comando che permette di automatizzare la procedure. In particolare, volendo applicare una deformazione costante rispettivamente su $x$, $y$ o  di scorrimento è necessaria una mappa sulle condizioni di spostamento che permette di mappare ogni punto  nel valore desiderato. Si usano quindi la funzione \texttt{Function[{n, X, Y}, a*X + b*Y ]}, dove a seconda che sia nullo $a$ o $b$ lo spostamento sarà lineare rispettivamente in Y o in X. 
 
-Questo permette di impostare le condizioni sui quadrato bordi del quadrato mediante tre parametri $\{a,\:b,\:c\}$. Questi parametri vengono passati alla funzione \texttt{TEST[]} che provvede a mapparli come indicato nello snippet  \ref{code_displacem} andando ad impostare condizioni al contorno di tipo essenziale.  
+Questo permette di impostare le condizioni sui bordi del quadrato mediante tre parametri $\{a,\:b,\:c\}$. Questi parametri vengono passati alla funzione \texttt{TEST[]} che provvede a mapparli come indicato nello snippet  \ref{code_displacem} andando ad impostare condizioni al contorno di tipo essenziale.  
 
 \begin{lstlisting}[language=Mathematica,caption=Algortimo per l'applicazione automatizzate delle condizioni al bordo,label=code_displacem]
 	SMTAddEssentialBoundary[Line[{{0, 0}, {0, Ly}}],

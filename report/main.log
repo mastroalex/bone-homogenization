@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  19 JAN 2022 18:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  19 JAN 2022 22:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,10 +799,10 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absparsep=\skip157
 )
 Package newfloat Info: New float `keypoints' with options `placement=t!,name=kp
-t' on input line 305.
+t' on input line 309.
 \c@keypoints=\count288
 \newfloat@ftype=\count289
-Package newfloat Info: float type `keypoints'=8 on input line 305.
+Package newfloat Info: float type `keypoints'=8 on input line 309.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -2225,6 +2225,8 @@ Package fancyhdr Warning: \headheight is too small (17.5pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
 
+LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 238.
 [2 <./figures//homogen.pdf>]
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
 (Font)              scaled to size 8.5pt on input line 258.
@@ -2276,12 +2278,6 @@ ivo della
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 289--290
-\T1/Merriwthr-OsF/m/up/9 (+20) mente isotropi, quindi tali da avere un com-por-
-ta-
- []
-
-
 Underfull \vbox (badness 7832) has occurred while \output is active []
 
 
@@ -2294,17 +2290,10 @@ Package fancyhdr Warning: \headheight is too small (17.5pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
 
 [3]
-Overfull \hbox (5.1118pt too wide) detected at line 319
-\U/msb/m/n/9 C[] \T1/Merriwthr-OsF/m/n/9 = \U/msb/m/n/9 S[] \T1/Merriwthr-OsF/m
-/n/9 = []
- []
-
 
 LaTeX Font Warning: Font shape `T1/Merriwthr-OsF/b/up' undefined
 (Font)              using `T1/Merriwthr-OsF/b/n' instead on input line 331.
 
-LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 331.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/up' will be
 (Font)              scaled to size 7.0pt on input line 331.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/b/up' will be
@@ -2347,50 +2336,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--336
 []\T1/Merriwthr-OsF/m/up/9 (+20) Applicando un campo di de-for-mazione alla
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
 (Font)              scaled to size 6.0pt on input line 381.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/it' will be
 (Font)              scaled to size 6.0pt on input line 381.
 LaTeX Font Info:    Font shape `T1/MerriwthrSans-OsF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 381.
-
-
-Package fancyhdr Warning: \headheight is too small (17.5pt): 
-(fancyhdr)                Make it at least 18.99997pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.99997pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
-
-[4]
-<figures//test_mesh_axR_0.8.png, id=199, 803.1606pt x 801.7152pt>
+<figures//test_mesh_axR_0.8.png, id=180, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.8.png Graphic file (type png)
 <use figures//test_mesh_axR_0.8.png>
 Package pdftex.def Info: figures//test_mesh_axR_0.8.png  used on input line 421
 .
 (pdftex.def)             Requested size: 92.76448pt x 92.59288pt.
-<figures//test_mesh_axR_0.6.png, id=200, 803.1606pt x 801.7152pt>
+<figures//test_mesh_axR_0.6.png, id=181, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.6.png Graphic file (type png)
 <use figures//test_mesh_axR_0.6.png>
 Package pdftex.def Info: figures//test_mesh_axR_0.6.png  used on input line 424
 .
 (pdftex.def)             Requested size: 92.76448pt x 92.59288pt.
-<figures//test_mesh_axR_0.5.png, id=201, 803.1606pt x 801.7152pt>
+<figures//test_mesh_axR_0.5.png, id=182, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.5.png Graphic file (type png)
 <use figures//test_mesh_axR_0.5.png>
 Package pdftex.def Info: figures//test_mesh_axR_0.5.png  used on input line 427
 .
 (pdftex.def)             Requested size: 92.76448pt x 92.59288pt.
-<figures//test_mesh_axR_0.3.png, id=202, 803.1606pt x 801.7152pt>
+<figures//test_mesh_axR_0.3.png, id=183, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.3.png Graphic file (type png)
 <use figures//test_mesh_axR_0.3.png>
 Package pdftex.def Info: figures//test_mesh_axR_0.3.png  used on input line 430
 .
 (pdftex.def)             Requested size: 92.76448pt x 92.59288pt.
-<figures//test_mesh_axR_0.1.png, id=203, 803.1606pt x 801.7152pt>
+<figures//test_mesh_axR_0.1.png, id=184, 803.1606pt x 801.7152pt>
 File: figures//test_mesh_axR_0.1.png Graphic file (type png)
 <use figures//test_mesh_axR_0.1.png>
 Package pdftex.def Info: figures//test_mesh_axR_0.1.png  used on input line 433
@@ -2406,7 +2382,6 @@ LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
 (Font)              scaled to size 4.99982pt on input line 437.
 LaTeX Font Info:    Font shape `T1/Merriwthr-OsF/m/up' will be
 (Font)              scaled to size 4.20001pt on input line 437.
-
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.20001> not available
 (Font)              size <5> substituted on input line 437.
@@ -2439,7 +2414,19 @@ LaTeX Font Warning: Font shape `U/stmry/m/n' in size <4.20001> not available
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <4.20001> not available
 (Font)              size <5> substituted on input line 437.
 
-(./figures//var_geometr.pdf_tex
+
+Underfull \vbox (badness 1371) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (17.5pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
+
+[4] (./figures//var_geometr.pdf_tex
 <figures//var_geometr.pdf, id=204, page=1, 288.77135pt x 154.77072pt>
 File: figures//var_geometr.pdf Graphic file (type pdf)
 <use figures//var_geometr.pdf, page 1>
@@ -2561,6 +2548,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 630--631
  []
 
 
+Underfull \hbox (badness 3514) in paragraph at lines 633--634
+[]\T1/Merriwthr-OsF/m/up/9 (+20) Nell'analizzare i pori dis-posti sec-ondo una 
+dis-
+ []
+
+
 Package fancyhdr Warning: \headheight is too small (17.5pt): 
 (fancyhdr)                Make it at least 18.99997pt, for example:
 (fancyhdr)                \setlength{\headheight}{18.99997pt}.
@@ -2572,12 +2565,6 @@ Package fancyhdr Warning: \headheight is too small (17.5pt):
 png (PNG copy)> <./figures//test_mesh_axR_0.5.png (PNG copy)> <./figures//test_
 mesh_axR_0.3.png (PNG copy)> <./figures//test_mesh_axR_0.1.png (PNG copy)> <./f
 igures//var_geometr.pdf>]
-Underfull \hbox (badness 3514) in paragraph at lines 633--634
-[]\T1/Merriwthr-OsF/m/up/9 (+20) Nell'analizzare i pori dis-posti sec-ondo una 
-dis-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 643--644
 []\T1/Merriwthr-OsF/m/up/9 (+20) Questi ul-timi risul-tati si dis-costano
  []
@@ -2587,6 +2574,17 @@ Underfull \hbox (badness 7685) in paragraph at lines 643--644
 \T1/Merriwthr-OsF/m/up/9 (+20) dall'omogenizzazione nel caso ide-ale e mostrano
 
  []
+
+(./figures//variazione_Ebone.pdf_tex
+<figures//variazione_Ebone.pdf, id=239, page=1, 194.9935pt x 150.5851pt>
+File: figures//variazione_Ebone.pdf Graphic file (type pdf)
+<use figures//variazione_Ebone.pdf, page 1>
+Package pdftex.def Info: figures//variazione_Ebone.pdf , page1 used on input li
+ne 56.
+(pdftex.def)             Requested size: 211.6011pt x 163.41759pt.
+)
+Underfull \vbox (badness 5637) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (17.5pt): 
@@ -2603,14 +2601,7 @@ pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures//real_mesh_n1.png (PNG copy)> <./figures//real_mesh_n2.png (PNG co
 py)> <./figures//mesh_100.png (PNG copy)> <./figures//mesh_300.png (PNG copy)> 
 <./figures//test_mesh_2.png (PNG copy)> <./figures//test_mesh_1.png (PNG copy)>
-] (./figures//variazione_Ebone.pdf_tex
-<figures//variazione_Ebone.pdf, id=248, page=1, 194.9935pt x 150.5851pt>
-File: figures//variazione_Ebone.pdf Graphic file (type pdf)
-<use figures//variazione_Ebone.pdf, page 1>
-Package pdftex.def Info: figures//variazione_Ebone.pdf , page1 used on input li
-ne 56.
-(pdftex.def)             Requested size: 211.6011pt x 163.41759pt.
-) (./figures//variazione_Enarrow.pdf_tex
+] (./figures//variazione_Enarrow.pdf_tex
 <figures//variazione_Enarrow.pdf, id=249, page=1, 200.82779pt x 118.34966pt>
 File: figures//variazione_Enarrow.pdf Graphic file (type pdf)
 <use figures//variazione_Enarrow.pdf, page 1>
@@ -2621,6 +2612,12 @@ line 56.
 Overfull \hbox (0.55548pt too wide) in paragraph at lines 18--22
 \T1/Merriwthr-OsF/m/up/9 (-20) poro-sis.e.  Cal-ci-fied tis-sue in-ter-na-tiona
 l 2007;83:368--
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 43--49
+\T1/Merriwthr-OsF/m/up/9 (+20) BA, ed-i-tors. Mi-crome-chan-ics of Com-pos-ite 
+Ma-
  []
 
 
@@ -2636,12 +2633,6 @@ Package fancyhdr Warning: \headheight is too small (17.5pt):
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//variazione_Enarro
 w.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 2221) in paragraph at lines 43--49
-\T1/Merriwthr-OsF/m/up/9 (+20) BA, ed-i-tors. Mi-crome-chan-ics of Com-pos-ite 
-Ma-
- []
-
-
 Underfull \hbox (badness 2197) in paragraph at lines 59--64
 \T1/Merriwthr-OsF/m/up/9 (+20) simulation of the prox-i-mal fe-mur.  Jour-nal o
 f
@@ -2739,12 +2730,6 @@ Package fancyhdr Warning: \headheight is too small (17.5pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.49997pt}.
 
 [8]
-Underfull \hbox (badness 2894) in paragraph at lines 751--752
-[]\T1/Merriwthr-OsF/m/up/9 (+20) Questo per-me-tte di im-postare le con-dizioni
- sui
- []
-
-
 Underfull \hbox (badness 1412) in paragraph at lines 792--793
 []\T1/Merriwthr-OsF/m/up/9 (+20) Quindi è stata mod-i-fi-cata la fun-zione per 
 dis-eg-
@@ -2879,7 +2864,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  47462 strings out of 478994
  902746 string characters out of 5858184
- 2732393 words of memory out of 5000000
+ 2732363 words of memory out of 5000000
  63378 multiletter control sequences out of 15000+600000
  1992343 words of font info for 657 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2910,7 +2895,7 @@ c/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
 1/public/stmaryrd/stmary8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
 ublic/wasy-type1/wasy7.pfb>
-Output written on main.pdf (10 pages, 24054967 bytes).
+Output written on main.pdf (10 pages, 24054900 bytes).
 PDF statistics:
  457 PDF objects out of 1000 (max. 8388607)
  395 compressed objects within 4 object streams
