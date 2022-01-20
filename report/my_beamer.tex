@@ -7,24 +7,40 @@
 \usepackage{hyperref}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
-
+\usepackage{siunitx}
+\usepackage{import}
+\usepackage{amsmath}
+%\numberwithin{equation}{section}% numera eq come #section.#formula
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{cancel}
+\usepackage{textcomp}
+\definecolor{myred}{rgb}{0.545, 0.172, 0.031}
+%\usepackage{cleveref}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
 \title[short title]{Omogeneizzazione numerica di materiali microstrutturati} % The short title appears at the bottom of every slide, the full title is only on the title page
-\subtitle{Subtitle}
+\subtitle{Omogenizzazione di tessuto osseo}
 
-\author[Pin-Yen] {Pin-Yen Huang}
+\author[Pin-Yen] {Alessandro Mastrofini}
 
 \institute[NTU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-    Department of Computer Science and Information Engineering \\
-    National Taiwan University % Your institution for the title page
+Meccanica Computazionale dei Tessuti e Biomateriali \\
+Università degli Studi di Roma Tor Vergata% Your institution for the title page
 }
-\date{\today} % Date, can be changed to a custom date
+\date{2022} % Date, can be changed to a custom date
 
-
+\graphicspath{{figures/}} %Setting the graphicspat%h
+\graphicspath{{figures/}} %Setting the graphicspath
+\makeatletter
+\providecommand*{\input@path}{}
+\edef\input@path{{figures/}{}\input@path}% prepend
+\makeatother
 %----------------------------------------------------------------------------------------
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
@@ -36,126 +52,163 @@
     \titlepage
 \end{frame}
 
-\begin{frame}{Overview}
-    % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
-    \tableofcontents
-\end{frame}
-
 %------------------------------------------------
 \section{First Section}
 %------------------------------------------------
 
-\begin{frame}{Bullet Points}
-    \begin{itemize}
-        \item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        \item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-        \item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-        \item Nam cursus est eget velit posuere pellentesque
-        \item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-    \end{itemize}
+\begin{frame}{Volume di interesse}
+    \begin{figure}%[b!]  %% Add a [b!] if you prefer the wide image to be at the bottm of the page
+  	\centering
+  	\tiny{\def\svgwidth{\textwidth}
+  	\input{homogen2.pdf_tex}}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{Omogenizzazione}
+	\begin{figure}
+		\centering
+		\begin{minipage}{0.45\linewidth}
+			\begin{center}
+	\includegraphics[width=0.5\linewidth]{test_mesh_8.png}
+	\vspace{20pt}\vfill
+	\small{$\mathbb{C}^{(o m)}=\left(\begin{array}{ccc}756.78 & 80.90 & 0.00 \\ 80.90 & 756.78 & 0.00 \\ 0.00 & 0.00 & 40.87\end{array}\right)$}
+\end{center}
+		\end{minipage}\hfill
+		\begin{minipage}{0.51\linewidth}
+		\tiny{	\def\svgwidth{\linewidth}
+			\input{test_data1.pdf_tex}}
+		\end{minipage}\hfill
+	\end{figure}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}{Microstruttura}
+\begin{figure} 
+	\centering
+	\begin{minipage}[b]{0.16\linewidth}
+		\centering
+	\tiny	$\operatorname{AxR}=0.8	$
+	\end{minipage}
+	\begin{minipage}[b]{0.16\linewidth}
+		\centering
+	\tiny	$\operatorname{AxR}=0.6	$
+	\end{minipage}
+	\begin{minipage}[b]{0.16\linewidth}
+		\centering
+	\tiny	$	\operatorname{AxR}=0.5$
+	\end{minipage}
+	\begin{minipage}[b]{0.16\linewidth}
+		\centering
+	\tiny	$	\operatorname{AxR}=0.3$
+	\end{minipage}
+	\begin{minipage}[b]{0.16\linewidth}
+		\centering
+	\tiny	$	\operatorname{AxR}=0.1$
+	\end{minipage} 
+	\begin{minipage}[b]{0.16\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.8.png}
+	\end{minipage} 
+	\begin{minipage}[b]{0.16\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.6.png}
+	\end{minipage} 
+	\begin{minipage}[b]{0.16\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.5.png}
+	\end{minipage}
+	\begin{minipage}[b]{0.16\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.3.png}
+	\end{minipage} 
+	\begin{minipage}[b]{0.16\linewidth}
+		\includegraphics[width=\linewidth]{test_mesh_axR_0.1.png}
+	\end{minipage} 
+\end{figure}
+
+\begin{figure}[bt!] %% preferably at bottom or top of column
+	
+	\centering
+	\tiny{	\def\svgwidth{0.40\linewidth}
+\input{var_geometr.pdf_tex}}
+\end{figure}
+
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}{Blocks of Highlighted Text}
-    In this slide, some important text will be \alert{highlighted} because it's important. Please, don't abuse it.
+\begin{frame}{Regione di interesse}
+\begin{figure} 
 
-    \begin{block}{Block}
-        Sample text
-    \end{block}
+	\begin{minipage}[c]{0.20\linewidth}
+	\includegraphics[width=\linewidth]{mesh_100.png}
+\end{minipage} \hspace{0.01\linewidth}
+\begin{minipage}[c]{0.20\linewidth}
+	\includegraphics[width=\linewidth]{mesh_300.png}
+\end{minipage}\hspace{0.01\linewidth}
+		\begin{minipage}[c]{0.20\linewidth}
+			\includegraphics[width=\linewidth]{real_mesh_n1.png}
+		\end{minipage}\hspace{0.01\linewidth}
+		\begin{minipage}[c]{0.20\linewidth}
+			\includegraphics[width=\linewidth]{real_mesh_n2.png}
+		\end{minipage}
+	
+\end{figure}
+\begin{figure}
+				\centering
+		\begin{minipage}[b]{0.22\linewidth}
+			\tiny{$
+				\begin{bmatrix}
+					1034.17 & 411.96 & -11.69 \\
+					411.96 & 1074.45 & -21.40 \\
+					-11.67 & -21.41 & 224.12 \\
+				\end{bmatrix}
+				$}
+		\end{minipage}\hspace{0.01\linewidth}
+		\begin{minipage}[b]{0.22\linewidth}
+			\centering
+			\tiny{$
+				\begin{bmatrix}
+					959.28 & 439.22 & 0.29 \\
+					439.21 & 995.56 & -11.64 \\
+					0.29 & -11.63 & 209.55 \\
+				\end{bmatrix}
+				$}
+		\end{minipage}\hspace{0.01\linewidth}
+		\begin{minipage}[b]{0.22\linewidth}
+			\centering
+			\tiny{$
+				\begin{bmatrix}
+					1744.59 & 701.46 & 81.03 \\
+					701.46 & 1649.60 & 49.05 \\
+					81.03 & 49.05 & 540.63 \\
+				\end{bmatrix}
+				$}
+		\end{minipage}\hspace{0.01\linewidth}
+		\begin{minipage}[b]{0.22\linewidth}
+			\centering
+			\tiny{$
+				\begin{bmatrix}
+					2237.42 & 887.87 & 19.48 \\
+					887.87 & 2394.87 & 71.54 \\
+					19.48 & 71.54 & 690.04 \\
+				\end{bmatrix}
+				$}
+		\end{minipage}		
 
-    \begin{alertblock}{Alertblock}
-        Sample text in red box
-    \end{alertblock}
+\end{figure}
 
-    \begin{examples}
-        Sample text in green box. The title of the block is ``Examples".
-    \end{examples}
 \end{frame}
 
-%------------------------------------------------
-
-\begin{frame}{Multiple Columns}
-    \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-        \column{.45\textwidth} % Left column and width
-        \textbf{Heading}
-        \begin{enumerate}
-            \item Statement
-            \item Explanation
-            \item Example
-        \end{enumerate}
-
-        \column{.5\textwidth} % Right column and width
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-    \end{columns}
+\begin{frame}{Parametri materiali}
+\begin{figure}
+	\centering
+	\begin{minipage}{0.45\linewidth}
+	\tiny{\def\svgwidth{0.9\linewidth}
+	\input{variazione_Ebone.pdf_tex}}
+	\end{minipage}\hfill
+	\begin{minipage}{0.51\linewidth}
+	\tiny{\def\svgwidth{\linewidth}
+\input{variazione_Enarrow.pdf_tex}}
+\end{minipage}\hfill
+\end{figure}
 \end{frame}
-
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
-
-\begin{frame}{Table}
-    \begin{table}
-        \begin{tabular}{l l l}
-            \toprule
-            \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2} \\
-            \midrule
-            Treatment 1         & 0.0003262           & 0.562               \\
-            Treatment 2         & 0.0015681           & 0.910               \\
-            Treatment 3         & 0.0009271           & 0.296               \\
-            \bottomrule
-        \end{tabular}
-        \caption{Table caption}
-    \end{table}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}{Theorem}
-    \begin{theorem}[Mass--energy equivalence]
-        $E = mc^2$
-    \end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}{Figure}
-    Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-    %\begin{figure}
-    %\includegraphics[width=0.8\linewidth]{test}
-    %\end{figure}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-    \frametitle{Citation}
-    An example of the \verb|\cite| command to cite within the presentation:\\~
-
-    This statement requires citation \cite{p1}.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}{References}
-    % Beamer does not support BibTeX so references must be inserted manually as below
-    \footnotesize{
-        \begin{thebibliography}{99}
-            \bibitem[Smith, 2012]{p1} John Smith (2012)
-            \newblock Title of the publication
-            \newblock \emph{Journal Name} 12(3), 45 -- 678.
-        \end{thebibliography}
-    }
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-    \Huge{\centerline{\textbf{The End}}}
-\end{frame}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  19 JAN 2022 22:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.7)  20 JAN 2022 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -790,32 +790,117 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count325
 \@thisrulewidth=\dimen296
 )
+(/usr/local/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count326
 \l__pdf_internal_box=\box72
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-
+01.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.
+tex)))
+Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen297
+\ar@mcellbox=\box73
+\extrarowheight=\dimen298
+\NC@list=\toks44
+\extratabsurround=\skip64
+\backup@length=\skip65
+\ar@cellbox=\box74
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box75
+\l__siunitx_tmp_dim=\dimen299
+\l__siunitx_tmp_int=\count327
+\l__siunitx_number_mantissa_length_int=\count328
+\l__siunitx_number_uncert_length_int=\count329
+\l__siunitx_round_int=\count330
+\l__siunitx_process_decimal_int=\count331
+\l__siunitx_process_uncertainty_int=\count332
+\l__siunitx_process_fixed_int=\count333
+\l__siunitx_process_integer_min_int=\count334
+\l__siunitx_process_precision_int=\count335
+\l__siunitx_group_min_int=\count336
+\l__siunitx_angle_marker_box=\box76
+\l__siunitx_angle_unit_box=\box77
+\l__siunitx_angle_marker_dim=\dimen300
+\l__siunitx_angle_unit_dim=\dimen301
+\l__siunitx_unit_int=\count337
+\l__siunitx_unit_denominator_int=\count338
+\l__siunitx_unit_numerator_int=\count339
+\l__siunitx_unit_prefix_int=\count340
+\l__siunitx_unit_prefix_base_int=\count341
+\l__siunitx_unit_prefix_gram_int=\count342
+\l__siunitx_number_product_int=\count343
+\c__siunitx_one_fill_skip=\skip66
+\l__siunitx_table_unit_align_skip=\skip67
+\l__siunitx_table_exponent_dim=\dimen302
+\l__siunitx_table_integer_dim=\dimen303
+\l__siunitx_table_mantissa_dim=\dimen304
+\l__siunitx_table_marker_dim=\dimen305
+\l__siunitx_table_result_dim=\dimen306
+\l__siunitx_table_uncert_dim=\dimen307
+\l__siunitx_table_fill_pre_dim=\dimen308
+\l__siunitx_table_fill_post_dim=\dimen309
+\l__siunitx_table_fill_mid_dim=\dimen310
+\l__siunitx_table_pre_box=\box78
+\l__siunitx_table_post_box=\box79
+\l__siunitx_table_mantissa_box=\box80
+\l__siunitx_table_result_box=\box81
+\l__siunitx_table_number_align_skip=\skip68
+\l__siunitx_table_text_align_skip=\skip69
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \ocircle on input line 243.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 (./my_beamer.aux)
 \openout1 = `my_beamer.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -853,17 +938,17 @@ LaTeX Font Info:    ... okay on input line 32.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
-\scratchdimen=\dimen297
-\scratchbox=\box73
-\nofMPsegments=\count328
-\nofMParguments=\count329
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count330
-\MPscratchDim=\dimen298
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count344
+\scratchdimen=\dimen311
+\scratchbox=\box82
+\nofMPsegments=\count345
+\nofMParguments=\count346
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count347
+\MPscratchDim=\dimen312
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
+\everyMPtoPDFconversion=\toks46
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -873,7 +958,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 48.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -885,67 +970,67 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count333
+\c@section@level=\count350
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
  (./my_beamer.out) (./my_beamer.out)
 \@outlinefile=\write5
 \openout5 = `my_beamer.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 32.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 32.
-\symnumbers=\mathgroup6
-\sympureletters=\mathgroup7
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 48.
+\symnumbers=\mathgroup8
+\sympureletters=\mathgroup9
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 32.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 32.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 32.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 32.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 32.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 32.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 32.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 32.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 32.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 32.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 32.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 32.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 32.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 32.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 48.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 48.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 3
-2.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 4
+8.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 3
-2.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 4
+8.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 32.
+ut line 48.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -970,53 +1055,159 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-theorem-dic
 tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./my_beamer.nav) [1
-
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./my_b
-eamer.toc) [2
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+) (./my_beamer.nav)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 4
+8.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 48
+.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 56.
+ut line 48.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
+) [1
+
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./figures//homogen2.pdf_tex
+<figures//homogen.pdf, id=28, page=1, 7085.04192pt x 1418.76546pt>
+File: figures//homogen.pdf Graphic file (type pdf)
+<use figures//homogen.pdf, page 1>
+Package pdftex.def Info: figures//homogen.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 411.44397pt x 82.37288pt.
+) [2
+
+ <./figures//homogen.pdf>]
+<figures//test_mesh_8.png, id=45, 803.1606pt x 801.7152pt>
+File: figures//test_mesh_8.png Graphic file (type png)
+<use figures//test_mesh_8.png>
+Package pdftex.def Info: figures//test_mesh_8.png  used on input line 83.
+(pdftex.def)             Requested size: 92.57426pt x 92.39714pt.
+
+(./figures//test_data1.pdf_tex
+<figures//test_data1.pdf, id=46, page=1, 197.94452pt x 150.5324pt>
+File: figures//test_data1.pdf Graphic file (type pdf)
+<use figures//test_data1.pdf, page 1>
+Package pdftex.def Info: figures//test_data1.pdf , page1 used on input line 56.
+
+(pdftex.def)             Requested size: 209.83415pt x 159.57735pt.
 ) [3
 
-] [4
+ <./figures//test_mesh_8.png (PNG copy)> <./figures//test_data1.pdf>]
+<figures//test_mesh_axR_0.8.png, id=59, 803.1606pt x 801.7152pt>
+File: figures//test_mesh_axR_0.8.png Graphic file (type png)
+<use figures//test_mesh_axR_0.8.png>
+Package pdftex.def Info: figures//test_mesh_axR_0.8.png  used on input line 133
+.
+(pdftex.def)             Requested size: 65.83253pt x 65.70436pt.
+<figures//test_mesh_axR_0.6.png, id=60, 803.1606pt x 801.7152pt>
+File: figures//test_mesh_axR_0.6.png Graphic file (type png)
+<use figures//test_mesh_axR_0.6.png>
+Package pdftex.def Info: figures//test_mesh_axR_0.6.png  used on input line 133
+.
+(pdftex.def)             Requested size: 65.83253pt x 65.70436pt.
+<figures//test_mesh_axR_0.5.png, id=61, 803.1606pt x 801.7152pt>
+File: figures//test_mesh_axR_0.5.png Graphic file (type png)
+<use figures//test_mesh_axR_0.5.png>
+Package pdftex.def Info: figures//test_mesh_axR_0.5.png  used on input line 133
+.
+(pdftex.def)             Requested size: 65.83253pt x 65.70436pt.
+<figures//test_mesh_axR_0.3.png, id=62, 803.1606pt x 801.7152pt>
+File: figures//test_mesh_axR_0.3.png Graphic file (type png)
+<use figures//test_mesh_axR_0.3.png>
+Package pdftex.def Info: figures//test_mesh_axR_0.3.png  used on input line 133
+.
+(pdftex.def)             Requested size: 65.83253pt x 65.70436pt.
+<figures//test_mesh_axR_0.1.png, id=63, 803.1606pt x 801.7152pt>
+File: figures//test_mesh_axR_0.1.png Graphic file (type png)
+<use figures//test_mesh_axR_0.1.png>
+Package pdftex.def Info: figures//test_mesh_axR_0.1.png  used on input line 133
+.
+(pdftex.def)             Requested size: 65.83253pt x 65.70436pt.
+ (./figures//var_geometr.pdf_tex
+<figures//var_geometr.pdf, id=64, page=1, 288.77135pt x 154.77072pt>
+File: figures//var_geometr.pdf Graphic file (type pdf)
+<use figures//var_geometr.pdf, page 1>
+Package pdftex.def Info: figures//var_geometr.pdf , page1 used on input line 56
+.
+(pdftex.def)             Requested size: 164.57507pt x 88.20605pt.
+) [4
 
-] [5
+ <./figures//test_mesh_axR_0.8.png (PNG copy)> <./figures//test_mesh_axR_0.6.pn
+g (PNG copy)> <./figures//test_mesh_axR_0.5.png (PNG copy)> <./figures//test_me
+sh_axR_0.3.png (PNG copy)> <./figures//test_mesh_axR_0.1.png (PNG copy)> <./fig
+ures//var_geometr.pdf>]
+<figures//mesh_100.png, id=72, 5264.66875pt x 5264.66875pt>
+File: figures//mesh_100.png Graphic file (type png)
+<use figures//mesh_100.png>
+Package pdftex.def Info: figures//mesh_100.png  used on input line 198.
+(pdftex.def)             Requested size: 82.28754pt x 82.26024pt.
+<figures//mesh_300.png, id=73, 9071.8925pt x 9071.8925pt>
+File: figures//mesh_300.png Graphic file (type png)
+<use figures//mesh_300.png>
+Package pdftex.def Info: figures//mesh_300.png  used on input line 198.
+(pdftex.def)             Requested size: 82.28754pt x 82.2249pt.
+<figures//real_mesh_n1.png, id=74, 1504.62125pt x 1504.62125pt>
+File: figures//real_mesh_n1.png Graphic file (type png)
+<use figures//real_mesh_n1.png>
+Package pdftex.def Info: figures//real_mesh_n1.png  used on input line 198.
+(pdftex.def)             Requested size: 82.28754pt x 82.28377pt.
+<figures//real_mesh_n2.png, id=75, 2501.345pt x 2501.345pt>
+File: figures//real_mesh_n2.png Graphic file (type png)
+<use figures//real_mesh_n2.png>
+Package pdftex.def Info: figures//real_mesh_n2.png  used on input line 198.
+(pdftex.def)             Requested size: 82.28754pt x 82.25075pt.
 
-] [6
+Overfull \hbox (2.33173pt too wide) in paragraph at lines 198--198
+[]$[]$ 
+ []
 
-] [7
+[5
 
-] [8
+ <./figures//mesh_100.png (PNG copy)> <./figures//mesh_300.png (PNG copy)> <./f
+igures//real_mesh_n1.png (PNG copy)> <./figures//real_mesh_n2.png (PNG copy)>] 
+(./figures//variazione_Ebone.pdf_tex
+<figures//variazione_Ebone.pdf, id=82, page=1, 194.9935pt x 150.5851pt>
+File: figures//variazione_Ebone.pdf Graphic file (type pdf)
+<use figures//variazione_Ebone.pdf, page 1>
+Package pdftex.def Info: figures//variazione_Ebone.pdf , page1 used on input li
+ne 56.
+(pdftex.def)             Requested size: 166.63254pt x 128.68724pt.
+) (./figures//variazione_Enarrow.pdf_tex
+<figures//variazione_Enarrow.pdf, id=83, page=1, 200.82779pt x 118.34966pt>
+File: figures//variazione_Enarrow.pdf Graphic file (type pdf)
+<use figures//variazione_Enarrow.pdf, page 1>
+Package pdftex.def Info: figures//variazione_Enarrow.pdf , page1 used on input 
+line 56.
+(pdftex.def)             Requested size: 209.83415pt x 123.66582pt.
+) [6
 
-]
-\openout4 = `my_beamer.vrb'.
+ <./figures//variazione_Ebone.pdf> <./figures//variazione_Enarrow.pdf
 
- (./my_beamer.vrb) [9
-
-] [10
-
- </usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [
-11
-
-]
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//variazione_Enarro
+w.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 \tf@nav=\write6
 \openout6 = `my_beamer.nav'.
 
@@ -1028,29 +1219,34 @@ thkerncmss.
 
  (./my_beamer.aux)
 Package rerunfilecheck Info: File `my_beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 7E101005BEC8C4200DF797AE66FBB49D;227.
+(rerunfilecheck)             Checksum: 65F2C9F0DC09CB7504E7C1CFD3FF7492;111.
  ) 
 Here is how much of TeX's memory you used:
- 20950 strings out of 478994
- 392266 string characters out of 5858184
- 670705 words of memory out of 5000000
- 37925 multiletter control sequences out of 15000+600000
- 414062 words of font info for 64 fonts, out of 8000000 for 9000
+ 23620 strings out of 478994
+ 461502 string characters out of 5858184
+ 729852 words of memory out of 5000000
+ 40523 multiletter control sequences out of 15000+600000
+ 419032 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,11n,132p,434b,623s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on my_beamer.pdf (11 pages, 103370 bytes).
+ 131i,18n,132p,434b,725s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pf
+b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/wasy-type1/wasy6.pfb>
+Output written on my_beamer.pdf (6 pages, 23480315 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
