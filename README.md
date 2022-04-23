@@ -12,3 +12,7 @@ Conclusions, the results obtained show how bone remodeling strongly contributes 
 #### Read more:
 
 [**Report**](https://github.com/mastroalex/bone-homogenization/blob/main/report/main.pdf)
+
+---
+
+|[](https://alessandromastrofini.it/wp-content/uploads/2022/04/image-25-1024x640.png)
