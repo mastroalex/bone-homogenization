@@ -15,4 +15,4 @@ Conclusions, the results obtained show how bone remodeling strongly contributes 
 
 ---
 
-|[](https://alessandromastrofini.it/wp-content/uploads/2022/04/image-25-1024x640.png)
+![](https://alessandromastrofini.it/wp-content/uploads/2022/04/image-25-1024x640.png)
