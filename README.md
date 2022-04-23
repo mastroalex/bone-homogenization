@@ -11,8 +11,9 @@ Conclusions, the results obtained show how bone remodeling strongly contributes 
 
 #### Read more:
 
-[**Report**](https://github.com/mastroalex/bone-homogenization/blob/main/report/main.pdf)
-
+- [**Report**](https://github.com/mastroalex/bone-homogenization/blob/main/report/main.pdf)
+- [Web article (EN version)](https://alessandromastrofini.it/en/2022/04/23/bone-homogenization/)
+- [Web article (IT version)](https://alessandromastrofini.it/2021/11/12/osso-omogenizzazione/)
 ---
 
 ![](https://alessandromastrofini.it/wp-content/uploads/2022/04/image-25-1024x640.png)
