@@ -18,9 +18,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="2.060412"
-     inkscape:cx="-13.832185"
-     inkscape:cy="125.94568"
+     inkscape:zoom="2.9138626"
+     inkscape:cx="144.65335"
+     inkscape:cy="98.666286"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -595,6 +595,18 @@
          id="tspan3916"
          x="181.51709"
          y="134.92447" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.2094px;line-height:1.25;font-family:sans-serif;stroke-width:0.825585"
+       x="27.486841"
+       y="10.766549"
+       id="text2615"
+       transform="scale(0.82558538,1.2112618)"><tspan
+         sodipodi:role="line"
+         id="tspan2613"
+         x="27.486841"
+         y="10.766549"
+         style="stroke-width:0.825585">$|C_{11}|\over | C_{11,\infty}|$</tspan></text>
   </g>
   <g
      id="Livello_2"

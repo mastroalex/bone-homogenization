@@ -18,14 +18,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="1.5589562"
-     inkscape:cx="188.90845"
-     inkscape:cy="82.426947"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:zoom="0.7794781"
+     inkscape:cx="470.1864"
+     inkscape:cy="93.652407"
+     inkscape:window-width="1284"
+     inkscape:window-height="1032"
+     inkscape:window-x="318"
+     inkscape:window-y="129"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs4">
@@ -596,7 +596,7 @@
        id="text162-3"
        style="font-size:12px;font-family:MyriadPro-Regular, 'Myriad Pro';display:inline"
        x="7.891027"
-       y="1.2236584">$\left[\text{MPa}\right]$s</text>
+       y="1.2236584">$\left[\text{MPa}\right]$</text>
     <text
        class="cls-7"
        id="text164"
@@ -605,14 +605,16 @@
        y="141.79405">$C_{11}$</text>
     <text
        xml:space="preserve"
-       style="font-size:16px;line-height:1.25;font-family:sans-serif"
-       x="382.89758"
-       y="209.84758"
-       id="text5998"><tspan
+       style="font-size:3.00674px;line-height:1.25;font-family:sans-serif;stroke-width:0.187921"
+       x="2043.7612"
+       y="39.434776"
+       id="text5998"
+       transform="scale(0.18792105,5.3213836)"><tspan
          sodipodi:role="line"
          id="tspan5996"
-         x="382.89758"
-         y="209.84758">$\operatorname{AxR}$</tspan></text>
+         x="2043.7612"
+         y="39.434776"
+         style="stroke-width:0.187921">$\operatorname{AxR}$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:16px;line-height:1.25;font-family:sans-serif"

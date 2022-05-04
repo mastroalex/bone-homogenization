@@ -19,8 +19,8 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="2.060412"
-     inkscape:cx="87.118499"
-     inkscape:cy="44.408594"
+     inkscape:cx="145.35928"
+     inkscape:cy="86.633159"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -352,32 +352,32 @@
     <text
        class="cls-3"
        id="text10"
-       x="37.285614"
-       y="196.85487"
+       x="36.800274"
+       y="198.3109"
        style="font-size:4.7471px;font-family:ArialMT, Arial;display:inline;stroke-width:0.732577">$5\cdot 10^3$</text>
     <text
        class="cls-3"
        id="text156"
-       x="58.566471"
-       y="197.56598"
+       x="58.081131"
+       y="199.022"
        style="font-size:4.7471px;font-family:ArialMT, Arial;display:inline;stroke-width:0.732577">$10^4$</text>
     <text
        class="cls-3"
        id="text158"
-       x="213.61398"
-       y="196.93546"
+       x="213.12865"
+       y="198.39148"
        style="font-size:4.7471px;font-family:ArialMT, Arial;display:inline;stroke-width:0.732577">$10^6$</text>
     <text
        class="cls-3"
        id="text160"
-       x="130.64932"
-       y="196.85487"
+       x="130.16399"
+       y="198.3109"
        style="font-size:4.7471px;font-family:ArialMT, Arial;display:inline;stroke-width:0.732577">$10^5$</text>
     <text
        class="cls-3"
        id="text162"
-       x="187.53076"
-       y="197.21042"
+       x="187.04543"
+       y="198.66644"
        style="font-size:4.7471px;font-family:ArialMT, Arial;display:inline;stroke-width:0.732577">$5\cdot 10^5$</text>
     <text
        class="cls-3"
@@ -400,11 +400,11 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.86061px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.732577"
-       x="5.4550033"
+       x="2.0576246"
        y="160.46252"
        id="text14812"><tspan
          sodipodi:role="line"
-         x="5.4550033"
+         x="2.0576246"
          y="160.46252"
          id="tspan14810"
          style="stroke-width:0.732577"><tspan
@@ -415,11 +415,11 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.86061px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.732577"
-       x="4.7439065"
+       x="1.3465277"
        y="128.20767"
        id="text14818"><tspan
          sodipodi:role="line"
-         x="4.7439065"
+         x="1.3465277"
          y="128.20767"
          id="tspan14816"
          style="stroke-width:0.732577"><tspan
@@ -430,11 +430,11 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.86061px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.732577"
-       x="5.4550033"
+       x="2.0576246"
        y="94.774818"
        id="text14824"><tspan
          sodipodi:role="line"
-         x="5.4550033"
+         x="2.0576246"
          y="94.774818"
          id="tspan14822"
          style="stroke-width:0.732577"><tspan
@@ -445,11 +445,11 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.86061px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.732577"
-       x="5.4550033"
+       x="2.0576246"
        y="62.519955"
        id="text14830"><tspan
          sodipodi:role="line"
-         x="5.4550033"
+         x="2.0576246"
          y="62.519955"
          id="tspan14828"
          style="stroke-width:0.732577"><tspan
@@ -460,11 +460,11 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.86061px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.732577"
-       x="4.3883576"
+       x="0.99097884"
        y="27.664913"
        id="text14836"><tspan
          sodipodi:role="line"
-         x="4.3883576"
+         x="0.99097884"
          y="27.664913"
          id="tspan14834"
          style="stroke-width:0.732577"><tspan
@@ -472,6 +472,18 @@
            dy="0"
            style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.86061px;font-family:Arial;fill:#000000;stroke-width:0.732577"
            id="tspan14832">$0.25$</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.7517px;line-height:1.25;font-family:sans-serif;stroke-width:0.921978"
+       x="23.359055"
+       y="11.63429"
+       id="text2134"
+       transform="scale(0.92197823,1.0846243)"><tspan
+         sodipodi:role="line"
+         id="tspan2132"
+         x="23.359055"
+         y="11.63429"
+         style="stroke-width:0.921978">$\|C\|\over \| C_\infty\|$</tspan></text>
   </g>
   <g
      id="Livello_2"

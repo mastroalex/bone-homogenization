@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{197.20500183bp}%
+    \setlength{\unitlength}{195.37945685bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,20 +50,21 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.76047769)%
+  \begin{picture}(1,0.76468425)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{test_data1.pdf}}%
-    \put(0.14180274,-0.0084947){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^3$\end{tabular}}}}%
-    \put(0.22273701,-0.01119914){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^4$\end{tabular}}}}%
-    \put(0.8124058,-0.00880117){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^6$\end{tabular}}}}%
-    \put(0.49687884,-0.0084947){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^5$\end{tabular}}}}%
-    \put(0.71320742,-0.00984689){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^5$\end{tabular}}}}%
-    \put(0.69428731,0.06747757){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\color{myred}0.0023$\end{tabular}}}}%
-    \put(-0.00140365,0.14283153){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.05$\end{tabular}}}}%
-    \put(-0.00410805,0.26550153){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.10$\end{tabular}}}}%
-    \put(-0.00140365,0.39265166){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.15$\end{tabular}}}}%
-    \put(-0.00140365,0.51532172){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.20$\end{tabular}}}}%
-    \put(-0.00546026,0.64788063){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.25$\end{tabular}}}}%
+    \put(0.13665867,0.00460714){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^3$\end{tabular}}}}%
+    \put(0.21834916,0.00187743){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^4$\end{tabular}}}}%
+    \put(0.81352758,0.00429781){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^6$\end{tabular}}}}%
+    \put(0.49505246,0.00460714){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$10^5$\end{tabular}}}}%
+    \put(0.71340234,0.00324231){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\cdot 10^5$\end{tabular}}}}%
+    \put(0.6961685,0.06638479){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\color{myred}0.0023$\end{tabular}}}}%
+    \put(0.00329262,0.14989508){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.05$\end{tabular}}}}%
+    \put(0.00056294,0.27371127){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.10$\end{tabular}}}}%
+    \put(0.00329262,0.40204943){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.15$\end{tabular}}}}%
+    \put(0.00329262,0.52586566){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.20$\end{tabular}}}}%
+    \put(-0.0008019,0.65966315){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0.25$\end{tabular}}}}%
+    \put(0.07806602,0.7174203){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\|C\|\over \| C_\infty\|$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

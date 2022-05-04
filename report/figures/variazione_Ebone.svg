@@ -18,11 +18,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="4.3643454"
-     inkscape:cx="129.5727"
-     inkscape:cy="100.015"
-     inkscape:window-width="3440"
-     inkscape:window-height="1369"
+     inkscape:zoom="16.017597"
+     inkscape:cx="237.02057"
+     inkscape:cy="176.27488"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -460,25 +460,25 @@
     <text
        class="cls-3"
        id="text80"
-       x="3.599432"
+       x="-3.8923283"
        y="156.27151"
        style="font-size:6.48px;font-family:ArialMT, Arial">$200$</text>
     <text
        class="cls-3"
        id="text90"
-       x="3.599432"
+       x="-3.8923283"
        y="121.19151"
        style="font-size:6.48px;font-family:ArialMT, Arial">$400$</text>
     <text
        class="cls-3"
        id="text100"
-       x="3.599432"
+       x="-3.8923283"
        y="86.111519"
        style="font-size:6.48px;font-family:ArialMT, Arial">$600$</text>
     <text
        class="cls-3"
        id="text110"
-       x="3.599432"
+       x="-3.8923283"
        y="51.031517"
        style="font-size:6.48px;font-family:ArialMT, Arial">$800$</text>
     <text
@@ -486,6 +486,28 @@
        id="text120"
        y="15.951515"
        style="font-size:6.48px;font-family:ArialMT, Arial"
-       x="-0.00057035621">$1000$</text>
+       x="-7.4923306">$1000$</text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.83478px;line-height:1.25;font-family:sans-serif;stroke-width:0.302174"
+       x="861.23035"
+       y="60.927502"
+       id="text2301"
+       transform="scale(0.30217395,3.3093521)"><tspan
+         sodipodi:role="line"
+         id="tspan2299"
+         x="861.23035"
+         y="60.927502"
+         style="stroke-width:0.302174">[MPa]</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;line-height:1.25;font-family:sans-serif"
+       x="257.52927"
+       y="186.41997"
+       id="text4257"><tspan
+         sodipodi:role="line"
+         id="tspan4255"
+         x="257.52927"
+         y="186.41997">$E_b$</tspan></text>
   </g>
 </svg>

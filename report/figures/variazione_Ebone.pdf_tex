@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{194.26499176bp}%
+    \setlength{\unitlength}{235.71210588bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,21 +50,21 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.772257)%
+  \begin{picture}(1,0.6513021)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{variazione_Ebone.pdf}}%
-    \put(0.09396404,0.00057502){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2000$\end{tabular}}}}%
-    \put(0.285069,0.00057502){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3000$\end{tabular}}}}%
-    \put(0.47617386,0.00057502){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$4000$\end{tabular}}}}%
-    \put(0.6672788,0.00057502){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5000$\end{tabular}}}}%
-    \put(0.8583838,0.00057502){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$6000$\end{tabular}}}}%
-    \put(-0.02856452,0.16716946){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$200$\end{tabular}}}}%
-    \put(-0.02856452,0.302603){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$400$\end{tabular}}}}%
-    \put(-0.02856452,0.43803654){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$600$\end{tabular}}}}%
-    \put(-0.02856452,0.57347011){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$800$\end{tabular}}}}%
-    \put(-0.04246307,0.70890368){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1000$\end{tabular}}}}%
-    \put(1.01552235,0.02211505){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_b$\end{tabular}}}}%
-    \put(0.05396067,0.79702583){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C_{11}$\end{tabular}}}}%
+    \put(0.10054612,0.01531104){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2000$\end{tabular}}}}%
+    \put(0.2580476,0.01531104){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3000$\end{tabular}}}}%
+    \put(0.41554898,0.01531104){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$4000$\end{tabular}}}}%
+    \put(0.57305044,0.01531104){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5000$\end{tabular}}}}%
+    \put(0.73055194,0.01531104){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$6000$\end{tabular}}}}%
+    \put(0.01071973,0.15406996){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$200$\end{tabular}}}}%
+    \put(0.01071973,0.26568918){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$400$\end{tabular}}}}%
+    \put(0.01071973,0.37730837){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$600$\end{tabular}}}}%
+    \put(0.01071973,0.48892759){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$800$\end{tabular}}}}%
+    \put(-0.00073493,0.60054681){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1000$\end{tabular}}}}%
+    \put(0.85115292,0.0097444){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}[MPa]\end{tabular}}}}%
+    \put(0.8425234,0.05814218){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_b$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

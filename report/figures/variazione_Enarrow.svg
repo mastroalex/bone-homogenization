@@ -18,9 +18,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="2.2416315"
-     inkscape:cx="195.61646"
-     inkscape:cy="50.632765"
+     inkscape:zoom="6.3402913"
+     inkscape:cx="275.61825"
+     inkscape:cy="124.04793"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -605,13 +605,13 @@
     <text
        xml:space="preserve"
        style="font-size:16px;line-height:1.25;font-family:sans-serif"
-       x="268.77744"
-       y="151.67525"
+       x="264.91528"
+       y="144.63791"
        id="text5511"><tspan
          sodipodi:role="line"
          id="tspan5509"
-         x="268.77744"
-         y="151.67525">$E_m$</tspan></text>
+         x="264.91528"
+         y="144.63791">$E_m$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:16px;line-height:1.25;font-family:sans-serif"
@@ -622,5 +622,17 @@
          id="tspan7811"
          x="196.28561"
          y="114.64864" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.83478px;line-height:1.25;font-family:sans-serif;stroke-width:0.302174"
+       x="883.88751"
+       y="48.450768"
+       id="text2301"
+       transform="scale(0.30217395,3.3093521)"><tspan
+         sodipodi:role="line"
+         id="tspan2299"
+         x="883.88751"
+         y="48.450768"
+         style="stroke-width:0.302174">[MPa]</tspan></text>
   </g>
 </svg>
